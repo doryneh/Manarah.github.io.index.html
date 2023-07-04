@@ -527,8 +527,60 @@ section.Calculator .greenDiv .Details{
     line-height: 25px;
     font-weight: 400;
 }
+
 /**************************
 **************************
 End Calculator
+**************************
+**************************/
+
+
+/**************************
+**************************
+Four Steps 
+**************************
+**************************/
+section.FourSteps .CardNumber{
+    font-size: 45px;
+    line-height: 65px;
+    color: #70CACB;
+    font-weight: 500;
+}
+section.FourSteps .Cardborder{
+    border: 2px solid #00A1A3;
+    border-radius: 20px;
+}
+section.FourSteps .Cardborder .card{
+    filter: drop-shadow(4px 4px 8px hsla(0, 0%, 0%, 0.1));
+    border-radius: 20px;
+    height: 100%;
+  
+}
+section.FourSteps .Cardborder .card img{
+    height: 35px;
+    width: fit-content;
+    margin-bottom: 20px;
+}
+section.FourSteps .Cardborder .card .card-body{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+section.FourSteps .Cardborder .card  .card-title{
+    font-size: 20px;
+    line-height: 45px;
+    font-weight: 600;
+}
+section.FourSteps .Cardborder .card  .card-text{
+    font-size: 16px;
+    line-height: 25px;
+    color: #838383;
+    font-weight: 500;
+}
+/**************************
+**************************
+End Four Steps 
 **************************
 **************************/
