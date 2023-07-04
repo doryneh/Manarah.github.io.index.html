@@ -48,6 +48,19 @@ body {
     background-color: white;
     color: #00A1A3;
 }
+.paragraph {
+    font-size: 20px;
+    line-height: 45px;
+    font-weight: normal;
+}
+
+.paragraph.Bold {
+    font-weight: 600;
+}
+
+.paragraph.SmallLine {
+    line-height: 33px;
+}
 
 /************************
 **************************
@@ -207,19 +220,6 @@ section.KnowUs .carousel .carousel-control-prev, section.KnowUs .carousel .carou
     width: fit-content;
 }
 
-section.KnowUs .KnowUsText .paragraph {
-    font-size: 20px;
-    line-height: 45px;
-    font-weight: normal;
-}
-
-section.KnowUs .KnowUsText .paragraph.Bold {
-    font-weight: 600;
-}
-
-section.KnowUs .KnowUsText .paragraph.SmallLine {
-    line-height: 33px;
-}
 
 /************************
 **************************
@@ -582,5 +582,27 @@ section.FourSteps .Cardborder .card  .card-text{
 /**************************
 **************************
 End Four Steps 
+**************************
+**************************/
+
+
+/**************************
+**************************
+System Status
+**************************
+**************************/
+section.SystemStatus .TextPart{
+    display: flex ;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+section.SystemStatus .ImgPart img{
+    width: 90%;
+    float: left;
+}
+/**************************
+**************************
+End System Status
 **************************
 **************************/
