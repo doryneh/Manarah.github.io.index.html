@@ -606,3 +606,49 @@ section.SystemStatus .ImgPart img{
 End System Status
 **************************
 **************************/
+
+
+
+
+/**************************
+**************************
+Latest Transactions
+**************************
+**************************/
+section.Transactions table{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+section.Transactions table thead {
+    background-color: #70CACB;
+    height: 85px;
+}
+section.Transactions table tbody{
+    background-color: #F9F8FD;
+}
+section.Transactions table thead tr th{
+    font-size: 25px;
+    line-height: 45px;
+    color: white;
+    font-weight:500;
+    border: 2px solid #70CACB;
+}
+section.Transactions table tbody tr{
+    border-bottom: 1px solid #70CACB;
+    width: 90%;
+}
+section.Transactions table tbody tr td{
+    font-size: 20px;
+    line-height: 45px;
+    font-weight: 400;
+    line-height: 60px;
+}
+section.Transactions table tbody tr td:nth-child(3){
+    color: #44BC59;
+}
+/**************************
+**************************
+End Latest Transactions
+**************************
+**************************/
