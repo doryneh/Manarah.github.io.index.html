@@ -1,0 +1,534 @@
+@font-face {
+    font-family: Tajawal;
+    src: url(../fonts/Tajawal/Tajawal-Regular.ttf);
+}
+
+body {
+    direction: rtl;
+    font-family: Tajawal !important;
+}
+
+.sectionTitle {
+    font-size: 40px;
+    line-height: 45px;
+    font-weight: bold;
+}
+
+.greenBtnLink, .whiteBtnLink {
+    text-align: center;
+    padding: 10px 50px;
+    text-decoration: none;
+    border-radius: 33px;
+    font-size: 18px;
+    transition: 0.3s ease all;
+
+}
+
+.greenBtnLink {
+    background-color: #00A1A3;
+    border: 1px solid #00A1A3;
+
+    color: white;
+
+}
+
+.greenBtnLink:hover {
+    background-color: white;
+    color: #00A1A3;
+}
+
+.whiteBtnLink {
+    background-color: transparent;
+    border: 1px solid white;
+    margin-right: 20px;
+    color: white;
+}
+
+.whiteBtnLink:hover {
+    background-color: white;
+    color: #00A1A3;
+}
+
+/************************
+**************************
+Navbar
+**************************
+**************************/
+nav.navbar {
+    background-color: transparent;
+
+}
+
+nav.navbar ul.navbar-nav li.nav-item a.nav-link {
+    color: white;
+    font-size: 20px;
+    line-height: 65px;
+    margin-left: 25px;
+}
+
+/************************
+**************************
+End Navbar
+**************************
+**************************/
+
+
+
+
+/************************
+**************************
+Header
+**************************
+**************************/
+header.header {
+    height: 100vh;
+    background: linear-gradient(90deg, #312F69 0%, #07959D 50%, #312F69 100%);
+}
+
+header.header .BannerImg {
+    width: 90%;
+}
+
+header.header .BannerTextPart {
+    position: relative;
+
+}
+
+header.header .BannerTextPart .BannerPattern {
+    position: absolute;
+    top: 0%;
+    left: -30%;
+    z-index: 0;
+}
+
+header.header .BannerTextPart h1 {
+    font-size: 55px;
+    line-height: 90px;
+    color: white;
+    font-weight: bold;
+}
+
+header.header .BannerTextPart p {
+    font-size: 25px;
+    line-height: 45px;
+    color: white;
+}
+
+header.header .BannerTextPart p a {
+    color: #47ADEE;
+    font-size: 20px;
+    line-height: 45px;
+}
+
+header.header .BannerTextPart .btn-group {
+    width: 100%;
+}
+
+
+header.header .BannerTextPart .greenBtnLink, header.header .BannerTextPart .whiteBtnLink {
+
+    width: 35%;
+
+}
+
+
+/************************
+**************************
+End Header
+**************************
+**************************/
+
+
+/************************
+**************************
+Statistics
+**************************
+**************************/
+section.Stat .StatisticsRow {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+section.Stat .StatisticsRow .statDiv {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+}
+
+section.Stat .StatisticsRow .statDiv .statTextRow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.Stat .StatisticsRow .statDiv .statICon {
+    margin-left: 20px;
+}
+
+section.Stat .StatisticsRow .statDiv .statTextRow .statText {
+    font-size: 20px;
+    line-height: 40px;
+    color: #00A1A3;
+    font-weight: 600;
+}
+
+section.Stat .StatisticsRow .statDiv .statTextRow .statNumbers {
+    font-size: 25px;
+    line-height: 45px;
+    color: #00A1A3;
+    font-weight: 600;
+}
+
+/************************
+**************************
+ENd Statistics
+**************************
+**************************/
+
+/************************
+**************************
+Know Us Section
+**************************
+**************************/
+section.KnowUs .carousel .carousel-item img {
+    width: 80%;
+    margin: auto;
+
+}
+
+section.KnowUs .carousel .carousel-control-prev, section.KnowUs .carousel .carousel-control-next {
+    opacity: 1;
+    width: fit-content;
+}
+
+section.KnowUs .KnowUsText .paragraph {
+    font-size: 20px;
+    line-height: 45px;
+    font-weight: normal;
+}
+
+section.KnowUs .KnowUsText .paragraph.Bold {
+    font-weight: 600;
+}
+
+section.KnowUs .KnowUsText .paragraph.SmallLine {
+    line-height: 33px;
+}
+
+/************************
+**************************
+End Know Us Section
+**************************
+**************************/
+
+/************************
+**************************
+Bundels
+**************************
+**************************/
+section.Bundels .card {
+    border-radius: 20px;
+    filter: drop-shadow(0px 4px 20px hsla(0, 0%, 0%, 0.16));
+    border: none;
+    height: 100%;
+}
+
+section.Bundels .card-overlay {
+    background-color: white;
+    border-radius: 20px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+section.Bundels .card-overlay .Batch .batchType {
+    font-size: 25px;
+    line-height: 45px;
+    font-weight: 400;
+    padding-right: 15px;
+}
+
+section.Bundels .card-overlay .PercentagePart .percentage {
+    font-size: 42px;
+    line-height: 38px;
+    font-weight: 600;
+    padding-bottom: 25px;
+}
+
+section.Bundels .card-overlay .PercentagePart .DiscountBundle {
+    text-align: center;
+    padding-left: 15px;
+}
+
+section.Bundels .card-overlay .PercentagePart .DiscountBundle .win {
+    font-size: 30px;
+    line-height: 45px;
+    font-size: 600;
+
+}
+
+section.Bundels .card-overlay .PercentagePart .DiscountBundle .amount {
+    font-size: 50px;
+    line-height: 45px;
+    font-size: 600;
+}
+
+section.Bundels .card-overlay .PercentagePart .DiscountBundle .time, section.Bundels .card-overlay .ButtonsPart p {
+    font-size: 18px;
+    line-height: 45px;
+    font-size: light;
+}
+
+section.Bundels .card-overlay .ListPart {
+    color: black !important;
+}
+
+section.Bundels .card-overlay .ListPart ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+section.Bundels .card-overlay .ListPart ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    padding: 5px 15px;
+
+}
+
+section.Bundels .card-overlay .ButtonsPart {
+    padding: 0px 15px;
+}
+
+section.Bundels .card-overlay .ButtonsPart .greenBtnLink {
+    display: block;
+    padding: 15px 0px;
+}
+
+/*Brown Card*/
+section.Bundels .card.Brown {
+    background-color: #B26419;
+    color: #B26419;
+}
+
+section.Bundels .card.Brown .ListPart .FirstItemList {
+    background-color: #FBF7F3;
+
+}
+
+section.Bundels .card.Brown .card-overlay .PercentagePart .DiscountBundle .time, section.Bundels .card.Brown .card-overlay .ButtonsPart p {
+    color: #D4A87E;
+}
+
+section.Bundels .card.Brown .card-overlay .ButtonsPart .greenBtnLink {
+    background-color: #B26419;
+    border: 1px solid #B26419;
+
+}
+
+section.Bundels .card.Brown .card-overlay .ButtonsPart .greenBtnLink:hover {
+    background-color: white;
+    color: #B26419;
+}
+
+/*Grey Card*/
+section.Bundels .card.Grey {
+    background-color: #777777;
+    color: #777777;
+}
+
+section.Bundels .card.Grey .ListPart .FirstItemList {
+    background-color: #F8F8F8;
+
+}
+
+section.Bundels .card.Grey .card-overlay .PercentagePart .DiscountBundle .time, section.Bundels .card.Grey .card-overlay .ButtonsPart p {
+    color: #AAAAAA;
+}
+
+section.Bundels .card.Grey .card-overlay .ButtonsPart .greenBtnLink {
+    background-color: #777777;
+    border: 1px solid #777777;
+
+}
+
+section.Bundels .card.Grey .card-overlay .ButtonsPart .greenBtnLink:hover {
+    background-color: white;
+    color: #777777;
+}
+
+/*Orange Card*/
+section.Bundels .card.Orange {
+    background-color: #D4990D;
+    color: #D4990D;
+}
+
+section.Bundels .card.Orange .ListPart .FirstItemList {
+    background-color: #FDFAF2;
+
+}
+
+section.Bundels .card.Orange .card-overlay .PercentagePart .DiscountBundle .time, section.Bundels .card.Orange .card-overlay .ButtonsPart p {
+    color: #E4C069;
+}
+
+section.Bundels .card.Orange .card-overlay .ButtonsPart .greenBtnLink {
+    background-color: #D4990D;
+    border: 1px solid #D4990D;
+
+}
+
+section.Bundels .card.Orange .card-overlay .ButtonsPart .greenBtnLink:hover {
+    background-color: white;
+    color: #D4990D;
+}
+
+
+/*Orange Card*/
+section.Bundels .card.Green {
+    background-color: #00A1A3;
+    color: #00A1A3;
+}
+
+section.Bundels .card.Green .ListPart .FirstItemList {
+    background-color: #70c9cb2d;
+
+}
+
+section.Bundels .card.Green .card-overlay .PercentagePart .DiscountBundle .time, section.Bundels .card.Green .card-overlay .ButtonsPart p {
+    color: #70CACB;
+}
+
+
+/**************************
+**************************
+End Bundels
+**************************
+**************************/
+
+
+/**************************
+**************************
+Calculator
+**************************
+**************************/
+section.Calculator .Text {
+    font-size: 25px;
+    line-height: 45px;
+    font-weight: 500;
+}
+section.Calculator select{
+    appearance: none; /* Remove default arrow */
+    -webkit-appearance: none; /* Remove default arrow for Safari */
+    -moz-appearance: none; /* Remove default arrow for Firefox */
+    background-image: url('../images/Select\ Arrow.svg') no-repeat right center; /* Replace with your custom arrow image path */
+    background-size: 16px 16px; /* Adjust the size of the custom arrow */
+
+    border-radius: 20px;
+    background-position: 97% center;
+filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.06));
+border: none;
+box-shadow: none !important;
+font-size: 20px;
+line-height: 45px;
+font-weight: 400;
+padding: 10px 60px 10px 10px;
+
+}
+
+section.Calculator .form-range-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+section.Calculator #rangeValue {
+    position: absolute;
+    top: -50px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 45px;
+    color: #101540;
+    font-weight: 400;
+    min-width: 150px;
+    width: fit-content;
+}
+
+
+
+section.Calculator .form-range-container input[type="range"] {
+    direction: rtl;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    section.Calculator input[type='range'] {
+        height: 9px;
+        -webkit-appearance: none;
+        background: linear-gradient(to left, #00A1A3 0%, #00A1A3 0%, #f3f3f3 0%, #f3f3f3 100%);
+        border-radius: 28px;
+      }
+      
+      section.Calculator input[type='range']::-webkit-slider-runnable-track {
+        height: 10px;
+        color: #13bba4 !important;
+        -webkit-appearance: none;
+        padding-bottom:25px ;
+      }
+      
+      section.Calculator  input[type='range']::-webkit-slider-thumb {
+        width: 28px;
+        -webkit-appearance: none;
+        height: 28px;
+        border-radius: 50%;
+        cursor: ew-resize;
+        background: #00A1A3;
+        border: 2px solid white;
+        filter: drop-shadow(0px 3px 6px hsla(249, 100%, 8%, 0.38));
+      }
+     
+    }
+
+
+section.Calculator .greenDiv{
+    background-color: #00A1A3;
+    border-radius: 20px;
+    color: white;
+}
+section.Calculator .greenDiv .TopText{
+    font-size: 25px;
+    line-height: 45px;
+    font-weight: 500;
+}
+section.Calculator .greenDiv .Value{
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: bold;
+}
+section.Calculator .greenDiv .DetailsRow{
+    width: 90%;
+}
+section.Calculator .greenDiv .Details{
+    font-size: 18px;
+    text-align: center;
+    line-height: 25px;
+    font-weight: 400;
+}
+/**************************
+**************************
+End Calculator
+**************************
+**************************/
