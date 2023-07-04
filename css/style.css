@@ -671,6 +671,9 @@ section.FAQ img.FAQImg{
 section.FAQ  .QuestionsPart{
     z-index: 100;
 }
+section.FAQ .accordion.accordion-flush .accordion-item{
+    border-bottom: 1px solid #70cacb66;
+}
 section.FAQ .accordion .accordion-item .accordion-button::after {
     display: none;
 }
