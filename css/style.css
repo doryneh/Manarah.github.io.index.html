@@ -95,11 +95,19 @@ Header
 **************************/
 header.header {
     height: 100vh;
-    background: linear-gradient(90deg, #312F69 0%, #07959D 50%, #312F69 100%);
+    position: relative;
 }
+header.header .HeaderBg{
+    position: absolute;
+    top: -10%;
+    right: -10%;
+    z-index: 0;
+    width: 110%;
 
+}
 header.header .BannerImg {
     width: 90%;
+    z-index: 10;
 }
 
 header.header .BannerTextPart {
@@ -769,9 +777,14 @@ section.NewestBlogs .BigBlogPart .paragraph{
             line-clamp: 4; 
     -webkit-box-orient: vertical;
 } 
+section.NewestBlogs .smallImgText{
+    max-height: 100vh;
+    overflow-y: scroll;
+}
 section.NewestBlogs .smallImgText .Texts{
     font-size: 20px;
     line-height: 35px;
+    
 }
 section.NewestBlogs .smallImgText .paragraph{
     font-size: 16px;
@@ -875,4 +888,23 @@ End Footer
 
 .WhiteText{
     color: white;
+}
+@media (max-width: 1400px)  {
+    header.header .HeaderBg{
+        top: 0%;
+    }
+    header.header .BannerTextPart h1 {
+        font-size: 45px;
+        line-height: 75px;
+      
+    }
+    nav.navbar ul.navbar-nav li.nav-item a.nav-link {
+        font-size: 15px;
+        line-height: 40px;
+        margin-left: 15px;
+    }
+    header.header .BannerImg{
+        align-items: center !important;
+        justify-content: center !important;
+    }
 }
