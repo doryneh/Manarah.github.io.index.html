@@ -1283,4 +1283,8 @@ End Footer
         align-items: center;
         margin-top: 20px;
     }
+    header.header {
+        padding-top: 65px !important;
+        height: 100vh;
+    }
 }
