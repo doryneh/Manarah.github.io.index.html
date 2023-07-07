@@ -1230,6 +1230,24 @@ End Footer
     section.SystemStatus .ImgPart {
         display: flex;
     }
+    section.Transactions table.tableSmallScreen  tr th,section.Transactions table.tableSmallScreen  tr td{
+        font-size: 14px;
+    }
+    section.Transactions table.tableSmallScreen  tr th{
+        text-align: right;
+        font-weight: 600;
+    }
+    section.Transactions table.tableSmallScreen  tr td{
+        text-align: left;
+    }
+    section.Transactions table.tableSmallScreen  tr:nth-child(3) td {
+        color: #44BC59;
+
+    }
+    section.Transactions  .tablePhone{
+        height: 100vh;
+        overflow-y: scroll;        
+    }
 
 }
 
@@ -1375,4 +1393,7 @@ End Footer
         justify-content: center;
         align-items: center;
     }
+    section.FourSteps .Cardborder .card img {
+        height: 65px;
+    }    
 }
