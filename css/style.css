@@ -89,7 +89,9 @@ nav.navbar button.navbar-toggler {
     outline: none;
     padding: 0;
 }
-
+nav.navbar.blackNav {
+    background-color: #312f69bd;
+}
 /************************
 **************************
 End Navbar
@@ -1324,7 +1326,10 @@ End Footer
         padding-top: 65px !important;
         height: 100vh;
     }
-
+    .navbar-collapse.show {
+        opacity: 1;
+      }
+      
     .navbar-collapse {
 
         position: absolute;
@@ -1332,12 +1337,14 @@ End Footer
         top: 0;
         background: linear-gradient(90deg, #312F69 0%, #07959D 50%, #312F69 100%);
         width: 100vw;
-        height: 100vh;
+        height: 100vh !important;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center !important;
         z-index: 1000;
+        opacity: 0;
+        transition:opacity  0.5s ease ;
     }
 
     nav.navbar .navbar-brand, nav.navbar button.navbar-toggler,nav.navbar .RegisterNavRow {
@@ -1359,5 +1366,9 @@ End Footer
     nav.navbar .greenBtnLink,nav.navbar .whiteBtnLink{
         font-size: 13px;
         padding: 10px 15px;
+    }
+    .WhiteLogoTextFooter{
+        font-size: 12px;
+        line-height: 20px;
     }
 }
