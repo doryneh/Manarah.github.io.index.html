@@ -1371,4 +1371,8 @@ End Footer
         font-size: 12px;
         line-height: 20px;
     }
+    section.FourSteps .Cardborder .card,section.FourSteps .Cardborder .card .card-body{
+        justify-content: center;
+        align-items: center;
+    }
 }
