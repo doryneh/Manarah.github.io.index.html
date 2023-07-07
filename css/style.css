@@ -1225,4 +1225,62 @@ End Footer
     .container-sm, .container {
         max-width: unset;
     }
+    section.Stat .StatisticsRow .TwoStatDiv .statDiv{
+        min-width: unset;
+        margin-right: 0px;
+    }
+    header.header .BannerTextPart h1 {
+        font-size: 35px;
+        line-height: 50px;
+    }
+    header.header .BannerTextPart .greenBtnLink, header.header .BannerTextPart .whiteBtnLink {
+        width: 50%;
+    }
+    section.Stat .StatisticsRow .statDiv .statICon img {
+        width: unset;
+        height: 75px;
+    }
+    .sectionTitle img{
+        width: 60px;
+    }
+    .sectionTitle {
+        font-size: 32px;
+    }
+    section.FourSteps .CardNumber{
+        display: none;
+    }
+    .paragraph {
+        line-height: 30px;
+    }
+    section.Transactions table thead tr th {
+        font-size: 17px;
+        line-height: 28px;
+    }
+    section.Transactions table tbody tr td {
+        font-size: 9px;
+    }
+    section.FAQ .accordion .accordion-item .accordion-button {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    section.FAQ img.FAQImg {
+        margin-bottom: 20px;
+    }
+    section.NewsLetter .NewsLetterInputPart form input {
+        width: 55%;
+    }
+    .smallImgText .d-flex{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .smallImgText .d-flex .ImagesPart {
+        width: 100% !important;
+    }
+    section.NewestBlogs .textPart{
+        width: 100% !important;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
 }
