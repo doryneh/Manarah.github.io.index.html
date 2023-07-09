@@ -13,7 +13,13 @@ body {
     line-height: 45px;
     font-weight: bold;
 }
-
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: #00A1A3;
+}
 .greenBtnLink, .whiteBtnLink {
     text-align: center;
     padding: 10px 50px;
@@ -32,7 +38,13 @@ body {
 
 }
 
-.greenBtnLink:hover {
+.greenBtnLink button {
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.greenBtnLink:hover, .greenBtnLink:hover button {
     background-color: white;
     color: #00A1A3;
 }
@@ -62,7 +74,10 @@ body {
 .SmallLine {
     line-height: 33px;
 }
-
+.TextSmall{
+    font-size: 18px;
+    line-height: 24px;
+}
 /************************
 **************************
 Navbar
@@ -89,9 +104,28 @@ nav.navbar button.navbar-toggler {
     outline: none;
     padding: 0;
 }
+
 nav.navbar.blackNav {
-    background-color: #312f69bd;
+    background: linear-gradient(90deg, #312F69 0%, #07959D 50%, #312F69 100%);
 }
+.WhiteBGBody nav.navbar{
+    background: linear-gradient(90deg, #312F69 0%, #07959D 50%, #312F69 100%);
+
+}
+nav.navbar .navbar-nav .dropdown-menu {
+    position: absolute;
+    border-radius: 10px;
+    filter: drop-shadow(0px 3px 6px hsla(0, 0%, 0%, 0.16));
+    padding: 10px 20px;
+}
+
+nav.navbar .navbar-nav .dropdown-menu li a, .ModalSmallText {
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: 500;
+    color: black;
+}
+
 /************************
 **************************
 End Navbar
@@ -99,7 +133,80 @@ End Navbar
 **************************/
 
 
+/************************
+**************************
+Modal
+**************************
+**************************/
+.modal .modal-content {
+    border-radius: 10px;
+}
 
+.modal .modal-header {
+    border-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.modal .btn-close {
+    opacity: 1;
+    box-shadow: none;
+}
+
+.modal .greenBtnLink {
+    width: 50%;
+    margin: auto;
+    display: block;
+}
+
+.modal select, .modal input,.searchInput,section.LoginSection input,section.LoginSection select {
+    border-bottom: 1px solid black !important;
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    color: #AAAAAA;
+    font-size: 18px !important;
+    outline: none;
+    box-shadow: none !important;
+}
+
+.modal input {
+    padding-right: 0px !important;
+}
+
+.modal .input-group-text,section.LoginSection input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black !important;
+    margin-right: 10px !important;
+    border-radius: 0 !important;
+    box-shadow: none;
+
+}
+section.LoginSection input {
+    margin-right: 0px !important;
+    width: 100%;
+    box-shadow: none;
+
+}
+.modal .input-group-text span,.RegisterInputGroup.input-group span {
+    background-color: #D3EEEF;
+    color: #00A1A3;
+    border-radius: 19px;
+    font-size: 18px;
+    line-height: 45px;
+    padding: 0px 35px;
+    box-shadow: none;
+
+}
+
+.modal .modal-dialog {
+    max-width: 60%;
+}
+
+/************************
+**************************
+End Modal
+**************************
+**************************/
 
 /************************
 **************************
@@ -462,7 +569,7 @@ section.Calculator .Text {
     font-weight: 500;
 }
 
-section.Calculator select {
+section.Calculator select, .modal select, .modal input,.searchInput {
     appearance: none;
     /* Remove default arrow */
     -webkit-appearance: none;
@@ -483,7 +590,7 @@ section.Calculator select {
     line-height: 45px;
     font-weight: 400;
     padding: 10px 60px 10px 10px;
-
+    direction: rtl;
 }
 
 section.Calculator .form-range-container {
@@ -756,7 +863,13 @@ section.FAQ .accordion .accordion-item .accordion-button:not(.collapsed) {
     color: black;
     font-weight: 600;
 }
-
+.WhiteBGBody section.FAQ{
+    margin-bottom: 200px;
+}
+.WhiteBGBody  section.FAQ img.FAQImg{
+    top: unset;
+    bottom: -10%;
+}
 /**************************
 **************************
 End FAQ
@@ -918,7 +1031,6 @@ footer.footer .Texts {
 footer.footer a {
     display: block;
     text-decoration: none;
-    margin-bottom: 15px;
 }
 
 footer.footer a:hover {
@@ -960,6 +1072,10 @@ footer.footer .ContactUsFooter a.socialMediaFooter:hover {
     transform: scale(1.1);
 }
 
+.WhiteText {
+    color: white;
+}
+
 /**************************
 **************************
 End Footer
@@ -967,22 +1083,287 @@ End Footer
 **************************/
 
 
-
-.WhiteText {
-    color: white;
+/**************************
+**************************
+Bundel Page
+**************************
+**************************/
+section.BreadCrumbs, .BundelsPage section.Calculator {
+    background-color: #F9F8FD;
 }
 
+.BundelsPage section.BreadCrumbs h1 {
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: 500;
+}
+ section.BreadCrumbs nav ol li.breadcrumb-item,  section.BreadCrumbs nav ol li.breadcrumb-item a {
+    color: #70CACB !important;
+    font-size: 18px;
+    line-height: 35px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.breadcrumb-item::after {
+    content: '>>';
+    color: #70CACB !important;
+    font-size: 18px;
+    line-height: 35px;
+    font-weight: 500;
+    margin: 0px 10px;
+}
+
+.breadcrumb-item:last-child:after {
+    content: ' ';
+}
+
+ section.BreadCrumbs nav ol li.breadcrumb-item.active {
+    font-weight: 600;
+
+}
+
+/**************************
+**************************
+End Bundel Page
+**************************
+**************************/
+
+/**************************
+**************************
+Blog Page
+**************************
+**************************/
+.inputSearchDiv{
+    position: relative;
+}
+.inputSearchDiv .searchInput{
+    height: 100%;
+    width: 80%;
+    background-color: transparent;
+}
+.inputSearchDiv svg{
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform: translateY(-50%);
+    color: #AAAAAA;
+}
+/**************************
+**************************
+End Blog Page
+**************************
+**************************/
+
+/**************************
+**************************
+Blog Details 
+**************************
+**************************/
+.BlogDetails section.NewestBlogs .BigBlogPart .paragraph {
+    overflow: unset;
+    display: unset;
+    -webkit-line-clamp: unset;
+    line-clamp: unset;
+    -webkit-box-orient: unset;
+    display: block;
+}
+.BlogDetails section.NewestBlogs .UserRow .TextSmall{
+    color: #AAAAAA;
+}
+.UserImg{
+    border-radius: 50%;
+}
+
+.BlogDetails section.NewestBlogs .smallImgText .UserRow img{
+    width: 35px;
+}
+.BlogDetails section.NewestBlogs  .smallImgText .UserRow .TextSmall{
+    font-size: 16px;
+}
+/**************************
+**************************
+End Blog Details 
+**************************
+**************************/
+
+/**************************
+**************************
+Policy Pages
+**************************
+**************************/
+section.RefundPolicy ul li::marker{
+    color: #00A1A3;
+    width: 11px !important;
+    height: 11px !important;
+}
+/**************************
+**************************
+End Policy Pages
+**************************
+**************************/
+
+
+/**************************
+**************************
+Best Investors
+**************************
+**************************/
+section.Transactions.BestIvestors table tbody tr td:nth-child(3){
+    color:black;
+} 
+section.Transactions.BestIvestors table tbody tr td:nth-child(2) {
+    color: #44BC59;
+}
+section.Transactions table.tableSmallScreen{
+    width: 96%;
+}
+section.Transactions.BestIvestors table.tableSmallScreen tr td {
+    color: black !important;
+
+}
+section.Transactions.BestIvestors table.tableSmallScreen tr:nth-child(2) td {
+    color: #44BC59 !important;
+
+}
+/**************************
+**************************
+End Best Investors
+**************************
+**************************/
+
+/**************************
+**************************
+Login Register Page
+**************************
+**************************/
+section.LoginSection {
+    background-image: url(../images/LoginImage.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left top;
+}
+section.LoginSection.RegisterSection{
+    background-image: url(../images/RegisterImage.png);
+
+}
+section.LoginSection .sectionTitle{
+    font-size: 45px;
+    font-weight: 600;
+}
+section.LoginSection .CodeDiv {
+    background-color: #70c9cb59;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.LoginSection .CodeDiv span{
+    font-size: 25px;
+    font-weight: bolder;
+    color: #00A1A3;
+    margin-left: 30px;
+    line-height: 24px;
+}
+section.LoginSection .form-check-input{
+    background-color: #FFFFFF;
+    filter: drop-shadow(4px 4px 8px hsla(0, 0%, 0%, 0.15));
+    border: none !important;
+    border-radius: 20px !important;
+    height: 24px;
+    width: 45px !important;
+    box-shadow: none;
+    background-image: url(../images/Switch\ Dot.svg);
+    background-size:initial;
+}
+section.LoginSection .form-switch .form-check-input:checked{
+    background-color: #00A1A3;
+}
+section.LoginSection .Registerline a{
+    text-decoration: underline;
+}
+section.LoginSection .GreenBorderBottom{
+    border-bottom: 0.5px solid #00A1A3;
+    padding-bottom: 10px;
+}
+section.LoginSection .GreenBorderBottom input{
+    background-color: #E7F6F6;
+    border-radius: 23px !important;
+    border-bottom: none !important;
+    padding: 0 !important;
+    color: #00A1A3;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 10px !important;
+}
+section.LoginSection .GreenBorderBottom input.custom-placeholder {
+    color: #00A1A3; /* Default color for older browsers */
+  }
+  
+  /* Modern browsers */
+  section.LoginSection .GreenBorderBottom input::placeholder {
+    color: #00A1A3; /* Placeholder color for modern browsers */
+  }
+  section.LoginSection select {
+    border:none;
+    line-height: 24px;
+  }
+section.LoginSection .form-check-label.greenText{
+    font-size: 15px;
+}
+section.LoginSection  .RegisterCheck{
+    border-radius: 0px !important;
+    height: 35px;
+    width: 35px !important;
+    background-image: unset;
+    background-size:initial;
+}
+section.LoginSection .RegisterCheck:checked{
+    background-image: url(../images/CheckIcon.svg) ;
+}
+section.LoginSection .RegisterInputGroup.input-group span{
+    background-color: transparent;
+    padding: 0px 10px;
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 0 !important;
+    font-weight: 600;
+}
+.ModalSmallText button.resend{
+    text-decoration: underline;
+    box-shadow: none;
+    border: none;
+    background-color: transparent;
+}
+/**************************
+**************************
+End Login Register Page
+**************************
+**************************/
+
+.greenText{
+    color: #00A1A3 !important;
+}
+/******************************************************************************
+******************************************************************************
+Media Query 
+******************************************************************************
+******************************************************************************/
 @media (max-width: 1400px) {
     header.header .HeaderBg {
         top: 0%;
     }
-
+    .BlogDetails section.NewestBlogs .smallImgText .UserRow img{
+        width: 30px;
+    }
     header.header .BannerTextPart h1 {
         font-size: 45px;
         line-height: 75px;
 
     }
-
+    .BlogDetails section.NewestBlogs .smallImgText .UserRow .TextSmall {
+        font-size: 13px;
+    }
     nav.navbar ul.navbar-nav li.nav-item a.nav-link {
         font-size: 15px;
         line-height: 40px;
@@ -1014,9 +1395,11 @@ End Footer
     footer.footer .Texts {
         font-size: 22px;
     }
-
+    section.LoginSection input{
+        font-size: 15px !important;
+    }
     .paragraph {
-        font-size: 17px;
+        font-size: 18px;
     }
 
     section.Bundels .card-overlay .ButtonsPart .greenBtnLink {
@@ -1062,7 +1445,18 @@ End Footer
         text-align: center;
 
     }
-
+    .BlogDetails section.NewestBlogs .smallImgText .UserRow img{
+        width: 35px;
+    }
+    .BlogDetails section.NewestBlogs .smallImgText .UserRow .TextSmall {
+        font-size: 16px;
+    }
+    .smallImgText .UserRow.d-flex{
+        flex-direction: row !important;
+    }
+    .BlogDetails section.NewestBlogs .textPart .paragraph{
+        text-align: center;
+    }
     footer.footer hr {
         margin: auto;
         margin-bottom: 15px;
@@ -1156,6 +1550,9 @@ End Footer
     section.FAQ .accordion .accordion-item .accordion-button svg {
         font-size: 20px;
     }
+    section.LoginSection{
+        background-image: unset;
+    }
 }
 
 
@@ -1166,7 +1563,7 @@ End Footer
         text-align: center;
         padding-top: 130px !important;
     }
-
+   
     header.header .BannerTextPart .BannerPattern {
         left: 0;
     }
@@ -1230,23 +1627,28 @@ End Footer
     section.SystemStatus .ImgPart {
         display: flex;
     }
-    section.Transactions table.tableSmallScreen  tr th,section.Transactions table.tableSmallScreen  tr td{
+
+    section.Transactions table.tableSmallScreen tr th, section.Transactions table.tableSmallScreen tr td {
         font-size: 14px;
     }
-    section.Transactions table.tableSmallScreen  tr th{
+
+    section.Transactions table.tableSmallScreen tr th {
         text-align: right;
         font-weight: 600;
     }
-    section.Transactions table.tableSmallScreen  tr td{
+
+    section.Transactions table.tableSmallScreen tr td {
         text-align: left;
     }
-    section.Transactions table.tableSmallScreen  tr:nth-child(3) td {
+
+    section.Transactions table.tableSmallScreen tr:nth-child(3) td {
         color: #44BC59;
 
     }
-    section.Transactions  .tablePhone{
+
+    section.Transactions .tablePhone {
         height: 100vh;
-        overflow-y: scroll;        
+        overflow-y: scroll;
     }
 
 }
@@ -1328,7 +1730,7 @@ End Footer
         justify-content: center;
         align-items: center;
     }
-
+    
     .smallImgText .d-flex .ImagesPart {
         width: 100% !important;
     }
@@ -1344,10 +1746,11 @@ End Footer
         padding-top: 65px !important;
         height: 100vh;
     }
+
     .navbar-collapse.show {
         opacity: 1;
-      }
-      
+    }
+
     .navbar-collapse {
 
         position: absolute;
@@ -1362,10 +1765,10 @@ End Footer
         justify-content: center !important;
         z-index: 1000;
         opacity: 0;
-        transition:opacity  0.5s ease ;
+        transition: opacity 0.5s ease;
     }
 
-    nav.navbar .navbar-brand, nav.navbar button.navbar-toggler,nav.navbar .RegisterNavRow {
+    nav.navbar .navbar-brand, nav.navbar button.navbar-toggler, nav.navbar .RegisterNavRow {
         z-index: 2000;
     }
 
@@ -1380,20 +1783,26 @@ End Footer
         margin-bottom: 25px;
 
     }
-   
-    nav.navbar .greenBtnLink,nav.navbar .whiteBtnLink{
+
+    nav.navbar .greenBtnLink, nav.navbar .whiteBtnLink {
         font-size: 13px;
         padding: 10px 15px;
     }
-    .WhiteLogoTextFooter{
+
+    .WhiteLogoTextFooter {
         font-size: 12px;
         line-height: 20px;
     }
-    section.FourSteps .Cardborder .card,section.FourSteps .Cardborder .card .card-body{
+
+    section.FourSteps .Cardborder .card, section.FourSteps .Cardborder .card .card-body {
         justify-content: center;
         align-items: center;
     }
+
     section.FourSteps .Cardborder .card img {
         height: 65px;
-    }    
+    }
+    .TextSmall {
+    font-size: 15px;
+    }
 }

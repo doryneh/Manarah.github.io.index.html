@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <filter id="Shape_11" x="0" y="0" width="20" height="20" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#fff" flood-opacity="0.059" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g data-type="innerShadowGroup">
+    <circle id="Shape_11-2" data-name="Shape 11" cx="10" cy="10" r="10" fill="#00a1a3"/>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Shape_11)">
+      <circle id="Shape_11-3" data-name="Shape 11" cx="10" cy="10" r="10" fill="#fff"/>
+    </g>
+  </g>
+</svg>

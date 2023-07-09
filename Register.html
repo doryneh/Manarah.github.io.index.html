@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/bootstrap.rtl.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="">
+
+
+    <title> Manarah | Register Page</title>
+</head>
+
+<body class="WhiteBGBody">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center w-100">
+                <a class="navbar-brand" href="index.html"><img src="images/Logo.svg"
+                        alt="Al Manarah Logo Svg Format"></a>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav pe-lg-5">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                من نحن
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                                <li><a class="dropdown-item" href="#">من نحن</a></li>
+                                <li><a class="dropdown-item" href="#"> التسويق بالعمولة</a></li>
+                                <li><a class="dropdown-item" href="#"> ترخيص الشركة</a></li>
+                                <li><a class="dropdown-item" href="#"> عقد الاستثمار </a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="BundelPage.html">باقات الاستثمار</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">طرق الدفع</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                مساعدة
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                                <li><a class="dropdown-item" href="#">الأسئلة الشائعة</a></li>
+                                <li><a class="dropdown-item" href="#"> اتصل بنا</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class="d-flex justify-content-center align-items-center RegisterNavRow">
+                    <a href="">
+                        <button class="bg-transparent border-0"><img src="images/Language icon.svg"
+                                alt="Changing Language Icon Al Manarah Navbar "></button>
+                    </a>
+                    <button class="greenBtnLink">تسجيل</button>
+                    <button class="whiteBtnLink ms-2">دخول</button>
+
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!--End Navbar-->
+
+    <!-- Modal -->
+    <div class="modal fade" id="VerifyEmail" tabindex="-1" aria-labelledby="VerifyEmailLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-4">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="paragraph text-center"> <b> تأكيد البريد الإلكتروني </b></p>
+                    <p class="ModalSmallText mb-0 text-center">تم إرسال كود التحقق المكون من 6 أرقام إلى عنوان
+                        <br>
+                        بريدك t***@test.com الإلكتروني
+                    </p>
+
+                    <form action="">
+
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control text-center"
+                                placeholder="قم بإدخال بريدك الالكتروني أو اسم المستخدم " aria-label="EmailOrUserName"
+                                aria-describedby="EmailOrUserName">
+                        </div>
+
+                        <a href="" class="greenBtnLink mx-auto mt-4"> <button type="submit"
+                                class="bg-transparent border-0 w-100 h-100"> ارسال</button></a>
+                    </form>
+                    <p class="ModalSmallText mb-0 text-center"><button class="resend greenText">إعادة إرسال,</button>
+                        إذا لم يصلك كود التحقق</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--End Modals-->
+
+
+    <!--login Section-->
+    <section class="RegisterSection LoginSection py-5" id="LoginSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5">
+                    <div class="sectionTitle greenText">مرحباً !</div>
+                    <div class="Texts my-4">أهلا عزيزي يمكنك الان انشاء حسابك</div>
+                    <form action="" class="d-flex flex-column">
+                        <div class="row mx-0">
+                            <div class="col-6">
+                                <label for="FirstName" class="paragraph">الاسم الأول * </label>
+                                <input type="text" name="FirstName" class="py-3 TextSmall" id="FirstName"
+                                    placeholder="ادخل الاسم الاول" required>
+                            </div>
+                            <div class="col-6">
+                                <label for="LastName" class="paragraph">الاسم الأخير * </label>
+                                <input type="text" name="LastName" class="py-3 TextSmall" id="LastName"
+                                    placeholder="ادخل الاسم الأخير" required>
+                            </div>
+                            <div class="col-6 mt-3 d-flex justify-content-between flex-column">
+
+                                <label for="UserName" class="paragraph">اسم المستخدم * </label>
+                                <div class="GreenBorderBottom">
+                                    <input type="text" name="UserName" class="py-3 TextSmall" id="UserName"
+                                        placeholder="ALM034712694" required>
+
+                                </div>
+                            </div>
+                            <div class="col-6  mt-3 ">
+                                <label for="Email" class="paragraph">البريد الالكتروني *</label>
+                                <input type="text" name="Email" class="py-3 TextSmall" id="Email"
+                                    placeholder="ادخل البريد الالكتروني  " required>
+                            </div>
+                            <div class="col-6  mt-3 ">
+                                <label for="Country" class="paragraph">الدولة *</label>
+                                <select class="form-select form-select-lg py-3" aria-label=".form-select-lg example"
+                                    required>
+                                    <option value="0" selected>إختر</option>
+                                    <option value="1">Saudi Arabia</option>
+                                    <option value="2">Lebanon </option>
+                                </select>
+                            </div>
+                            <div class="col-6  mt-3 ">
+
+                                <label for="PhoneNumber" class="paragraph">رقم الهاتف *</label>
+                                <div class="RegisterInputGroup input-group mb-3">
+
+                                    <input type="number" name="PhoneNumber" class="form-control py-3 TextSmall"
+                                        id="PhoneNumber" placeholder=" " required>
+                                    <span class="input-group-text ms-2" id="CountryCodeNumber">214</span>
+                                </div>
+
+                            </div>
+                            <div class="col-6 mt-3">
+                                <label for="Password" class="paragraph mt-4">كلمة المرور *</label>
+                                <input type="password" name="Password" class="py-3 TextSmall" id="Password"
+                                    placeholder="************" required>
+                            </div>
+                            <div class="col-6 mt-3">
+                                <label for="PasswordRepeat" class="paragraph mt-4">إعادة كلمة المرور *</label>
+                                <input type="password" name="PasswordRepeat" class="py-3 TextSmall" id="PasswordRepeat"
+                                    placeholder="************" required>
+                            </div>
+                        </div>
+
+
+                        <div class="CodeDiv mt-4">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <input type="text" name="CodeVerification" class="py-3 TextSmall mt-3" id="CodeVerification"
+                            placeholder="أدخل الرمز كما هو موضح" required>
+
+                        <div class="d-flex justify-content-between align-items-center mt-4">
+                            <div class="form-check p-0  d-flex align-items-center">
+                                <input class="form-check-input RegisterCheck" type="checkbox" role="switch"
+                                    id="flexSwitchCheckDefault" required>
+                                <label class="form-check-label TextSmall ms-3 greenText" for="flexSwitchCheckDefault">
+                                    أوافق على
+                                    سياسة الخصوصية , الشروط والأحكام , سياسة الإسترجاع
+                                </label>
+                            </div>
+
+
+
+                        </div>
+                        <a href="" class="greenBtnLink mx-auto mt-4 w-100"> <button type="submit"
+                                class="bg-transparent border-0 w-100 h-100 paragraph" data-bs-toggle="modal"
+                                data-bs-target="#VerifyEmail"> افتح حساب الان </button></a>
+                        <div class="TextSmall greenText Registerline text-center mt-3">هل تملك حساب نشيط ؟<span
+                                class="ms-2"><a href="" class="greenText"> سجل دخولك </a></span></div>
+                    </form>
+                </div>
+                <div class="col-xl-7">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End login Section-->
+
+    <!--Footer-->
+    <footer class="footer py-5 " id="footer">
+        <div class="container">
+            <div class="row gx-0">
+                <div class="col-xl-3 col-6 order-md-0  pe-xl-4">
+                    <img src="images/Logo White.svg" alt="Al Manarah Logo White">
+                    <div class="paragraph WhiteText SmallLine mt-3 WhiteLogoTextFooter">الألم نفسه ، من المهم اتخاذ
+                        الخطوة الأولى.
+                        إذا اتبعت كل العقول ، فأنت ملزم بالتحرر من تلك الخيارات الأخرى! لأنه غير ملزم بنوع العمل ، لكنه
+                        لا يقوم بأي
+                        من واجبات حياته</div>
+                </div>
+                <div class="col-xl-2 order-md-2 order-xl-1 col-md-4 col-6 mt-md-4 mt-xl-0">
+                    <div class="Texts WhiteText">روابط الموقع</div>
+                    <hr>
+
+                    <a href="BundelPage.html" class="paragraph WhiteText">الباقات</a>
+                    <a href="AboutUs.html" class="paragraph WhiteText">من نحن</a>
+                    <a href="FAQ.html" class="paragraph WhiteText">الاسئلة الشائعة </a>
+                    <a href="BlogPage.html" class="paragraph WhiteText">المدونة </a>
+
+                </div>
+                <div class="col-xl-2 order-md-3 order-xl-2  col-md-4 col-6 mt-4 mt-xl-0">
+                    <div class="Texts WhiteText ">روابط مهمة </div>
+                    <hr>
+
+                    <a href="PrivacyPolicy.html" class="paragraph WhiteText">سياسة الخصوصية</a>
+                    <a href="TermsAndConfition.html" class="paragraph WhiteText">الشروط والأحكام </a>
+                    <a href="RefundPolicy.html" class="paragraph WhiteText">سياسة الإسترجاع </a>
+
+                </div>
+                <div class="col-xl-2 order-md-4 order-xl-3  col-md-4 col-6 mt-4 mt-xl-0">
+                    <div class="Texts WhiteText ">إحصائيات النظام </div>
+                    <hr>
+                    <a href="BestInvestors.html" class="paragraph WhiteText"> <img src="images/leftArrowWhite.svg"
+                            alt="leftArrowWhite" class="me-2">أفضل المستثمرين </a>
+                    <a href="LatestCheckOutTransActions.html" class="paragraph WhiteText"> <img
+                            src="images/leftArrowWhite.svg" alt="leftArrowWhite" class="me-2">أخر عمليات السحب </a>
+                    <a href="LatestDepositsTransactions.html" class="paragraph WhiteText"> <img
+                            src="images/leftArrowWhite.svg" alt="leftArrowWhite" class="me-2">أخر عمليات الإيداع </a>
+                    <a href="LatestReferralCommissions.html" class="paragraph WhiteText"> <img
+                            src="images/leftArrowWhite.svg" alt="leftArrowWhite" class="me-2">أخر عمليات الإحالة </a>
+
+                </div>
+                <div class="col-xl-3  order-md-1 order-xl-4  mt-4 mt-md-0 col-md-6 ps-xl-4 ContactUsFooter">
+                    <div class="Texts WhiteText">إتصل بنا </div>
+                    <hr>
+                    <div class="paragraph WhiteText"><i class="fa-solid fa-location-dot me-2"></i> Sector 07, Uttara,
+                        Dhaka-1230,
+                        Bangladesh</div>
+                    <div class="paragraph WhiteText"><i class="fa-solid fa-envelope me-2"></i> info@al-manarh.com
+                    </div>
+                    <div class="paragraph WhiteText"><i class="fa-solid fa-phone-volume me-2"></i> +210 457445
+                    </div>
+                    <div class="d-flex socialMediaFooterPart">
+                        <a href="" class="socialMediaFooter"><i class="fa-brands fa-linkedin-in"></i> </a>
+                        <a href="" class="socialMediaFooter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="" class="socialMediaFooter"><i class="fa-brands fa-facebook-f"></i> </a>
+                        <a href="" class="socialMediaFooter"><i class="fa-brands fa-youtube"></i> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--End Footer-->
+
+</body>
+<script src="assets/js/jquery-3.6.1.min.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/all.js"></script>
+<script src="js/js.js"></script>
+<script src="js/CodeGeneration.js"></script>
+
+
+</html>
