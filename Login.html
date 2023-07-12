@@ -16,7 +16,7 @@
 
 <body class="WhiteBGBody">
   <!--Navbar-->
-  <nav class="navbar navbar-expand-lg ">
+  <nav class="navbar navbar-expand-lg  fixed-top">
     <div class="container">
       <div class="d-flex justify-content-between align-items-center w-100">
         <a class="navbar-brand" href="index.html"><img src="images/Logo.svg" alt="Al Manarah Logo Svg Format"></a>
@@ -24,7 +24,7 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
           <ul class="navbar-nav pe-lg-5">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
+              <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" role="button"
@@ -32,10 +32,10 @@
                 من نحن
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
-                <li><a class="dropdown-item" href="#">من نحن</a></li>
-                <li><a class="dropdown-item" href="#"> التسويق بالعمولة</a></li>
-                <li><a class="dropdown-item" href="#"> ترخيص الشركة</a></li>
-                <li><a class="dropdown-item" href="#"> عقد الاستثمار </a></li>
+                <li><a class="dropdown-item" href="AboutUs.html">من نحن</a></li>
+                <li><a class="dropdown-item" href="AffiliateMarketing.html"> التسويق بالعمولة</a></li>
+                <li><a class="dropdown-item" href="CompanyLicense.html"> ترخيص الشركة</a></li>
+                <li><a class="dropdown-item" href="InvestmentContract.html"> عقد الاستثمار </a></li>
 
               </ul>
             </li>
@@ -43,7 +43,7 @@
               <a class="nav-link" href="BundelPage.html">باقات الاستثمار</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">طرق الدفع</a>
+              <a class="nav-link" href="PaymentMethods.html">طرق الدفع</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button"
@@ -51,8 +51,8 @@
                 مساعدة
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
-                <li><a class="dropdown-item" href="#">الأسئلة الشائعة</a></li>
-                <li><a class="dropdown-item" href="#"> اتصل بنا</a></li>
+                <li><a class="dropdown-item" href="FAQ.html">الأسئلة الشائعة</a></li>
+                <li><a class="dropdown-item" href="ContactUs.html"> اتصل بنا</a></li>
               </ul>
             </li>
 
@@ -64,8 +64,8 @@
             <button class="bg-transparent border-0"><img src="images/Language icon.svg"
                 alt="Changing Language Icon Al Manarah Navbar "></button>
           </a>
-          <button class="greenBtnLink">تسجيل</button>
-          <button class="whiteBtnLink ms-2">دخول</button>
+          <a href="Register.html" class="greenBtnLink">تسجيل</a>
+          <a href="Login.html" class="whiteBtnLink ms-2">دخول</a>
 
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -77,96 +77,103 @@
   </nav>
   <!--End Navbar-->
 
-     <!-- Modal -->
-     <div class="modal fade" id="ResetPassword" tabindex="-1" aria-labelledby="ResetPasswordLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content p-4">
-              <div class="modal-header">
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                  <p class="paragraph text-center"> <b> إعادة تعيين كلمة  المرور</b></p>
-                  <form action="">
-                  
-                      <div class="input-group mb-3">
-                          <input type="text" class="form-control text-center" placeholder="قم بإدخال بريدك الالكتروني أو اسم المستخدم " aria-label="EmailOrUserName"
-                              aria-describedby="EmailOrUserName" required>
-                      </div>
+  <!-- Modal -->
+  <div class="modal fade" id="ResetPassword" tabindex="-1" aria-labelledby="ResetPasswordLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-4">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="paragraph text-center"> <b> إعادة تعيين كلمة المرور</b></p>
+          <form action="">
 
-                      <a href="" class="greenBtnLink mx-auto mt-4 "> <button type="submit"
-                              class="bg-transparent border-0 w-100 h-100"> ارسال</button></a>
-                  </form>
-              </div>
-          </div>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control text-center"
+                placeholder="قم بإدخال بريدك الالكتروني أو اسم المستخدم " aria-label="EmailOrUserName"
+                aria-describedby="EmailOrUserName" required>
+            </div>
+
+            <a href="" class="greenBtnLink mx-auto mt-4 "> <button type="submit"
+                class="bg-transparent border-0 w-100 h-100"> ارسال</button></a>
+          </form>
+        </div>
       </div>
+    </div>
   </div>
 
   <!--End Modals-->
-  
 
-<!--login Section-->
-<section class="  LoginSection  py-5" id="LoginSection">
+
+  <!--login Section-->
+  <section class="  LoginSection  py-5" id="LoginSection">
     <div class="container">
-        <div class="row">
-            <div class="col-xl-5">
-                <div class="sectionTitle greenText">مرحباً !</div>
-                <div class="Texts my-4">أهلا بعودتك يمكنك الان التسجيل</div>
-                <form action="" class="d-flex flex-column">
-                  <label for="EmailOrUserName" class="paragraph">البريد الالكتروني  أو اسم المستخدم</label>
-                  <input type="text" name="EmailOrUserName" class="py-3 TextSmall" id="EmailOrUserName" placeholder="ادخل البريد الالكتروني أو اسم المستخدم" required>
-                  <label for="Password" class="paragraph mt-4" >كلمة المرور  </label>
-                  <input type="password" name="Password" class="py-3 TextSmall" id="Password" placeholder="************" required>
-                <div class="CodeDiv mt-4">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-                <input type="text" name="CodeVerification" class="py-3 TextSmall mt-3" id="CodeVerification" placeholder="أدخل الرمز كما هو موضح" required>
-
-                <div class="d-flex justify-content-between align-items-center mt-4">
-                  <div class="form-check form-switch p-0  d-flex align-items-center">
-                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                    <label class="form-check-label TextSmall ms-3" for="flexSwitchCheckDefault">تذكرني</label>
-                  </div>
-                  <a href="" class="TextSmall"  data-bs-toggle="modal"
-                  data-bs-target="#ResetPassword">هل نسيت كلمة المرور؟</a>
-
-                </div>
-                <a href="" class="greenBtnLink mx-auto mt-4 w-100"> <button type="submit"
-                  class="bg-transparent border-0 w-100 h-100 paragraph"> تسجيل دخول</button></a>
-                  <div class="TextSmall greenText Registerline text-center mt-3">ليس لديك حساب نشيط ؟ <span class="ms-2"><a href="" class="greenText"> افتح حساب الان</a></span></div>
-                </form>
+      <div class="row">
+        <div class="col-xl-5">
+          <div class="sectionTitle greenText">مرحباً !</div>
+          <div class="Texts my-4">أهلا بعودتك يمكنك الان التسجيل</div>
+          <form action="" class="d-flex flex-column">
+            <label for="EmailOrUserName" class="paragraph">البريد الالكتروني أو اسم المستخدم</label>
+            <input type="text" name="EmailOrUserName" class="py-3 TextSmall" id="EmailOrUserName"
+              placeholder="ادخل البريد الالكتروني أو اسم المستخدم" required>
+            <label for="Password" class="paragraph mt-4">كلمة المرور </label>
+            <input type="password" name="Password" class="py-3 TextSmall" id="Password" placeholder="************"
+              required>
+            <div class="CodeDiv mt-4">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
-            <div class="col-xl-7">
+            <input type="text" name="CodeVerification" class="py-3 TextSmall mt-3" id="CodeVerification"
+              placeholder="أدخل الرمز كما هو موضح" required>
+
+            <div class="d-flex justify-content-between align-items-center mt-4">
+              <div class="form-check form-switch p-0  d-flex align-items-center">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                <label class="form-check-label TextSmall ms-3" for="flexSwitchCheckDefault">تذكرني</label>
+              </div>
+              <a href="" class="TextSmall" data-bs-toggle="modal" data-bs-target="#ResetPassword">هل نسيت كلمة
+                المرور؟</a>
+
             </div>
+            <a href="" class="greenBtnLink mx-auto mt-4 w-100"> <button type="submit"
+                class="bg-transparent border-0 w-100 h-100 paragraph"> تسجيل دخول</button></a>
+            <div class="TextSmall greenText Registerline text-center mt-3">ليس لديك حساب نشيط ؟ <span class="ms-2"><a
+                  href="" class="greenText"> افتح حساب الان</a></span></div>
+          </form>
         </div>
+        <div class="col-xl-7">
+        </div>
+      </div>
     </div>
-</section>
-<!--End login Section-->
+  </section>
+  <!--End login Section-->
 
   <!--Footer-->
-  <footer class="footer py-5 " id="footer">
+  <footer class="footer py-5 mt-4" id="footer">
     <div class="container">
       <div class="row gx-0">
         <div class="col-xl-3 col-6 order-md-0  pe-xl-4">
           <img src="images/Logo White.svg" alt="Al Manarah Logo White">
-          <div class="paragraph WhiteText SmallLine mt-3 WhiteLogoTextFooter">الألم نفسه ، من المهم اتخاذ الخطوة الأولى.
-            إذا اتبعت كل العقول ، فأنت ملزم بالتحرر من تلك الخيارات الأخرى! لأنه غير ملزم بنوع العمل ، لكنه لا يقوم بأي
+          <div class="paragraph WhiteText SmallLine mt-3 WhiteLogoTextFooter">الألم نفسه ، من المهم اتخاذ
+            الخطوة الأولى.
+            إذا اتبعت كل العقول ، فأنت ملزم بالتحرر من تلك الخيارات الأخرى! لأنه غير ملزم بنوع العمل ، لكنه
+            لا يقوم بأي
             من واجبات حياته</div>
         </div>
         <div class="col-xl-2 order-md-2 order-xl-1 col-md-4 col-6 mt-md-4 mt-xl-0">
-          <div class="Texts WhiteText">روابط الموقع</div>
+          <div class="Texts mb-4 WhiteText">روابط الموقع</div>
           <hr>
 
-          <a href="" class="paragraph WhiteText">الباقات</a>
-          <a href="" class="paragraph WhiteText">من نحن</a>
-          <a href="" class="paragraph WhiteText">الاسئلة الشائعة </a>
-          <a href="" class="paragraph WhiteText">المدونة </a>
+          <a href="BundelPage.html" class="paragraph WhiteText">الباقات</a>
+          <a href="AboutUs.html" class="paragraph WhiteText">من نحن</a>
+          <a href="FAQ.html" class="paragraph WhiteText">الاسئلة الشائعة </a>
+          <a href="BlogPage.html" class="paragraph WhiteText">المدونة </a>
 
         </div>
         <div class="col-xl-2 order-md-3 order-xl-2  col-md-4 col-6 mt-4 mt-xl-0">
-          <div class="Texts WhiteText ">روابط مهمة </div>
+          <div class="Texts mb-4 WhiteText ">روابط مهمة </div>
           <hr>
 
           <a href="PrivacyPolicy.html" class="paragraph WhiteText">سياسة الخصوصية</a>
@@ -175,7 +182,7 @@
 
         </div>
         <div class="col-xl-2 order-md-4 order-xl-3  col-md-4 col-6 mt-4 mt-xl-0">
-          <div class="Texts WhiteText ">إحصائيات النظام </div>
+          <div class="Texts mb-4 WhiteText ">إحصائيات النظام </div>
           <hr>
           <a href="BestInvestors.html" class="paragraph WhiteText"> <img src="images/leftArrowWhite.svg"
               alt="leftArrowWhite" class="me-2">أفضل المستثمرين </a>
@@ -188,9 +195,10 @@
 
         </div>
         <div class="col-xl-3  order-md-1 order-xl-4  mt-4 mt-md-0 col-md-6 ps-xl-4 ContactUsFooter">
-          <div class="Texts WhiteText">إتصل بنا </div>
+          <div class="Texts mb-4 WhiteText">إتصل بنا </div>
           <hr>
-          <div class="paragraph WhiteText"><i class="fa-solid fa-location-dot me-2"></i> Sector 07, Uttara, Dhaka-1230,
+          <div class="paragraph WhiteText"><i class="fa-solid fa-location-dot me-2"></i> Sector 07, Uttara,
+            Dhaka-1230,
             Bangladesh</div>
           <div class="paragraph WhiteText"><i class="fa-solid fa-envelope me-2"></i> info@al-manarh.com
           </div>

@@ -16,6 +16,12 @@ $(document).ready(function() {
 
     }
   });
+
+
+    $('.CloseBtn').click(function() {
+      $(this).closest('.Subscribtion').remove();
+    });
+
 });
 
 

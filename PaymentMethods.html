@@ -11,12 +11,12 @@
     <meta name="description" content="">
 
 
-    <title> Manarah |  Payment Methods</title>
+    <title> Manarah | Payment Methods</title>
 </head>
 
 <body class="WhiteBGBody">
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg ">
+    <nav class="navbar navbar-expand-lg  fixed-top">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center w-100">
                 <a class="navbar-brand" href="index.html"><img src="images/Logo.svg"
@@ -25,7 +25,7 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                     <ul class="navbar-nav pe-lg-5">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" role="button"
@@ -33,10 +33,10 @@
                                 من نحن
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
-                                <li><a class="dropdown-item" href="#">من نحن</a></li>
-                                <li><a class="dropdown-item" href="#"> التسويق بالعمولة</a></li>
-                                <li><a class="dropdown-item" href="#"> ترخيص الشركة</a></li>
-                                <li><a class="dropdown-item" href="#"> عقد الاستثمار </a></li>
+                                <li><a class="dropdown-item" href="AboutUs.html">من نحن</a></li>
+                                <li><a class="dropdown-item" href="AffiliateMarketing.html"> التسويق بالعمولة</a></li>
+                                <li><a class="dropdown-item" href="CompanyLicense.html"> ترخيص الشركة</a></li>
+                                <li><a class="dropdown-item" href="InvestmentContract.html"> عقد الاستثمار </a></li>
 
                             </ul>
                         </li>
@@ -44,7 +44,7 @@
                             <a class="nav-link" href="BundelPage.html">باقات الاستثمار</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">طرق الدفع</a>
+                            <a class="nav-link" href="PaymentMethods.html">طرق الدفع</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button"
@@ -52,8 +52,8 @@
                                 مساعدة
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
-                                <li><a class="dropdown-item" href="#">الأسئلة الشائعة</a></li>
-                                <li><a class="dropdown-item" href="#"> اتصل بنا</a></li>
+                                <li><a class="dropdown-item" href="FAQ.html">الأسئلة الشائعة</a></li>
+                                <li><a class="dropdown-item" href="ContactUs.html"> اتصل بنا</a></li>
                             </ul>
                         </li>
 
@@ -65,8 +65,8 @@
                         <button class="bg-transparent border-0"><img src="images/Language icon.svg"
                                 alt="Changing Language Icon Al Manarah Navbar "></button>
                     </a>
-                    <button class="greenBtnLink">تسجيل</button>
-                    <button class="whiteBtnLink ms-2">دخول</button>
+                    <a href="Register.html" class="greenBtnLink">تسجيل</a>
+                    <a href="Login.html" class="whiteBtnLink ms-2">دخول</a>
 
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -80,309 +80,329 @@
     <!--End Navbar-->
 
 
-        <section class="BreadCrumbs py-5 mt-5" id="BreadCrumbs">
-            <div class="container">
-                <h1>طرق الدفع  </h1>
-                <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">طرق الدفع 
-                        </li>
-                    </ol>
-                </nav>
-                <div class="Texts mb-4">سنعرض طرق الدفع المتوفرة لدينا</div>
-            </div>
-        </section>
+    <section class="BreadCrumbs py-5 mt-5" id="BreadCrumbs">
+        <div class="container">
+            <h1>طرق الدفع </h1>
+            <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">طرق الدفع
+                    </li>
+                </ol>
+            </nav>
+            <div class="Texts mb-4">سنعرض طرق الدفع المتوفرة لدينا</div>
+        </div>
+    </section>
 
 
     <!--Payment Methods-->
-  <section class="PaymentMethods py-lg-5 pt-3 pb-5" id="PaymentMethods">
-    <div class="container">
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">العملات الرقمية</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">بنوك الكترونية</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">الدفع التقليدي</button>
-            </li>
-           
-          </ul>
-          <div class="tab-content mt-5" id="myTabContent">
-            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-                <div class="row mx-0">
-                    <div class="col-xl-3 col-lg-4 col-sm-6">
-                        <div class="WhiteDiv w-100 h-100 p-5">
-                            <img src="images/PaymentMethodBluePattern.svg" class="BluePattern" alt="Payment Method Blue Pattern">
-                       <div class="d-flex align-items-center">
-                        <img src="images/Usdt.svg" alt="Usdt" class="PaymentLogo">
-                        <div class="Texts">USDT</div>
-                       </div>
-                       <div class="d-flex justify-content-between align-items-center mt-4">
-                        <div class="TextSmall">
-                            <img src="images/CheckIcon.svg" alt="CheckIcon" class="me-1">
-                            الحد الأدنى
+    <section class="PaymentMethods py-lg-5 pt-3 pb-5" id="PaymentMethods">
+        <div class="container">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                        type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">العملات
+                        الرقمية</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                        type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">بنوك
+                        الكترونية</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
+                        type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">الدفع
+                        التقليدي</button>
+                </li>
+
+            </ul>
+            <div class="tab-content mt-5" id="myTabContent">
+                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                    tabindex="0">
+                    <div class="row mx-0">
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="WhiteDiv w-100 h-100 p-5">
+                                <img src="images/PaymentMethodBluePattern.svg" class="BluePattern"
+                                    alt="Payment Method Blue Pattern">
+                                <div class="d-flex align-items-center">
+                                    <img src="images/Usdt.svg" alt="Usdt" class="PaymentLogo">
+                                    <div class="Texts">USDT</div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-4">
+                                    <div class="TextSmall">
+                                        <img src="images/CheckIcon.svg" alt="CheckIcon" class="me-1">
+                                        الحد الأدنى
+                                    </div>
+                                    <div class="TextSmall">999 $</div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <div class="TextSmall">
+                                        <img src="images/CheckIcon.svg" alt="CheckIcon" class="me-1">
+                                        الحد الأقصى
+                                    </div>
+                                    <div class="TextSmall">100 $</div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="TextSmall">999 $</div>
-                       </div>
-                       <div class="d-flex justify-content-between align-items-center mt-3">
-                        <div class="TextSmall">
-                            <img src="images/CheckIcon.svg" alt="CheckIcon" class="me-1">
-                            الحد الأقصى 
-                        </div>
-                        <div class="TextSmall">100 $</div>
-                       </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 mt-sm-0 mt-4">
+                            <div class="WhiteDiv w-100 h-100 p-5">
+                                <img src="images/PaymentMethodBluePattern.svg" class="BluePattern"
+                                    alt="Payment Method Blue Pattern">
+                                <div class="d-flex align-items-center">
+                                    <img src="images/Bitcoin.svg" alt="Bitcoin" class="PaymentLogo">
+                                    <div class="Texts">BitCoin</div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-4">
+                                    <div class="TextSmall">
+                                        <img src="images/CheckIcon.svg" alt="CheckIcon" class="me-1">
+                                        الحد الأدنى
+                                    </div>
+                                    <div class="TextSmall">999 $</div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <div class="TextSmall">
+                                        <img src="images/CheckIcon.svg" alt="CheckIcon" class="me-1">
+                                        الحد الأقصى
+                                    </div>
+                                    <div class="TextSmall">100 $</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-sm-6 mt-sm-0 mt-4">
-                        <div class="WhiteDiv w-100 h-100 p-5">
-                            <img src="images/PaymentMethodBluePattern.svg" class="BluePattern" alt="Payment Method Blue Pattern">
-                       <div class="d-flex align-items-center">
-                        <img src="images/Bitcoin.svg" alt="Bitcoin" class="PaymentLogo">
-                        <div class="Texts">BitCoin</div>
-                       </div>
-                       <div class="d-flex justify-content-between align-items-center mt-4">
-                        <div class="TextSmall">
-                            <img src="images/CheckIcon.svg" alt="CheckIcon" class="me-1">
-                            الحد الأدنى
+                </div>
+                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                    tabindex="0">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="WhiteDiv w-100 h-100 p-5">
+                                <img src="images/PaymentMethodBluePattern.svg" class="BluePattern"
+                                    alt="Payment Method Blue Pattern">
+                                <div class="d-flex align-items-center">
+                                    <img src="images/PayPal.svg" alt="PayPal" class="PaymentLogo">
+                                    <div class="Texts">PayPal</div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-4">
+                                    <div class="TextSmall">
+                                        <img src="images/CheckIcon.svg" alt="CheckIcon" class="me-1">
+                                        الحد الأدنى
+                                    </div>
+                                    <div class="TextSmall">999 $</div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <div class="TextSmall">
+                                        <img src="images/CheckIcon.svg" alt="CheckIcon" class="me-1">
+                                        الحد الأقصى
+                                    </div>
+                                    <div class="TextSmall">100 $</div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="TextSmall">999 $</div>
-                       </div>
-                       <div class="d-flex justify-content-between align-items-center mt-3">
-                        <div class="TextSmall">
-                            <img src="images/CheckIcon.svg" alt="CheckIcon" class="me-1">
-                            الحد الأقصى 
+                        <div class="col-xl-3 col-lg-4 col-sm-6 mt-sm-0 mt-4">
+                            <div class="WhiteDiv w-100 h-100 p-5">
+                                <img src="images/PaymentMethodBluePattern.svg" class="BluePattern"
+                                    alt="Payment Method Blue Pattern">
+                                <div class="d-flex align-items-center">
+                                    <img src="images/PerfectMoney.svg" alt="PerfectMoney" class="PaymentLogo">
+                                    <div class="Texts">Perfect Money</div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-4">
+                                    <div class="TextSmall">
+                                        <img src="images/CheckIcon.svg" alt="CheckIcon" class="me-1">
+                                        الحد الأدنى
+                                    </div>
+                                    <div class="TextSmall">999 $</div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <div class="TextSmall">
+                                        <img src="images/CheckIcon.svg" alt="CheckIcon" class="me-1">
+                                        الحد الأقصى
+                                    </div>
+                                    <div class="TextSmall">100 $</div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="TextSmall">100 $</div>
-                       </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 mt-sm-0 mt-4">
+                            <div class="WhiteDiv w-100 h-100 p-5">
+                                <img src="images/PaymentMethodBluePattern.svg" class="BluePattern"
+                                    alt="Payment Method Blue Pattern">
+                                <div class="d-flex align-items-center">
+                                    <img src="images/Payeer.svg" alt="Payeer" class="PaymentLogo">
+                                    <div class="Texts">Payeer </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-4">
+                                    <div class="TextSmall">
+                                        <img src="images/CheckIcon.svg" alt="CheckIcon" class="me-1">
+                                        الحد الأدنى
+                                    </div>
+                                    <div class="TextSmall">999 $</div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <div class="TextSmall">
+                                        <img src="images/CheckIcon.svg" alt="CheckIcon" class="me-1">
+                                        الحد الأقصى
+                                    </div>
+                                    <div class="TextSmall">100 $</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
+                    tabindex="0">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-4 col-sm-6">
+                            <div class="WhiteDiv w-100 h-100 p-5">
+                                <img src="images/PaymentMethodBluePattern.svg" class="BluePattern"
+                                    alt="Payment Method Blue Pattern">
+                                <div class="d-flex align-items-center">
+                                    <img src="images/Egypt_Post_Logo.svg" alt="Egypt_Post_Logo" class="PaymentLogo">
+                                    <div class="Texts">البريد المصري</div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-4">
+                                    <div class="TextSmall">
+                                        <img src="images/CheckIcon.svg" alt="CheckIcon" class="me-1">
+                                        الحد الأدنى
+                                    </div>
+                                    <div class="TextSmall">999 $</div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <div class="TextSmall">
+                                        <img src="images/CheckIcon.svg" alt="CheckIcon" class="me-1">
+                                        الحد الأقصى
+                                    </div>
+                                    <div class="TextSmall">100 $</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 mt-sm-0 mt-4">
+                            <div class="WhiteDiv w-100 h-100 p-5">
+                                <img src="images/PaymentMethodBluePattern.svg" class="BluePattern"
+                                    alt="Payment Method Blue Pattern">
+                                <div class="d-flex align-items-center">
+                                    <img src="images/VodaPhone.svg" alt="VodaPhone" class="PaymentLogo">
+                                    <div class="Texts"> فودافون كاش</div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-4">
+                                    <div class="TextSmall">
+                                        <img src="images/CheckIcon.svg" alt="CheckIcon" class="me-1">
+                                        الحد الأدنى
+                                    </div>
+                                    <div class="TextSmall">999 $</div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <div class="TextSmall">
+                                        <img src="images/CheckIcon.svg" alt="CheckIcon" class="me-1">
+                                        الحد الأقصى
+                                    </div>
+                                    <div class="TextSmall">100 $</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 mt-lg-0 mt-4">
+                            <div class="WhiteDiv w-100 h-100 p-5">
+                                <img src="images/PaymentMethodBluePattern.svg" class="BluePattern"
+                                    alt="Payment Method Blue Pattern">
+                                <div class="d-flex align-items-center">
+                                    <img src="images/WesternUnion.svg" alt="WesternUnion" class="PaymentLogo">
+                                    <div class="Texts">ويستريونيون </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-4">
+                                    <div class="TextSmall">
+                                        <img src="images/CheckIcon.svg" alt="CheckIcon" class="me-1">
+                                        الحد الأدنى
+                                    </div>
+                                    <div class="TextSmall">999 $</div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <div class="TextSmall">
+                                        <img src="images/CheckIcon.svg" alt="CheckIcon" class="me-1">
+                                        الحد الأقصى
+                                    </div>
+                                    <div class="TextSmall">100 $</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6 mt-xl-0 mt-4">
+                            <div class="WhiteDiv w-100 h-100 p-5">
+                                <img src="images/PaymentMethodBluePattern.svg" class="BluePattern"
+                                    alt="Payment Method Blue Pattern">
+                                <div class="d-flex align-items-center">
+                                    <img src="images/MoneyGram.svg" alt="MoneyGram" class="PaymentLogo">
+                                    <div class="Texts">موني جرام </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-4">
+                                    <div class="TextSmall">
+                                        <img src="images/CheckIcon.svg" alt="CheckIcon" class="me-1">
+                                        الحد الأدنى
+                                    </div>
+                                    <div class="TextSmall">999 $</div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <div class="TextSmall">
+                                        <img src="images/CheckIcon.svg" alt="CheckIcon" class="me-1">
+                                        الحد الأقصى
+                                    </div>
+                                    <div class="TextSmall">100 $</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6  mt-4">
+                            <div class="WhiteDiv w-100 h-100 p-5">
+                                <img src="images/PaymentMethodBluePattern.svg" class="BluePattern"
+                                    alt="Payment Method Blue Pattern">
+                                <div class="d-flex align-items-center">
+                                    <img src="images/TI3.svg" alt="TI3" class="PaymentLogo">
+                                    <div class="Texts">موني جرام </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-4">
+                                    <div class="TextSmall">
+                                        <img src="images/CheckIcon.svg" alt="CheckIcon" class="me-1">
+                                        الحد الأدنى
+                                    </div>
+                                    <div class="TextSmall">999 $</div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <div class="TextSmall">
+                                        <img src="images/CheckIcon.svg" alt="CheckIcon" class="me-1">
+                                        الحد الأقصى
+                                    </div>
+                                    <div class="TextSmall">100 $</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-6  mt-4">
+                            <div class="WhiteDiv w-100 h-100 p-5">
+                                <img src="images/PaymentMethodBluePattern.svg" class="BluePattern"
+                                    alt="Payment Method Blue Pattern">
+                                <div class="d-flex align-items-center">
+                                    <img src="images/BankTransfer.svg" alt="BankTransfer" class="PaymentLogo">
+                                    <div class="Texts">تحويل بنكي </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-4">
+                                    <div class="TextSmall">
+                                        <img src="images/CheckIcon.svg" alt="CheckIcon" class="me-1">
+                                        الحد الأدنى
+                                    </div>
+                                    <div class="TextSmall">999 $</div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <div class="TextSmall">
+                                        <img src="images/CheckIcon.svg" alt="CheckIcon" class="me-1">
+                                        الحد الأقصى
+                                    </div>
+                                    <div class="TextSmall">100 $</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-             <div class="row">
-                <div class="col-xl-3 col-lg-4 col-sm-6">
-                    <div class="WhiteDiv w-100 h-100 p-5">
-                        <img src="images/PaymentMethodBluePattern.svg" class="BluePattern" alt="Payment Method Blue Pattern">
-                   <div class="d-flex align-items-center">
-                    <img src="images/PayPal.svg" alt="PayPal" class="PaymentLogo">
-                    <div class="Texts">PayPal</div>
-                   </div>
-                   <div class="d-flex justify-content-between align-items-center mt-4">
-                    <div class="TextSmall">
-                        <img src="images/CheckIcon.svg" alt="CheckIcon" class="me-1">
-                        الحد الأدنى
-                    </div>
-                    <div class="TextSmall">999 $</div>
-                   </div>
-                   <div class="d-flex justify-content-between align-items-center mt-3">
-                    <div class="TextSmall">
-                        <img src="images/CheckIcon.svg" alt="CheckIcon" class="me-1">
-                        الحد الأقصى 
-                    </div>
-                    <div class="TextSmall">100 $</div>
-                   </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-sm-6 mt-sm-0 mt-4">
-                    <div class="WhiteDiv w-100 h-100 p-5">
-                        <img src="images/PaymentMethodBluePattern.svg" class="BluePattern" alt="Payment Method Blue Pattern">
-                   <div class="d-flex align-items-center">
-                    <img src="images/PerfectMoney.svg" alt="PerfectMoney" class="PaymentLogo">
-                    <div class="Texts">Perfect Money</div>
-                   </div>
-                   <div class="d-flex justify-content-between align-items-center mt-4">
-                    <div class="TextSmall">
-                        <img src="images/CheckIcon.svg" alt="CheckIcon" class="me-1">
-                        الحد الأدنى
-                    </div>
-                    <div class="TextSmall">999 $</div>
-                   </div>
-                   <div class="d-flex justify-content-between align-items-center mt-3">
-                    <div class="TextSmall">
-                        <img src="images/CheckIcon.svg" alt="CheckIcon" class="me-1">
-                        الحد الأقصى 
-                    </div>
-                    <div class="TextSmall">100 $</div>
-                   </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-sm-6 mt-sm-0 mt-4">
-                    <div class="WhiteDiv w-100 h-100 p-5">
-                        <img src="images/PaymentMethodBluePattern.svg" class="BluePattern" alt="Payment Method Blue Pattern">
-                   <div class="d-flex align-items-center">
-                    <img src="images/Payeer.svg" alt="Payeer" class="PaymentLogo">
-                    <div class="Texts">Payeer </div>
-                   </div>
-                   <div class="d-flex justify-content-between align-items-center mt-4">
-                    <div class="TextSmall">
-                        <img src="images/CheckIcon.svg" alt="CheckIcon" class="me-1">
-                        الحد الأدنى
-                    </div>
-                    <div class="TextSmall">999 $</div>
-                   </div>
-                   <div class="d-flex justify-content-between align-items-center mt-3">
-                    <div class="TextSmall">
-                        <img src="images/CheckIcon.svg" alt="CheckIcon" class="me-1">
-                        الحد الأقصى 
-                    </div>
-                    <div class="TextSmall">100 $</div>
-                   </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
-                <div class="row">
-                    <div class="col-xl-3 col-lg-4 col-sm-6">
-                        <div class="WhiteDiv w-100 h-100 p-5">
-                            <img src="images/PaymentMethodBluePattern.svg" class="BluePattern" alt="Payment Method Blue Pattern">
-                       <div class="d-flex align-items-center">
-                        <img src="images/Egypt_Post_Logo.svg" alt="Egypt_Post_Logo" class="PaymentLogo">
-                        <div class="Texts">البريد المصري</div>
-                       </div>
-                       <div class="d-flex justify-content-between align-items-center mt-4">
-                        <div class="TextSmall">
-                            <img src="images/CheckIcon.svg" alt="CheckIcon" class="me-1">
-                            الحد الأدنى
-                        </div>
-                        <div class="TextSmall">999 $</div>
-                       </div>
-                       <div class="d-flex justify-content-between align-items-center mt-3">
-                        <div class="TextSmall">
-                            <img src="images/CheckIcon.svg" alt="CheckIcon" class="me-1">
-                            الحد الأقصى 
-                        </div>
-                        <div class="TextSmall">100 $</div>
-                       </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-sm-6 mt-sm-0 mt-4">
-                        <div class="WhiteDiv w-100 h-100 p-5">
-                            <img src="images/PaymentMethodBluePattern.svg" class="BluePattern" alt="Payment Method Blue Pattern">
-                       <div class="d-flex align-items-center">
-                        <img src="images/VodaPhone.svg" alt="VodaPhone" class="PaymentLogo">
-                        <div class="Texts"> فودافون كاش</div>
-                       </div>
-                       <div class="d-flex justify-content-between align-items-center mt-4">
-                        <div class="TextSmall">
-                            <img src="images/CheckIcon.svg" alt="CheckIcon" class="me-1">
-                            الحد الأدنى
-                        </div>
-                        <div class="TextSmall">999 $</div>
-                       </div>
-                       <div class="d-flex justify-content-between align-items-center mt-3">
-                        <div class="TextSmall">
-                            <img src="images/CheckIcon.svg" alt="CheckIcon" class="me-1">
-                            الحد الأقصى 
-                        </div>
-                        <div class="TextSmall">100 $</div>
-                       </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-sm-6 mt-lg-0 mt-4">
-                        <div class="WhiteDiv w-100 h-100 p-5">
-                            <img src="images/PaymentMethodBluePattern.svg" class="BluePattern" alt="Payment Method Blue Pattern">
-                       <div class="d-flex align-items-center">
-                        <img src="images/WesternUnion.svg" alt="WesternUnion" class="PaymentLogo">
-                        <div class="Texts">ويستريونيون </div>
-                       </div>
-                       <div class="d-flex justify-content-between align-items-center mt-4">
-                        <div class="TextSmall">
-                            <img src="images/CheckIcon.svg" alt="CheckIcon" class="me-1">
-                            الحد الأدنى
-                        </div>
-                        <div class="TextSmall">999 $</div>
-                       </div>
-                       <div class="d-flex justify-content-between align-items-center mt-3">
-                        <div class="TextSmall">
-                            <img src="images/CheckIcon.svg" alt="CheckIcon" class="me-1">
-                            الحد الأقصى 
-                        </div>
-                        <div class="TextSmall">100 $</div>
-                       </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-sm-6 mt-xl-0 mt-4">
-                        <div class="WhiteDiv w-100 h-100 p-5">
-                            <img src="images/PaymentMethodBluePattern.svg" class="BluePattern" alt="Payment Method Blue Pattern">
-                       <div class="d-flex align-items-center">
-                        <img src="images/MoneyGram.svg" alt="MoneyGram" class="PaymentLogo">
-                        <div class="Texts">موني جرام </div>
-                       </div>
-                       <div class="d-flex justify-content-between align-items-center mt-4">
-                        <div class="TextSmall">
-                            <img src="images/CheckIcon.svg" alt="CheckIcon" class="me-1">
-                            الحد الأدنى
-                        </div>
-                        <div class="TextSmall">999 $</div>
-                       </div>
-                       <div class="d-flex justify-content-between align-items-center mt-3">
-                        <div class="TextSmall">
-                            <img src="images/CheckIcon.svg" alt="CheckIcon" class="me-1">
-                            الحد الأقصى 
-                        </div>
-                        <div class="TextSmall">100 $</div>
-                       </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-sm-6  mt-4">
-                        <div class="WhiteDiv w-100 h-100 p-5">
-                            <img src="images/PaymentMethodBluePattern.svg" class="BluePattern" alt="Payment Method Blue Pattern">
-                       <div class="d-flex align-items-center">
-                        <img src="images/TI3.svg" alt="TI3" class="PaymentLogo">
-                        <div class="Texts">موني جرام </div>
-                       </div>
-                       <div class="d-flex justify-content-between align-items-center mt-4">
-                        <div class="TextSmall">
-                            <img src="images/CheckIcon.svg" alt="CheckIcon" class="me-1">
-                            الحد الأدنى
-                        </div>
-                        <div class="TextSmall">999 $</div>
-                       </div>
-                       <div class="d-flex justify-content-between align-items-center mt-3">
-                        <div class="TextSmall">
-                            <img src="images/CheckIcon.svg" alt="CheckIcon" class="me-1">
-                            الحد الأقصى 
-                        </div>
-                        <div class="TextSmall">100 $</div>
-                       </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-sm-6  mt-4">
-                        <div class="WhiteDiv w-100 h-100 p-5">
-                            <img src="images/PaymentMethodBluePattern.svg" class="BluePattern" alt="Payment Method Blue Pattern">
-                       <div class="d-flex align-items-center">
-                        <img src="images/BankTransfer.svg" alt="BankTransfer" class="PaymentLogo">
-                        <div class="Texts">تحويل بنكي  </div>
-                       </div>
-                       <div class="d-flex justify-content-between align-items-center mt-4">
-                        <div class="TextSmall">
-                            <img src="images/CheckIcon.svg" alt="CheckIcon" class="me-1">
-                            الحد الأدنى
-                        </div>
-                        <div class="TextSmall">999 $</div>
-                       </div>
-                       <div class="d-flex justify-content-between align-items-center mt-3">
-                        <div class="TextSmall">
-                            <img src="images/CheckIcon.svg" alt="CheckIcon" class="me-1">
-                            الحد الأقصى 
-                        </div>
-                        <div class="TextSmall">100 $</div>
-                       </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-          </div>
-    </div>
-  </section>
+        </div>
+    </section>
     <!--End Payment Methods-->
 
     <!--Footer-->
-    <footer class="footer py-5 " id="footer">
+    <footer class="footer py-5 mt-4" id="footer">
         <div class="container">
             <div class="row gx-0">
                 <div class="col-xl-3 col-6 order-md-0  pe-xl-4">
@@ -394,7 +414,7 @@
                         من واجبات حياته</div>
                 </div>
                 <div class="col-xl-2 order-md-2 order-xl-1 col-md-4 col-6 mt-md-4 mt-xl-0">
-                    <div class="Texts WhiteText">روابط الموقع</div>
+                    <div class="Texts mb-4 WhiteText">روابط الموقع</div>
                     <hr>
 
                     <a href="BundelPage.html" class="paragraph WhiteText">الباقات</a>
@@ -404,7 +424,7 @@
 
                 </div>
                 <div class="col-xl-2 order-md-3 order-xl-2  col-md-4 col-6 mt-4 mt-xl-0">
-                    <div class="Texts WhiteText ">روابط مهمة </div>
+                    <div class="Texts mb-4 WhiteText ">روابط مهمة </div>
                     <hr>
 
                     <a href="PrivacyPolicy.html" class="paragraph WhiteText">سياسة الخصوصية</a>
@@ -413,7 +433,7 @@
 
                 </div>
                 <div class="col-xl-2 order-md-4 order-xl-3  col-md-4 col-6 mt-4 mt-xl-0">
-                    <div class="Texts WhiteText ">إحصائيات النظام </div>
+                    <div class="Texts mb-4 WhiteText ">إحصائيات النظام </div>
                     <hr>
                     <a href="BestInvestors.html" class="paragraph WhiteText"> <img src="images/leftArrowWhite.svg"
                             alt="leftArrowWhite" class="me-2">أفضل المستثمرين </a>
@@ -426,7 +446,7 @@
 
                 </div>
                 <div class="col-xl-3  order-md-1 order-xl-4  mt-4 mt-md-0 col-md-6 ps-xl-4 ContactUsFooter">
-                    <div class="Texts WhiteText">إتصل بنا </div>
+                    <div class="Texts mb-4 WhiteText">إتصل بنا </div>
                     <hr>
                     <div class="paragraph WhiteText"><i class="fa-solid fa-location-dot me-2"></i> Sector 07, Uttara,
                         Dhaka-1230,
