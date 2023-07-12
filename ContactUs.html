@@ -11,7 +11,7 @@
     <meta name="description" content="">
 
 
-    <title> Manarah | Register Page</title>
+    <title> Manarah | Contact Us</title>
 </head>
 
 <body class="WhiteBGBody">
@@ -79,57 +79,28 @@
     </nav>
     <!--End Navbar-->
 
-    <!-- Modal -->
-    <div class="modal fade" id="VerifyEmail" tabindex="-1" aria-labelledby="VerifyEmailLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content p-4">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p class="paragraph text-center"> <b> تأكيد البريد الإلكتروني </b></p>
-                    <p class="ModalSmallText mb-0 text-center">تم إرسال كود التحقق المكون من 6 أرقام إلى عنوان
-                        <br>
-                        بريدك t***@test.com الإلكتروني
-                    </p>
 
-                    <form action="">
-
-                        <div class="input-group mb-3 w-75 mx-auto">
-                            <input type="Number" class="form-control text-center" aria-label="VerificationDIGIT"
-                                aria-describedby="VerificationDIGIT" maxlength="1" required>
-                            <input type="Number" class="form-control text-center ms-3" aria-label="VerificationDIGIT"
-                                aria-describedby="VerificationDIGIT" maxlength="1" required>
-                            <input type="Number" class="form-control text-center  ms-3" aria-label="VerificationDIGIT"
-                                aria-describedby="VerificationDIGIT" maxlength="1" required>
-                            <input type="Number" class="form-control text-center  ms-3" aria-label="VerificationDIGIT"
-                                aria-describedby="VerificationDIGIT" maxlength="1" required>
-                            <input type="Number" class="form-control text-center  ms-3" aria-label="VerificationDIGIT"
-                                aria-describedby="VerificationDIGIT" maxlength="1" required>
-                            <input type="Number" class="form-control text-center  ms-3" aria-label="VerificationDIGIT"
-                                aria-describedby="VerificationDIGIT" maxlength="1" required>
-                        </div>
-
-                        <a href="" class="greenBtnLink mx-auto mt-4"> <button type="submit"
-                                class="bg-transparent border-0 w-100 h-100"> ارسال</button></a>
-                    </form>
-                    <p class="ModalSmallText mb-0 text-center"><button class="resend greenText">إعادة إرسال,</button>
-                        إذا لم يصلك كود التحقق</p>
-                </div>
+        <section class="BreadCrumbs py-5 mt-5" id="BreadCrumbs">
+            <div class="container">
+                <h1>إتصل بنا </h1>
+                <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">اتصل بنا
+                        </li>
+                    </ol>
+                </nav>
+                <div class="Texts mb-4">ابقى على تواصل معنا </div>
             </div>
-        </div>
-    </div>
-
-    <!--End Modals-->
+        </section>
 
 
     <!--login Section-->
-    <section class="RegisterSection LoginSection py-5" id="LoginSection">
+    <section class="ContactUs RegisterSection  position-relative LoginSection py-lg-5 py-3" id="LoginSection">
         <div class="container">
             <div class="row">
-                <div class="col-xl-5">
-                    <div class="sectionTitle greenText">مرحباً !</div>
-                    <div class="Texts my-4">أهلا عزيزي يمكنك الان انشاء حسابك</div>
+                <div class="col-lg-6">
+
                     <form action="" class="d-flex flex-column">
                         <div class="row mx-0">
                             <div class="col-6">
@@ -137,88 +108,62 @@
                                 <input type="text" name="FirstName" class="py-3 TextSmall" id="FirstName"
                                     placeholder="ادخل الاسم الاول" required>
                             </div>
+
                             <div class="col-6">
-                                <label for="LastName" class="paragraph">الاسم الأخير * </label>
-                                <input type="text" name="LastName" class="py-3 TextSmall" id="LastName"
-                                    placeholder="ادخل الاسم الأخير" required>
-                            </div>
-                            <div class="col-6 mt-3 d-flex justify-content-between flex-column">
-
-                                <label for="UserName" class="paragraph">اسم المستخدم * </label>
-                                <div class="GreenBorderBottom">
-                                    <input type="text" name="UserName" class="py-3 TextSmall" id="UserName"
-                                        placeholder="ALM034712694" required>
-
-                                </div>
-                            </div>
-                            <div class="col-6  mt-3 ">
                                 <label for="Email" class="paragraph">البريد الالكتروني *</label>
                                 <input type="text" name="Email" class="py-3 TextSmall" id="Email"
                                     placeholder="ادخل البريد الالكتروني  " required>
                             </div>
-                            <div class="col-6  mt-3 ">
-                                <label for="Country" class="paragraph">الدولة *</label>
-                                <select class="form-select form-select-lg py-3" aria-label=".form-select-lg example"
-                                    required>
-                                    <option value="0" selected>إختر</option>
-                                    <option value="1">Saudi Arabia</option>
-                                    <option value="2">Lebanon </option>
-                                </select>
-                            </div>
-                            <div class="col-6  mt-3 ">
 
-                                <label for="PhoneNumber" class="paragraph">رقم الهاتف *</label>
-                                <div class="RegisterInputGroup input-group mb-3">
+                            <div class="col-12  mt-3 ">
 
-                                    <input type="number" name="PhoneNumber" class="form-control py-3 TextSmall"
-                                        id="PhoneNumber" placeholder=" " required>
-                                    <span class="input-group-text ms-2" id="CountryCodeNumber">214</span>
-                                </div>
+                                <label for="MessageTitle" class="paragraph">العنوان *</label>
+
+                                <input type="number" name="MessageTitle" class="form-control py-3 TextSmall"
+                                    id="MessageTitle" placeholder="ادخل العنوان " required>
 
                             </div>
-                            <div class="col-6 mt-3">
-                                <label for="Password" class="paragraph mt-4">كلمة المرور *</label>
-                                <input type="password" name="Password" class="py-3 TextSmall" id="Password"
-                                    placeholder="************" required>
-                            </div>
-                            <div class="col-6 mt-3">
-                                <label for="PasswordRepeat" class="paragraph mt-4">إعادة كلمة المرور *</label>
-                                <input type="password" name="PasswordRepeat" class="py-3 TextSmall" id="PasswordRepeat"
-                                    placeholder="************" required>
+                            <div class="col-12 mt-3">
+                                <label for="MessageContent" class="paragraph">الرسالة *</label>
+                                <textarea name="MessageContent" id="MessageContent" class="form-control py-3 TextSmall"
+                                    rows="5" placeholder="ادخل نص الرسالة" required></textarea>
                             </div>
                         </div>
 
 
-                        <div class="CodeDiv mt-4">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <input type="text" name="CodeVerification" class="py-3 TextSmall mt-3" id="CodeVerification"
-                            placeholder="أدخل الرمز كما هو موضح" required>
-
-                        <div class="d-flex justify-content-between align-items-center mt-4">
-                            <div class="form-check p-0  d-flex align-items-center">
-                                <input class="form-check-input RegisterCheck" type="checkbox" role="switch"
-                                    id="flexSwitchCheckDefault" required>
-                                <label class="form-check-label TextSmall ms-3 greenText" for="flexSwitchCheckDefault">
-                                    أوافق على
-                                    سياسة الخصوصية , الشروط والأحكام , سياسة الإسترجاع
-                                </label>
-                            </div>
-
-
-
-                        </div>
                         <a href="" class="greenBtnLink mx-auto mt-4 w-100"> <button type="submit"
                                 class="bg-transparent border-0 w-100 h-100 paragraph" data-bs-toggle="modal"
-                                data-bs-target="#VerifyEmail"> افتح حساب الان </button></a>
-                        <div class="TextSmall greenText Registerline text-center mt-3">هل تملك حساب نشيط ؟<span
-                                class="ms-2"><a href="" class="greenText"> سجل دخولك </a></span></div>
+                                data-bs-target="#VerifyEmail"> أرسل الان </button></a>
+
                     </form>
                 </div>
-                <div class="col-xl-7">
+                <div class="col-lg-6">
+                    <div class=" BlueContactForm p-4">
+                        <div class="Texts whiteText mb-4">معلوماتنا</div>
+                        <div class="d-flex mb-3">
+                            <div class="iconPart"><i class="fa-solid fa-location-dot"></i> </div>
+                            <div class="paragraph whiteText SmallLine"> Sector 07, Uttara, Dhaka-1230,
+                                Bangladesh</div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <div class="iconPart"><i class="fa-solid fa-envelope"></i> </div>
+                            <div class="paragraph whiteText SmallLine"> 
+                                info@al-manarh.com
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <div class="iconPart"><img src="images/ContactUs Phone Icon.svg" alt="ContactUs Phone Icon"> </div>
+                            <div class="paragraph whiteText SmallLine"> +012 457447445</div>
+                        </div>
+                        <div class="TextSmall text-center whiteText mt-5">مواقع التواصل لدينا</div>
+                       <div class="d-flex socialMedia mt-3 justify-content-center align-items-center">
+                        <a href=""> <i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+
+                       </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -296,7 +241,6 @@
 <script src="assets/js/bootstrap.js"></script>
 <script src="assets/js/all.js"></script>
 <script src="js/js.js"></script>
-<script src="js/CodeGeneration.js"></script>
 
 
 </html>

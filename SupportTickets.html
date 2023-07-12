@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/bootstrap.rtl.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="">
+
+
+    <title> Manarah | Support Tickets</title>
+</head>
+
+<body class="WhiteBGBody">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center w-100">
+                <a class="navbar-brand" href="index.html"><img src="images/Logo.svg"
+                        alt="Al Manarah Logo Svg Format"></a>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav pe-lg-5">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                من نحن
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                                <li><a class="dropdown-item" href="#">من نحن</a></li>
+                                <li><a class="dropdown-item" href="#"> التسويق بالعمولة</a></li>
+                                <li><a class="dropdown-item" href="#"> ترخيص الشركة</a></li>
+                                <li><a class="dropdown-item" href="#"> عقد الاستثمار </a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="BundelPage.html">باقات الاستثمار</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">طرق الدفع</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                مساعدة
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                                <li><a class="dropdown-item" href="#">الأسئلة الشائعة</a></li>
+                                <li><a class="dropdown-item" href="#"> اتصل بنا</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class="d-flex justify-content-center align-items-center RegisterNavRow">
+                    <a href="">
+                        <button class="bg-transparent border-0"><img src="images/Language icon.svg"
+                                alt="Changing Language Icon Al Manarah Navbar "></button>
+                    </a>
+                    <button class="greenBtnLink">تسجيل</button>
+                    <button class="whiteBtnLink ms-2">دخول</button>
+
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!--End Navbar-->
+
+
+    <section class="BreadCrumbs py-5 mt-5" id="BreadCrumbs">
+        <div class="container">
+            <h1>تذاكر الدعم </h1>
+            <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+                    <li class="breadcrumb-item"><a href="index.html">اتصل بنا</a></li>
+
+                    <li class="breadcrumb-item active" aria-current="page">تذاكر الدعم
+                    </li>
+                </ol>
+            </nav>
+            <div class="Texts mb-4"> شاهد تذاكر الدعم </div>
+        </div>
+    </section>
+
+
+    <!--Support Tickets-->
+    <section class="SupportTicket mt-3" id="SupportTicket">
+        <div class="container">
+            <div class="PinkBg py-5 px-4">
+                <div class="d-flex justify-content-between align-items-center TicketLine pe-3">
+                    <div class="d-flex  align-items-center ">
+                        <div class="StatusButton whiteText ">
+                            مفتوحة
+                        </div>
+                        <div class="paragraph ms-3">[تذكرة#66404649] استفسار</div>
+                    </div>
+                    <button class="paragraph ">
+                        <img src="images/Error Icon.svg" alt="Error icon" class="me-2">
+                        إغلاق التذكرة
+                    </button>
+                </div>
+                <textarea name="TicketMessage" id="TicketMessage" rows="5" placeholder="اكتب رسالة"
+                    class="w-100 border-0 p-4"></textarea>
+                <div class="d-flex ButtonsRow my-4 ps-md-3">
+                    <button class="TextSmall DropSHadowBtn">
+                        رد <i class="fa-solid fa-paper-plane ms-2"></i>
+                    </button>
+                    <button class="TextSmall ms-4">
+                        <i class="fa-solid fa-paperclip fa-flip-horizontal me-2"></i>
+                        ارفق الملفات
+                    </button>
+                </div>
+                <input type="file" name="TicketFile" id="TicketFile" hidden>
+                <label for="TicketFile" class="TicketFileLabel w-100 py-3 px-3"><img
+                        src="images/Ticket File Label Icon.svg" alt="Ticket File Label Icon"><span class="Icon"></span>
+                    <span class="paragraph">اسحب الملفات إلى هنا</span></label>
+
+                <div class="Support  mt-4 p-4">
+                    <div class="paragraph">
+                        <span> الدعم الفني نشر </span>
+                        في 23:45 @ 25 مارس,2023 ,الأربعاء (منذ 34دقيقة)
+                    </div>
+                    <div class="TextSmall mt-2">
+                        كيف يمكنني مساعدتك اليوم.؟
+                    </div>
+                    <div class="d-flex mt-3 FileNumbers">
+                        <a href="">
+                            <img src="images/FileFingerPrint.svg" alt="FileFingerPrint" class="me-2"> مرفق
+                            <span>1</span>
+                        </a>
+                        <a href="" class="ms-3">
+                            <img src="images/FileFingerPrint.svg" alt="FileFingerPrint" class="me-2"> مرفق
+                            <span>2</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="Support WhiteSupport  mt-4 p-4">
+                    <div class="paragraph">
+                        <span> ليلى نشرت</span>
+                        في 23:45 @ 25 مارس,2023 ,الأربعاء (منذ 34دقيقة)
+                    </div>
+                    <div class="TextSmall mt-2">
+                        مرحبا
+                        <br>
+                        لدي مشكلة هل من مساعدة
+                    </div>
+                    <div class="d-flex mt-3 FileNumbers">
+                     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Support Tickets-->
+
+    <!--Footer-->
+    <footer class="footer py-5 " id="footer">
+        <div class="container">
+            <div class="row gx-0">
+                <div class="col-xl-3 col-6 order-md-0  pe-xl-4">
+                    <img src="images/Logo White.svg" alt="Al Manarah Logo White">
+                    <div class="paragraph WhiteText SmallLine mt-3 WhiteLogoTextFooter">الألم نفسه ، من المهم اتخاذ
+                        الخطوة الأولى.
+                        إذا اتبعت كل العقول ، فأنت ملزم بالتحرر من تلك الخيارات الأخرى! لأنه غير ملزم بنوع العمل ، لكنه
+                        لا يقوم بأي
+                        من واجبات حياته</div>
+                </div>
+                <div class="col-xl-2 order-md-2 order-xl-1 col-md-4 col-6 mt-md-4 mt-xl-0">
+                    <div class="Texts WhiteText">روابط الموقع</div>
+                    <hr>
+
+                    <a href="BundelPage.html" class="paragraph WhiteText">الباقات</a>
+                    <a href="AboutUs.html" class="paragraph WhiteText">من نحن</a>
+                    <a href="FAQ.html" class="paragraph WhiteText">الاسئلة الشائعة </a>
+                    <a href="BlogPage.html" class="paragraph WhiteText">المدونة </a>
+
+                </div>
+                <div class="col-xl-2 order-md-3 order-xl-2  col-md-4 col-6 mt-4 mt-xl-0">
+                    <div class="Texts WhiteText ">روابط مهمة </div>
+                    <hr>
+
+                    <a href="PrivacyPolicy.html" class="paragraph WhiteText">سياسة الخصوصية</a>
+                    <a href="TermsAndConfition.html" class="paragraph WhiteText">الشروط والأحكام </a>
+                    <a href="RefundPolicy.html" class="paragraph WhiteText">سياسة الإسترجاع </a>
+
+                </div>
+                <div class="col-xl-2 order-md-4 order-xl-3  col-md-4 col-6 mt-4 mt-xl-0">
+                    <div class="Texts WhiteText ">إحصائيات النظام </div>
+                    <hr>
+                    <a href="BestInvestors.html" class="paragraph WhiteText"> <img src="images/leftArrowWhite.svg"
+                            alt="leftArrowWhite" class="me-2">أفضل المستثمرين </a>
+                    <a href="LatestCheckOutTransActions.html" class="paragraph WhiteText"> <img
+                            src="images/leftArrowWhite.svg" alt="leftArrowWhite" class="me-2">أخر عمليات السحب </a>
+                    <a href="LatestDepositsTransactions.html" class="paragraph WhiteText"> <img
+                            src="images/leftArrowWhite.svg" alt="leftArrowWhite" class="me-2">أخر عمليات الإيداع </a>
+                    <a href="LatestReferralCommissions.html" class="paragraph WhiteText"> <img
+                            src="images/leftArrowWhite.svg" alt="leftArrowWhite" class="me-2">أخر عمليات الإحالة </a>
+
+                </div>
+                <div class="col-xl-3  order-md-1 order-xl-4  mt-4 mt-md-0 col-md-6 ps-xl-4 ContactUsFooter">
+                    <div class="Texts WhiteText">إتصل بنا </div>
+                    <hr>
+                    <div class="paragraph WhiteText"><i class="fa-solid fa-location-dot me-2"></i> Sector 07, Uttara,
+                        Dhaka-1230,
+                        Bangladesh</div>
+                    <div class="paragraph WhiteText"><i class="fa-solid fa-envelope me-2"></i> info@al-manarh.com
+                    </div>
+                    <div class="paragraph WhiteText"><i class="fa-solid fa-phone-volume me-2"></i> +210 457445
+                    </div>
+                    <div class="d-flex socialMediaFooterPart">
+                        <a href="" class="socialMediaFooter"><i class="fa-brands fa-linkedin-in"></i> </a>
+                        <a href="" class="socialMediaFooter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="" class="socialMediaFooter"><i class="fa-brands fa-facebook-f"></i> </a>
+                        <a href="" class="socialMediaFooter"><i class="fa-brands fa-youtube"></i> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--End Footer-->
+
+</body>
+<script src="assets/js/jquery-3.6.1.min.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/all.js"></script>
+<script src="js/js.js"></script>
+
+
+</html>
