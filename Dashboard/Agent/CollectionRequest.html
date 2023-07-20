@@ -11,7 +11,7 @@
     <meta name="description" content="">
 
 
-    <title> Manarah | Profile </title>
+    <title> Manarah | Agent Dashboard </title>
 </head>
 
 <body class="pt-5">
@@ -81,13 +81,39 @@
         </div>
     </nav>
     <div class="container-fluid px-md-5">
-        <!--Navbar-->
 
-        <!--End Navbar-->
+        <!-- Modal -->
+        <div class="modal fade DetailModal" id="ContinueDepositeModal" tabindex="-1"
+            aria-labelledby="ContinueDepositeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content p-4">
+                    <div class="modal-header  py-3 px-4">
+                        <div class="paragraph"><b>توكيل مكتمل </b></div>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body border-0">
+                        <form action="">
+                            <p class="ModalSmallText mb-0">ملاحظة</p>
+                            <div class="input-group mb-3">
+                                <textarea name="Note" id="Note" rows="5" class="w-100 BorderRadius p-"
+                                    placeholder="اكتب ملاحظة"></textarea>
+                            </div>
+
+                            <div class="d-flex">
+                                <a href="" class="greenBtnLink mx-auto mt-2"> <button type="submit"
+                                        class="bg-transparent border-0 w-100 h-100"> اراسل </button></a>
+                                <a href="" class="greenBtnLink RedBtn mx-auto mt-2" data-bs-dismiss="modal"
+                                    aria-label="Close"> إغلاق</a>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
         <div class="row">
-            <!--Side Nav-->
             <!--Side Nav-->
             <div class="col-lg-2 mt-5 pt-4 SideNav">
                 <div class="d-lg-flex  flex-lg-column d-none">
@@ -153,108 +179,104 @@
 
             <!--End Side Nav-->
             <div class="col-lg-10 PinkBg mt-5 pt-4 px-0 ContentPart  px-3">
-                <div class="Texts my-4"><b>إعدادات الملف الشخصي </b></div>
-                <div class="WhiteBG pt-4 ">
-                    <div class="Texts pb-4 px-4" style="border-bottom: 1px solid #000000;">
-                        مالك الحساب
+                <div class="Texts py-4"><b>طلب تحصيل</b></div>
+
+                <div class="row AgentDashtable pb-5">
+                    <div class="WhiteBG pt-4 ">
+                        <div class="Texts pb-4" style="border-bottom: 1px solid #000000;">
+                            حالة الطلب <span class="float-end GoldenBadge px-5"><b> قيد الانتظار </b> </span>
+                        </div>
+                        <div class="row">
+
+                            <div class="col-xxl-4 pb-4" style="border-left: 1px solid #000000;">
+                                <div class="d-flex flex-column px-3 mt-4 ">
+                                    <div class="TextXSmall w-100"> التاريخ<span class="float-end ">2023-02-28 05:35
+                                            م</span></div>
+                                    <div class="TextXSmall w-100 mt-3"> نوع العمولة <span class="float-end ">نسبة مئوية
+                                        </span></div>
+                                    <div class="TextXSmall w-100 mt-3">مقدار العمولة<span class="float-end ">( 5% )
+                                            15,500.00 ج.م </span></div>
+                                    <div class="TextXSmall w-100 mt-3 greenText"> <img
+                                            src="../../images/DashboardImgs/P.S..svg" alt="P.S." class="me-2"> ملاحظة
+                                        المسؤول </div>
+                                    <div class="TextXSmall w-100 mt-3"> الرجاء مراجعة العملية </span></div>
+                                    <a href="" class="greenBtnLink RedBtn w-75  mt-5 px-0" data-bs-dismiss="modal"
+                                        aria-label="Close"> الغاء الطلب</a>
+
+                                </div>
+                            </div>
+                            <div class="col-xxl-8  pb-4 ps-xxl-0 ">
+                                <div class="d-flex flex-column  mt-2 ">
+                                    <div class="paragraph px-4">
+                                        اختر وسيلة التحصيل
+                                    </div>
+                                    <div class="RadioRow d-md-flex">
+                                        <div class="form-check CheckOne mt-3">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault1">
+                                            <label class="form-check-label paragraph" for="flexCheckDefault">
+                                                <img src="../../images/Payeer.svg" alt="Payeer" width="35" class="me-2">
+                                                بنك Payeer
+                                            </label>
+                                        </div>
+                                        <div class="form-check CheckTwo mt-3">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault2">
+                                            <label class="form-check-label paragraph" for="flexCheckChecked">
+                                                <img src="../../images/Usdt.svg" alt="Usdt" width="35" class="me-2">
+                                                USDT TRC20
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check CheckThree mt-3">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault3">
+                                            <label class="form-check-label paragraph" for="flexCheckChecked2">
+                                                <img src="../../images/PerfectMoney.svg" alt="PerfectMoney" width="35"
+                                                    class="me-2"> بيرفكت موني
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                    <form action="">
+                                        <p class="ModalSmallText mb-0 mt-3 px-4">الرجاء التحويل للمحفظة التالية * </p>
+                                        <div class="input-group mb-3 w-75 px-4">
+
+                                            <input type="text" placeholder="PXXXXXX1" value="PXXXXXX1" id="Gov"
+                                                name="Gov" class="form-control ps-0" aria-describedby="Gov">
+                                        </div>
+                                        <p class="ModalSmallText mb-0 mt-3 px-4">رقم العملية * </p>
+                                        <div class="input-group mb-3 w-75 px-4">
+
+                                            <input type="number" placeholder="رقم العملية" value="رقم العملية"
+                                                id="TransactionNumb" name="TransactionNumb" class="form-control ps-0"
+                                                aria-describedby="TransactionNumb">
+                                        </div>
+                                        <p class="ModalSmallText mb-0 mt-3 px-4">ارفاق صورة </p>
+
+                                        <div class="d-flex px-4 align-items-center">
+                                            <input type="file" name="TicketFile" id="TicketFile" hidden>
+                                            <label for="TicketFile" class="TicketFileLabel w-100 py-3 px-3"><img
+                                                    src="../../images/Ticket File Label Icon.svg"
+                                                    alt="Ticket File Label Icon"><span class="Icon"></span>
+                                                <span class="paragraph ms-2">اسحب الملفات إلى هنا</span></label>
+                                        </div>
+                                </div>
+                                <a href="" type="button" class="greenBtnLink  mt-2 w-50 ms-4" data-bs-toggle="modal"
+                                    data-bs-target="#ContinueDepositeModal"> إرسال </a>
+                                </form>
+
+                            </div>
+
+
+                        </div>
                     </div>
 
-                    <section class="RegisterSection LoginSection py-5" style="background-image: unset;"
-                        id="LoginSection">
-
-                        <form action="" class="d-flex flex-column px-4">
-                            <div class="row mx-0">
-                                <div class="col-6">
-                                    <label for="FirstName" class="paragraph">الاسم الأول * </label>
-                                    <br>
-                                    <input type="text" name="FirstName" class="py-3 TextSmall w-100 ps-0" id="FirstName"
-                                        placeholder="ادخل الاسم الاول" required>
-                                </div>
-                                <div class="col-6">
-                                    <label for="LastName" class="paragraph">الاسم الأخير * </label>
-                                    <br>
-                                    <input type="text" name="LastName" class="py-3 TextSmall w-100 ps-0" id="LastName"
-                                        placeholder="ادخل الاسم الأخير" required>
-                                </div>
-
-                                <div class="col-6  mt-3 ">
-                                    <label for="Email" class="paragraph">البريد الالكتروني *</label>
-                                    <div class="GreenBorderBottom">
-
-                                        <input type="text" name="Email" class="py-3 TextSmall w-100 ps-0" id="Email"
-                                            placeholder="ادخل البريد الالكتروني  " required>
-                                    </div>
-                                </div>
-                                <div class="col-6  mt-3 ">
-                                    <label for="PhoneNumber" class="paragraph">رقم الهاتف *</label>
-                                    <div class="GreenBorderBottom">
-
-                                        <input type="text" name="PhoneNumber" class="py-3 TextSmall w-100 ps-0"
-                                            id="PhoneNumber" placeholder="رقم الهاتف " required>
-                                    </div>
-                                </div>
-                                <div class="col-6  mt-3 d-flex justify-content-between flex-column h-100">
-
-                                    <label for="TelegramUserName" class="paragraph">اسم مستخدم تيلجرام *</label>
-                                    <div class="RegisterInputGroup input-group ">
-                                        <span class="input-group-text me-2" id="CountryCodeNumber">@</span>
-
-                                        <input type="text" name="TelegramUserName"
-                                            class="form-control py-4 TextSmall mt-1" id="TelegramUserName"
-                                            placeholder=" " required>
-                                    </div>
-
-
-
-                                </div>
-                                <div class="col-6  mt-3 ">
-                                    <label for="Country" class="paragraph">الدولة *</label>
-                                    <div class="GreenBorderBottom">
-
-                                        <select class="form-select form-select-lg  "
-                                            aria-label=".form-select-lg example" required
-                                            style="background-image: unset;">
-                                            <option value="0" selected>إختر</option>
-                                            <option value="1">Saudi Arabia</option>
-                                            <option value="2">Lebanon </option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-6 mt-3">
-                                    <label for="City" class="paragraph mt-4">المدينة *</label>
-                                    <input type="text" name="City" class="py-3 TextSmall w-100 ps-0" id="City"
-                                        placeholder="Kamal" required>
-                                </div>
-                                <div class="col-6 mt-3">
-                                    <label for="State" class="paragraph mt-4">المحافظة *</label>
-                                    <input type="text" name="State" class="py-3 TextSmall w-100 ps-0" id="State"
-                                        placeholder="المحافظة" required>
-                                </div>
-                                <div class="col-6 mt-3">
-                                    <label for="ECode" class="paragraph mt-4">الرمز البريدي *</label>
-                                    <input type="text" name="ECode" class="py-3 TextSmall w-100 ps-0" id="ECode"
-                                        placeholder="الرمز البريدي " required>
-                                </div>
-                                <div class="col-6 mt-3">
-                                    <label for="Address" class="paragraph mt-4">العنوان *</label>
-                                    <input type="text" name="Address" class="py-3 TextSmall w-100 ps-0" id="Address"
-                                        placeholder="العنوان  " required>
-                                </div>
-                            </div>
-
-
-                            <div class="d-flex mt-4">
-                                <a href="" class="greenBtnLink  mt-4 w-25"> حفظ التغييرات </a>
-                                <a href="" class="greenBtnLink RedBtn ms-4 mt-4 w-25 ">إلغاء</a>
-                            </div>
-                        </form>
-                    </section>
-
-
                 </div>
+
             </div>
+
         </div>
-    </div>
     </div>
 
 </body>

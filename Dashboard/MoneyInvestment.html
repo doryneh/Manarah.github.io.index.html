@@ -11,7 +11,7 @@
     <meta name="description" content="">
 
 
-    <title> Manarah |  Money Investment</title>
+    <title> Manarah | Money Investment</title>
 </head>
 
 <body class="pt-5">
@@ -19,12 +19,12 @@
     <nav class="navbar navbar-expand-lg  fixed-top DashNav">
         <div class="container-fluid px-md-5">
             <div class="row py-3 w-100 mx-0">
-                <div class="col-3 d-flex  align-items-center">
-                    <a class="navbar-brand" href="index.html"><img src="../images/DashboardImgs/LogoImgs.svg"
+                <div class="col-sm-3 d-flex  align-items-center justify-content-center">
+                    <a class="navbar-brand " href="index.html"><img src="../images/DashboardImgs/LogoImgs.svg"
                             alt="Al Manarah Logo Svg Format"></a>
 
                 </div>
-                <div class="col-9">
+                <div class="col-sm-9">
 
                     <div class="d-flex justify-content-between align-items-center w-100">
                         <form action="">
@@ -65,356 +65,434 @@
 
                                 </ul>
                             </div>
+                            <button class="btn btn-primary d-lg-none d-block bg-transparent border-0 Texts ms-sm-4 ms-2"
+                                type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                                aria-controls="offcanvasExample" style="color: #00A1A3; box-shadow: none;">
+                                <i class="fa-solid fa-bars"></i>
+
+                            </button>
 
                         </div>
 
                     </div>
+
                 </div>
             </div>
 
         </div>
     </nav>
-        <!--End Navbar-->
+    <!--End Navbar-->
     <div class="container-fluid px-md-5">
-        
 
- <!-- Modal -->
- <div class="modal fade DetailModal" id="PaymentType" tabindex="-1" aria-labelledby="PaymentTypeLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content p-4">
-            <div class="modal-header  py-3 px-4">
-                <div class="paragraph"><b>إستثمر الآن</b></div>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body border-0">
-                <p class="paragraph text-center"> <b>استثمر الآن</b></p>
-                <form action="">
-                    <p class="ModalSmallText mb-0">نوع المحفظة </p>
-                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                        <option value="0" >إختر</option>
-                        <option value="1" selected>محفظة إيداع</option>
-                        <option value="2">MasterCard</option>
-                    </select>
-                    <p class="ModalSmallText mb-0 mt-2">المبلغ </p>
-                    <div class="input-group mb-3">
-                        <input type="number" class="form-control" placeholder="0000000000000 " aria-label="amount"
-                            aria-describedby="Amount">
-                        <span class="input-group-text" id="Amount"><span>$</span></span>
-                    </div>
 
-                    <div class="d-flex mt-3">
-                        <a href="" class="greenBtnLink mx-auto mt-2"> <button type="submit"
-                                class="bg-transparent border-0 w-100 h-100"> تحديث </button></a>
-                        <a href="" class="greenBtnLink RedBtn mx-auto mt-2" data-bs-dismiss="modal"
-                            aria-label="Close"> إغلاق</a>
+        <!-- Modal -->
+        <div class="modal fade DetailModal" id="PaymentType" tabindex="-1" aria-labelledby="PaymentTypeLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content p-4">
+                    <div class="modal-header  py-3 px-4">
+                        <div class="paragraph"><b>إستثمر الآن</b></div>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                </form>
+                    <div class="modal-body border-0">
+                        <p class="paragraph text-center"> <b>استثمر الآن</b></p>
+                        <form action="">
+                            <p class="ModalSmallText mb-0">نوع المحفظة </p>
+                            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                                <option value="0">إختر</option>
+                                <option value="1" selected>محفظة إيداع</option>
+                                <option value="2">MasterCard</option>
+                            </select>
+                            <p class="ModalSmallText mb-0 mt-2">المبلغ </p>
+                            <div class="input-group mb-3">
+                                <input type="number" class="form-control" placeholder="0000000000000 "
+                                    aria-label="amount" aria-describedby="Amount">
+                                <span class="input-group-text" id="Amount"><span>$</span></span>
+                            </div>
+
+                            <div class="d-flex mt-3">
+                                <a href="" class="greenBtnLink mx-auto mt-2"> <button type="submit"
+                                        class="bg-transparent border-0 w-100 h-100"> تحديث </button></a>
+                                <a href="" class="greenBtnLink RedBtn mx-auto mt-2" data-bs-dismiss="modal"
+                                    aria-label="Close"> إغلاق</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
 
-<!--End Modals-->
+        <!--End Modals-->
 
         <div class="row">
             <!--Side Nav-->
-            <div class="col-lg-2 d-flex flex-column mt-5 pt-4 SideNav">
-                <a href=""><img src="../images/DashboardImgs/UserSide_1.svg" alt="UserSide_1" class="me-3 TextSmall">
-                    لوحة التحكم</a>
-                <a href=""><img src="../images/DashboardImgs/UserSide_2.svg" alt="UserSide_2" class="me-3 TextSmall">
-                    الإيداع </a>
-                <a href=""><img src="../images/DashboardImgs/UserSide_3.svg" alt="UserSide_3" class="me-3 TextSmall">
-                    إستثمار </a>
-                <a href=""><img src="../images/DashboardImgs/UserSide_2.svg" alt="UserSide_4" class="me-3 TextSmall">
-                    سحب </a>
-                <a href=""><img src="../images/DashboardImgs/UserSide_5.svg" alt="UserSide_5" class="me-3 TextSmall">
-                    تحويل الأموال </a>
-                <a href=""><img src="../images/DashboardImgs/UserSide_6.svg" alt="UserSide_6" class="me-3 TextSmall">
-                    المعاملات </a>
-                <a href=""><img src="../images/DashboardImgs/UserSide_7.svg" alt="UserSide_7" class="me-3 TextSmall">
-                    الإحالات </a>
-                <a href=""><img src="../images/DashboardImgs/UserSide_8.svg" alt="UserSide_8" class="me-3 TextSmall">
-                    عمولة الإحالة </a>
-                <a href=""><img src="../images/DashboardImgs/UserSide_9.svg" alt="UserSide_9" class="me-3 TextSmall">
-                    بنرات إعلانية </a>
-                <a href=""><img src="../images/DashboardImgs/UserSide_10.svg" alt="UserSide_10" class="me-3 TextSmall">
-                    إحصل على الدعم </a>
-                <a href=""><img src="../images/DashboardImgs/UserSide_11.svg" alt="UserSide_11" class="me-3 TextSmall">
-                    تأمين الحساب </a>
-                <a href=""><img src="../images/DashboardImgs/UserSide_12.svg" alt="UserSide_12" class="me-3 TextSmall">
-                    تسجيل الخروج </a>
+            <div class="col-lg-2 mt-5 pt-4 SideNav">
+                <div class="d-lg-flex  flex-lg-column d-none">
+                    <a href="" class="active"><img src="../images/DashboardImgs/UserSide_1.svg" alt="UserSide_1"
+                            class="me-3 TextSmall">
+                        لوحة التحكم</a>
+                    <a href=""><img src="../images/DashboardImgs/UserSide_2.svg" alt="UserSide_2"
+                            class="me-3 TextSmall">
+                        الإيداع </a>
+                    <a href=""><img src="../images/DashboardImgs/UserSide_3.svg" alt="UserSide_3"
+                            class="me-3 TextSmall">
+                        إستثمار </a>
+                    <a href=""><img src="../images/DashboardImgs/UserSide_2.svg" alt="UserSide_4"
+                            class="me-3 TextSmall">
+                        سحب </a>
+                    <a href=""><img src="../images/DashboardImgs/UserSide_5.svg" alt="UserSide_5"
+                            class="me-3 TextSmall">
+                        تحويل الأموال </a>
+                    <a href=""><img src="../images/DashboardImgs/UserSide_6.svg" alt="UserSide_6"
+                            class="me-3 TextSmall">
+                        المعاملات </a>
+                    <a href=""><img src="../images/DashboardImgs/UserSide_7.svg" alt="UserSide_7"
+                            class="me-3 TextSmall">
+                        الإحالات </a>
+                    <a href=""><img src="../images/DashboardImgs/UserSide_8.svg" alt="UserSide_8"
+                            class="me-3 TextSmall">
+                        عمولة الإحالة </a>
+                    <a href=""><img src="../images/DashboardImgs/UserSide_9.svg" alt="UserSide_9"
+                            class="me-3 TextSmall">
+                        بنرات إعلانية </a>
+                    <a href=""><img src="../images/DashboardImgs/UserSide_10.svg" alt="UserSide_10"
+                            class="me-3 TextSmall">
+                        إحصل على الدعم </a>
+                    <a href=""><img src="../images/DashboardImgs/UserSide_11.svg" alt="UserSide_11"
+                            class="me-3 TextSmall">
+                        تأمين الحساب </a>
+                    <a href=""><img src="../images/DashboardImgs/UserSide_12.svg" alt="UserSide_12"
+                            class="me-3 TextSmall">
+                        تسجيل الخروج </a>
+                </div>
 
-            </div>
-
-            <!--End Side Nav-->
-            <div class="col-lg-10 PinkBg mt-5 pt-4 px-0 ContentPart  px-3">
-                <div class="Texts "><b>خطط الاستثمار  </b></div>
-
-                 <!--Bundels-->
-        <section class="Bundels py-5" id="Bundels">
-            <div class="container">
-                <div class="row gx-lg-3">
-
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="card Brown pt-5">
-                            <div class="card-overlay pb-4">
-                                <div class="BatchPart d-flex justify-content-between align-items-center">
-                                    <div class="Batch">
-                                        <img src="../images/BUndelBatch Brown.svg" alt="Bundel Batch Brown">
-                                        <div class="batchType">
-                                            الباقة البرونزية
-                                        </div>
-                                    </div>
-
-                                    <div class="PercentagePart d-flex">
-                                        <div class="percentage d-flex justify-content-center align-items-center">%</div>
-
-                                        <div
-                                            class="DiscountBundle d-flex flex-column justify-content-center align-items-center">
-                                            <div class="win">إربح</div>
-                                            <div class="amount">
-                                                1.00
-                                            </div>
-                                            <div class="time">كل 120 يوم</div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="ListPart">
-                                    <ul>
-                                        <li class="FirstItemList">
-                                            <div>
-                                                <img src="../images/CheckIcon.svg" alt="CheckIcon">
-                                                استرجاع رأس المال
-                                            </div>
-
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <img src="../images/CheckIcon.svg" alt="CheckIcon">
-                                                الحد الأدنى للاستثمار
-                                            </div>
-                                            <div class="Money">
-                                                100 <span class="ms-2">$</span>
-                                            </div>
-
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <img src="../images/CheckIcon.svg" alt="CheckIcon">
-                                                الحد الأقصى للاستثمار
-                                            </div>
-                                            <div class="Money">
-                                                999 <span class="ms-2">$</span>
-                                            </div>
-
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="ButtonsPart">
-                                    <a href="" class="greenBtnLink w-100" type="button" data-bs-toggle="modal"
-                                    data-bs-target="#PaymentType">استثمر الان</a>
-                                    <p class="text-center mb-0">الدعم متاح 24/7</p>
-                                </div>
-                            </div>
-                        </div>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mt-4 mt-sm-0">
-                        <div class="card Grey pt-5">
-                            <div class="card-overlay pb-4">
-                                <div class="BatchPart d-flex justify-content-between align-items-center">
-                                    <div class="Batch">
-                                        <img src="../images/BUndelBatch Grey.svg" alt="Bundel Batch Grey">
-                                        <div class="batchType">
-                                            الباقة الفضية
-                                        </div>
-                                    </div>
-
-                                    <div class="PercentagePart d-flex">
-                                        <div class="percentage d-flex justify-content-center align-items-center">%</div>
-
-                                        <div
-                                            class="DiscountBundle d-flex flex-column justify-content-center align-items-center">
-                                            <div class="win">إربح</div>
-                                            <div class="amount">
-                                                1.50
-                                            </div>
-                                            <div class="time">كل 120 يوم</div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="ListPart">
-                                    <ul>
-                                        <li class="FirstItemList">
-                                            <div>
-                                                <img src="../images/CheckIcon.svg" alt="CheckIcon">
-                                                استرجاع رأس المال
-                                            </div>
-
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <img src="../images/CheckIcon.svg" alt="CheckIcon">
-                                                الحد الأدنى للاستثمار
-                                            </div>
-                                            <div class="Money">
-                                                1000 <span class="ms-2">$</span>
-                                            </div>
-
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <img src="../images/CheckIcon.svg" alt="CheckIcon">
-                                                الحد الأقصى للاستثمار
-                                            </div>
-                                            <div class="Money">
-                                                4999 <span class="ms-2">$</span>
-                                            </div>
-
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="ButtonsPart ">
-                                    <a href="" class="greenBtnLink w-100" data-bs-toggle="modal"
-                                        data-bs-target="#PaymentType">استثمر الان</a>
-                                    <p class="text-center mb-0">الدعم متاح 24/7</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mt-4 mt-lg-0">
-                        <div class="card Orange pt-5">
-                            <div class="card-overlay pb-4">
-                                <div class="BatchPart d-flex justify-content-between align-items-center">
-                                    <div class="Batch">
-                                        <img src="../images/BUndelBatch Orange.svg" alt="Bundel Batch Orange">
-                                        <div class="batchType">
-                                            الباقة الذهبية
-                                        </div>
-                                    </div>
-
-                                    <div class="PercentagePart d-flex">
-                                        <div class="percentage d-flex justify-content-center align-items-center">%</div>
-
-                                        <div
-                                            class="DiscountBundle d-flex flex-column justify-content-center align-items-center">
-                                            <div class="win">إربح</div>
-                                            <div class="amount">
-                                                2.00
-                                            </div>
-                                            <div class="time">كل 120 يوم</div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="ListPart">
-                                    <ul>
-                                        <li class="FirstItemList">
-                                            <div>
-                                                <img src="../images/CheckIcon.svg" alt="CheckIcon">
-                                                استرجاع رأس المال
-                                            </div>
-
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <img src="../images/CheckIcon.svg" alt="CheckIcon">
-                                                الحد الأدنى للاستثمار
-                                            </div>
-                                            <div class="Money">
-                                                5000 <span class="ms-2">$</span>
-                                            </div>
-
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <img src="../images/CheckIcon.svg" alt="CheckIcon">
-                                                الحد الأقصى للاستثمار
-                                            </div>
-                                            <div class="Money">
-                                                9999 <span class="ms-2">$</span>
-                                            </div>
-
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="ButtonsPart">
-                                    <a href="" class="greenBtnLink w-100" data-bs-toggle="modal"
-                                    data-bs-target="#PaymentType">استثمر الان</a>
-                                    <p class="text-center mb-0">الدعم متاح 24/7</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mt-4 ">
-                        <div class="card Green pt-5">
-                            <div class="card-overlay pb-4">
-                                <div class="BatchPart d-flex justify-content-between align-items-center">
-                                    <div class="Batch">
-                                        <img src="../images/BUndelBatch Green.svg" alt="Bundel Batch Green">
-                                        <div class="batchType">
-                                            الباقة الماسية
-                                        </div>
-                                    </div>
-
-                                    <div class="PercentagePart d-flex">
-                                        <div class="percentage d-flex justify-content-center align-items-center">%</div>
-
-                                        <div
-                                            class="DiscountBundle d-flex flex-column justify-content-center align-items-center">
-                                            <div class="win">إربح</div>
-                                            <div class="amount">
-                                                2.50
-                                            </div>
-                                            <div class="time">كل 120 يوم</div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="ListPart">
-                                    <ul>
-                                        <li class="FirstItemList">
-                                            <div>
-                                                <img src="../images/CheckIcon.svg" alt="CheckIcon">
-                                                استرجاع رأس المال
-                                            </div>
-
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <img src="../images/CheckIcon.svg" alt="CheckIcon">
-                                                الحد الأدنى للاستثمار
-                                            </div>
-                                            <div class="Money">
-                                                10000 <span class="ms-2">$</span>
-                                            </div>
-
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <img src="../images/CheckIcon.svg" alt="CheckIcon">
-                                                الحد الأقصى للاستثمار
-                                            </div>
-                                            <div class="Money">
-                                                100000 <span class="ms-2">$</span>
-                                            </div>
-
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="ButtonsPart">
-                                    <a href="" class="greenBtnLink w-100" data-bs-toggle="modal"
-                                    data-bs-target="#PaymentType">استثمر الان</a>
-                                    <p class="text-center mb-0">الدعم متاح 24/7</p>
-                                </div>
-                            </div>
+                    <div class="offcanvas-body">
+                        <div class="d-flex  flex-column">
+                            <a href="" class="active"><img src="../images/DashboardImgs/UserSide_1.svg" alt="UserSide_1"
+                                    class="me-3 TextSmall">
+                                لوحة التحكم</a>
+                            <a href=""><img src="../images/DashboardImgs/UserSide_2.svg" alt="UserSide_2"
+                                    class="me-3 TextSmall">
+                                الإيداع </a>
+                            <a href=""><img src="../images/DashboardImgs/UserSide_3.svg" alt="UserSide_3"
+                                    class="me-3 TextSmall">
+                                إستثمار </a>
+                            <a href=""><img src="../images/DashboardImgs/UserSide_2.svg" alt="UserSide_4"
+                                    class="me-3 TextSmall">
+                                سحب </a>
+                            <a href=""><img src="../images/DashboardImgs/UserSide_5.svg" alt="UserSide_5"
+                                    class="me-3 TextSmall">
+                                تحويل الأموال </a>
+                            <a href=""><img src="../images/DashboardImgs/UserSide_6.svg" alt="UserSide_6"
+                                    class="me-3 TextSmall">
+                                المعاملات </a>
+                            <a href=""><img src="../images/DashboardImgs/UserSide_7.svg" alt="UserSide_7"
+                                    class="me-3 TextSmall">
+                                الإحالات </a>
+                            <a href=""><img src="../images/DashboardImgs/UserSide_8.svg" alt="UserSide_8"
+                                    class="me-3 TextSmall">
+                                عمولة الإحالة </a>
+                            <a href=""><img src="../images/DashboardImgs/UserSide_9.svg" alt="UserSide_9"
+                                    class="me-3 TextSmall">
+                                بنرات إعلانية </a>
+                            <a href=""><img src="../images/DashboardImgs/UserSide_10.svg" alt="UserSide_10"
+                                    class="me-3 TextSmall">
+                                إحصل على الدعم </a>
+                            <a href=""><img src="../images/DashboardImgs/UserSide_11.svg" alt="UserSide_11"
+                                    class="me-3 TextSmall">
+                                تأمين الحساب </a>
+                            <a href=""><img src="../images/DashboardImgs/UserSide_12.svg" alt="UserSide_12"
+                                    class="me-3 TextSmall">
+                                تسجيل الخروج </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!--End Bundels-->
+
+            <!--End Side Nav-->
+            <div class="col-lg-10 PinkBg mt-5 pt-4 px-0 ContentPart  px-3">
+                <div class="Texts "><b>خطط الاستثمار </b></div>
+
+                <!--Bundels-->
+                <section class="Bundels py-5" id="Bundels">
+                    <div class="container">
+                        <div class="row gx-lg-3">
+
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="card Brown pt-5">
+                                    <div class="card-overlay pb-4">
+                                        <div class="BatchPart d-flex justify-content-between align-items-center">
+                                            <div class="Batch">
+                                                <img src="../images/BUndelBatch Brown.svg" alt="Bundel Batch Brown">
+                                                <div class="batchType">
+                                                    الباقة البرونزية
+                                                </div>
+                                            </div>
+
+                                            <div class="PercentagePart d-flex">
+                                                <div
+                                                    class="percentage d-flex justify-content-center align-items-center">
+                                                    %</div>
+
+                                                <div
+                                                    class="DiscountBundle d-flex flex-column justify-content-center align-items-center">
+                                                    <div class="win">إربح</div>
+                                                    <div class="amount">
+                                                        1.00
+                                                    </div>
+                                                    <div class="time">كل 120 يوم</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="ListPart">
+                                            <ul>
+                                                <li class="FirstItemList">
+                                                    <div>
+                                                        <img src="../images/CheckIcon.svg" alt="CheckIcon">
+                                                        استرجاع رأس المال
+                                                    </div>
+
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <img src="../images/CheckIcon.svg" alt="CheckIcon">
+                                                        الحد الأدنى للاستثمار
+                                                    </div>
+                                                    <div class="Money">
+                                                        100 <span class="ms-2">$</span>
+                                                    </div>
+
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <img src="../images/CheckIcon.svg" alt="CheckIcon">
+                                                        الحد الأقصى للاستثمار
+                                                    </div>
+                                                    <div class="Money">
+                                                        999 <span class="ms-2">$</span>
+                                                    </div>
+
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="ButtonsPart">
+                                            <a href="" class="greenBtnLink w-100" type="button" data-bs-toggle="modal"
+                                                data-bs-target="#PaymentType">استثمر الان</a>
+                                            <p class="text-center mb-0">الدعم متاح 24/7</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6 mt-4 mt-sm-0">
+                                <div class="card Grey pt-5">
+                                    <div class="card-overlay pb-4">
+                                        <div class="BatchPart d-flex justify-content-between align-items-center">
+                                            <div class="Batch">
+                                                <img src="../images/BUndelBatch Grey.svg" alt="Bundel Batch Grey">
+                                                <div class="batchType">
+                                                    الباقة الفضية
+                                                </div>
+                                            </div>
+
+                                            <div class="PercentagePart d-flex">
+                                                <div
+                                                    class="percentage d-flex justify-content-center align-items-center">
+                                                    %</div>
+
+                                                <div
+                                                    class="DiscountBundle d-flex flex-column justify-content-center align-items-center">
+                                                    <div class="win">إربح</div>
+                                                    <div class="amount">
+                                                        1.50
+                                                    </div>
+                                                    <div class="time">كل 120 يوم</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="ListPart">
+                                            <ul>
+                                                <li class="FirstItemList">
+                                                    <div>
+                                                        <img src="../images/CheckIcon.svg" alt="CheckIcon">
+                                                        استرجاع رأس المال
+                                                    </div>
+
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <img src="../images/CheckIcon.svg" alt="CheckIcon">
+                                                        الحد الأدنى للاستثمار
+                                                    </div>
+                                                    <div class="Money">
+                                                        1000 <span class="ms-2">$</span>
+                                                    </div>
+
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <img src="../images/CheckIcon.svg" alt="CheckIcon">
+                                                        الحد الأقصى للاستثمار
+                                                    </div>
+                                                    <div class="Money">
+                                                        4999 <span class="ms-2">$</span>
+                                                    </div>
+
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="ButtonsPart ">
+                                            <a href="" class="greenBtnLink w-100" data-bs-toggle="modal"
+                                                data-bs-target="#PaymentType">استثمر الان</a>
+                                            <p class="text-center mb-0">الدعم متاح 24/7</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6 mt-4 mt-lg-0">
+                                <div class="card Orange pt-5">
+                                    <div class="card-overlay pb-4">
+                                        <div class="BatchPart d-flex justify-content-between align-items-center">
+                                            <div class="Batch">
+                                                <img src="../images/BUndelBatch Orange.svg" alt="Bundel Batch Orange">
+                                                <div class="batchType">
+                                                    الباقة الذهبية
+                                                </div>
+                                            </div>
+
+                                            <div class="PercentagePart d-flex">
+                                                <div
+                                                    class="percentage d-flex justify-content-center align-items-center">
+                                                    %</div>
+
+                                                <div
+                                                    class="DiscountBundle d-flex flex-column justify-content-center align-items-center">
+                                                    <div class="win">إربح</div>
+                                                    <div class="amount">
+                                                        2.00
+                                                    </div>
+                                                    <div class="time">كل 120 يوم</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="ListPart">
+                                            <ul>
+                                                <li class="FirstItemList">
+                                                    <div>
+                                                        <img src="../images/CheckIcon.svg" alt="CheckIcon">
+                                                        استرجاع رأس المال
+                                                    </div>
+
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <img src="../images/CheckIcon.svg" alt="CheckIcon">
+                                                        الحد الأدنى للاستثمار
+                                                    </div>
+                                                    <div class="Money">
+                                                        5000 <span class="ms-2">$</span>
+                                                    </div>
+
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <img src="../images/CheckIcon.svg" alt="CheckIcon">
+                                                        الحد الأقصى للاستثمار
+                                                    </div>
+                                                    <div class="Money">
+                                                        9999 <span class="ms-2">$</span>
+                                                    </div>
+
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="ButtonsPart">
+                                            <a href="" class="greenBtnLink w-100" data-bs-toggle="modal"
+                                                data-bs-target="#PaymentType">استثمر الان</a>
+                                            <p class="text-center mb-0">الدعم متاح 24/7</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6 mt-4 ">
+                                <div class="card Green pt-5">
+                                    <div class="card-overlay pb-4">
+                                        <div class="BatchPart d-flex justify-content-between align-items-center">
+                                            <div class="Batch">
+                                                <img src="../images/BUndelBatch Green.svg" alt="Bundel Batch Green">
+                                                <div class="batchType">
+                                                    الباقة الماسية
+                                                </div>
+                                            </div>
+
+                                            <div class="PercentagePart d-flex">
+                                                <div
+                                                    class="percentage d-flex justify-content-center align-items-center">
+                                                    %</div>
+
+                                                <div
+                                                    class="DiscountBundle d-flex flex-column justify-content-center align-items-center">
+                                                    <div class="win">إربح</div>
+                                                    <div class="amount">
+                                                        2.50
+                                                    </div>
+                                                    <div class="time">كل 120 يوم</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="ListPart">
+                                            <ul>
+                                                <li class="FirstItemList">
+                                                    <div>
+                                                        <img src="../images/CheckIcon.svg" alt="CheckIcon">
+                                                        استرجاع رأس المال
+                                                    </div>
+
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <img src="../images/CheckIcon.svg" alt="CheckIcon">
+                                                        الحد الأدنى للاستثمار
+                                                    </div>
+                                                    <div class="Money">
+                                                        10000 <span class="ms-2">$</span>
+                                                    </div>
+
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <img src="../images/CheckIcon.svg" alt="CheckIcon">
+                                                        الحد الأقصى للاستثمار
+                                                    </div>
+                                                    <div class="Money">
+                                                        100000 <span class="ms-2">$</span>
+                                                    </div>
+
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="ButtonsPart">
+                                            <a href="" class="greenBtnLink w-100" data-bs-toggle="modal"
+                                                data-bs-target="#PaymentType">استثمر الان</a>
+                                            <p class="text-center mb-0">الدعم متاح 24/7</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--End Bundels-->
 
             </div>
 

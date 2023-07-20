@@ -1231,7 +1231,7 @@ Bundel Page
 **************************
 **************************/
 section.BreadCrumbs, .BundelsPage section.Calculator, .PinkBg {
-    background-color: #2b02cc;
+    background-color: #F9F8FD;
 }
 
 .BundelsPage section.BreadCrumbs h1 {
@@ -1853,9 +1853,16 @@ Side Nav
 **************************
 **************************/
 .SideNav a {
-    margin-bottom: 25px;
-}
+    margin-bottom: 5px;
+    padding: 10px 10px 10px 0px;
 
+}
+.SideNav a.active{
+    background-color: #E2F3F3;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    color: #00A1A3 !important;
+}
 /**************************
 **************************
 End Side Nav
@@ -1868,7 +1875,7 @@ ContentPart
 **************************
 **************************/
 .PinkBg.ContentPart {
-    background-color: red;
+    background-color: #F9F8FD;
 }
 
 .PinkBg.ContentPart .WelcomeLine .TextSmall {
@@ -2525,8 +2532,9 @@ Media Query
     }
 
     .greenBtnLink, .whiteBtnLink {
-        padding: 10px 35px;
+        padding: 10px 0px;
         font-size: 16px;
+        min-width: 35% !important;
 
     }
 
@@ -2580,7 +2588,10 @@ Media Query
         text-align: center;
         padding-top: 130px !important;
     }
-
+    nav.navbar .col-sm-3 .navbar-brand img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
     .InviteRow .MaxWidth, .InviteRow .MaxWidth .TextSmall {
         width: 100% !important;
         font-size: 15px;
@@ -2751,7 +2762,36 @@ Media Query
     section.Bundels .card-overlay .Batch .batchType {
         font-size: 18px;
     }
+    .greenBtnLink, .whiteBtnLink {
+   
+        min-width: 50% !important;
 
+    }
+
+    nav.navbar.DashNav button.NavSearchButton {
+        width: 20px;
+        height: 20px;
+        font-size: 15px !important;
+        border-radius: 0px !important;
+    }
+    nav.navbar.DashNav button.NotificationBtn img{
+        width: 30px;
+    }
+    nav.navbar.DashNav .dropdown .UserImg {
+        width: 45px;
+        height: 45px;
+    }
+    nav.navbar.DashNav .SearchLine input {
+        
+        font-size: 14px !important;
+        padding-right: 27px !important;
+    }
+    nav.navbar.DashNav .SearchLine{
+        width: 100px;
+    }
+    nav.navbar.DashNav .SearchLine img{
+        width: 15px;
+    }
     .InviteRow .MaxWidth, .InviteRow .MaxWidth .TextSmall,
     .PinkBg.ContentPart .copyLink button {
         font-size: 13px;
