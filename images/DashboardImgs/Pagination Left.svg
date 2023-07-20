@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24.044" height="24.044" viewBox="0 0 24.044 24.044">
+  <g id="vuesax_twotone_arrow-circle-down" data-name="vuesax/twotone/arrow-circle-down" transform="translate(24.044) rotate(90)">
+    <g id="arrow-circle-down">
+      <path id="Vector" d="M20.037,10.018A10.018,10.018,0,1,1,10.018,0,10.018,10.018,0,0,1,20.037,10.018Z" transform="translate(2.004 2.004)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="Vector-2" data-name="Vector" d="M0,0,3.536,3.526,7.073,0" transform="translate(8.485 10.76)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="Vector-3" data-name="Vector" d="M0,0H24.044V24.044H0Z" transform="translate(24.044 24.044) rotate(180)" fill="none" opacity="0"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+  <g id="vuesax_twotone_math" data-name="vuesax/twotone/math" transform="translate(-108 -636)">
+    <g id="math" transform="translate(108 636)">
+      <path id="Vector" d="M0,0H10.313" transform="translate(20.429 7.99)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Vector-2" data-name="Vector" d="M0,0H10.313" transform="translate(3.258 7.99)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" opacity="0.4"/>
+      <path id="Vector-3" data-name="Vector" d="M0,0H10.313" transform="translate(20.429 21.718)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" opacity="0.4"/>
+      <path id="Vector-4" data-name="Vector" d="M0,0H10.313" transform="translate(20.429 30.302)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" opacity="0.4"/>
+      <path id="Vector-5" data-name="Vector" d="M0,10.3V0" transform="translate(25.627 2.833)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Vector-6" data-name="Vector" d="M0,10.3,10.313,0" transform="translate(3.258 20.867)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Vector-7" data-name="Vector" d="M10.313,10.3,0,0" transform="translate(3.258 20.867)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <g id="Vector-8" data-name="Vector" fill="none" opacity="0">
+        <path d="M0,0H34V34H0Z" stroke="none"/>
+        <path d="M 3 3 L 3 31 L 31 31 L 31 3 L 3 3 M 0 0 L 34 0 L 34 34 L 0 34 L 0 0 Z" stroke="none" fill="#000"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="../../assets/css/bootstrap.rtl.css">
+    <link rel="stylesheet" href="../../assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <meta name="description" content="">
+
+
+    <title> Manarah | Cash In Navs </title>
+</head>
+
+<body class="pt-5">
+    <nav class="navbar navbar-expand-lg  fixed-top DashNav">
+        <div class="container-fluid px-md-5">
+            <div class="row py-3 w-100 mx-0">
+                <div class="col-3 d-flex  align-items-center">
+                    <a class="navbar-brand" href="index.html"><img src="../../images/DashboardImgs/LogoImgs.svg"
+                            alt="Al Manarah Logo Svg Format"></a>
+
+                </div>
+                <div class="col-9">
+
+                    <div class="d-flex justify-content-between align-items-center w-100">
+                        <form action="">
+                            <div class="d-flex align-items-center">
+                                <button class="TextSmall NavSearchButton DropSHadowBtn">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </button>
+                                <div class="SearchLine position-relative ms-3">
+                                    <input type="search" name="SearchNavLine" id="SearchNavLine" placeholder="ابحث"
+                                        class="py-2 TextSmall ps-5">
+                                    <img src="../../images/DashboardImgs/Search Nav Icon.svg" alt="Search Nav Icon">
+                                </div>
+                            </div>
+                        </form>
+
+
+                        <div class="d-flex justify-content-center align-items-center RegisterNavRow">
+                            <button type="button" class="btn  position-relative p-0 NotificationBtn me-3">
+                                <img src="../../images/DashboardImgs/NotificationIcon.svg" alt="Notification Icon">
+                                <span
+                                    class="position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger">
+                                    9+
+                                    <span class="visually-hidden">unread messages</span>
+                                </span>
+                            </button>
+
+                            <div class="nav-item dropdown p-0 ">
+                                <a class="nav-link dropdown-toggle p-0" href="#" id="navbarDropdownMenuLink1"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="../../images/DashboardImgs/UserImg.png" alt="UserImg " class="UserImg">
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                                    <li><a class="dropdown-item" href="AboutUs.html">من نحن</a></li>
+                                    <li><a class="dropdown-item" href="AffiliateMarketing.html"> التسويق بالعمولة</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="CompanyLicense.html"> ترخيص الشركة</a></li>
+                                    <li><a class="dropdown-item" href="InvestmentContract.html"> عقد الاستثمار </a></li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <div class="container-fluid px-md-5">
+        <!--Navbar-->
+
+        <!--End Navbar-->
+
+
+        <div class="row">
+            <!--Side Nav-->
+            <div class="col-lg-2 d-flex flex-column mt-5 pt-4 SideNav">
+                <a href=""><img src="../../images/DashboardImgs/UserSide_1.svg" alt="UserSide_1" class="me-3 TextSmall">
+                    لوحة التحكم</a>
+                <a href=""><img src="../../images/DashboardImgs/AgentSide_2.svg" alt="AgentSide_2"
+                        class="me-3 TextSmall">
+                    توكيلات الايداع
+                </a>
+                <a href=""><img src="../../images/DashboardImgs/AgentSide_3.svg" alt="AgentSide_3"
+                        class="me-3 TextSmall">
+                    توكيلات السحب </a>
+                <a href=""><img src="../../images/DashboardImgs/UserSide_9.svg" alt="UserSide_9" class="me-3 TextSmall">
+                    طلبات التحصيل </a>
+                <a href=""><img src="../../images/DashboardImgs/AgentSide_5.svg" alt="AgentSide_5"
+                        class="me-3 TextSmall">
+                    سجلات التمويل </a>
+
+                <a href=""><img src="../../images/DashboardImgs/UserSide_12.svg" alt="UserSide_12"
+                        class="me-3 TextSmall">
+                    تسجيل الخروج </a>
+
+            </div>
+
+            <!--End Side Nav-->
+            <div class="col-lg-10 PinkBg mt-5 pt-4 px-0 ContentPart  px-3">
+                <div class="Texts "><b>إعدادات الملف الشخصي  </b></div>
+                <!--Payment Methods-->
+                <section class="PaymentMethods py-lg-5 pt-3 pb-5" id="PaymentMethods">
+                    <div class="container">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active bg-transparent" id="home-tab" data-bs-toggle="tab"
+                                    data-bs-target="#home-tab-pane" type="button" role="tab"
+                                    aria-controls="home-tab-pane" aria-selected="true">الكل</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link bg-transparent" id="profile-tab" data-bs-toggle="tab"
+                                    data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                    aria-controls="profile-tab-pane" aria-selected="false">مراجعة</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link bg-transparent" id="contact-tab" data-bs-toggle="tab"
+                                    data-bs-target="#contact-tab-pane" type="button" role="tab"
+                                    aria-controls="contact-tab-pane" aria-selected="false">قيد الإنتظار </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link bg-transparent" id="contact-tab" data-bs-toggle="tab"
+                                    data-bs-target="#Four" type="button" role="tab" aria-controls="Four"
+                                    aria-selected="false">مكتمل </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link bg-transparent" id="contact-tab" data-bs-toggle="tab"
+                                    data-bs-target="#Five" type="button" role="tab" aria-controls="Five"
+                                    aria-selected="false">ملغي </button>
+                            </li>
+
+
+                        </ul>
+                        <div class="tab-content mt-5" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                                aria-labelledby="home-tab" tabindex="0">
+                                <!--Latest Transactions-->
+                                <div class="PinkBg px-0 ContentPart TransactionsRow">
+
+                                    <section class="Transactions  px-0" id="Transactions">
+
+                                        <table class="tableBigScreen d-none d-md-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>رقم العملية</th>
+                                                    <th>بوابة الدفع</th>
+                                                    <th>المبلغ</th>
+                                                    <th>عمولة</th>
+                                                    <th>الحالة</th>
+                                                    <th>الوقت</th>
+                                                    <th>التفاصيل</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1NDBWXSDQ1C5</td>
+                                                    <td> تحويل بنكي</td>
+                                                    <td class="green">3,026.00 ج.م.</td>
+                                                    <td>3,026.00 ج.م.</td>
+                                                    <td> <span class="GoldenBadge"> قيد الانتظار </span></td>
+
+                                                    <td>2023-02-28 05:35 م </td>
+                                                    <td> <a class="DetailBadge" type="button" data-bs-toggle="modal"
+                                                            data-bs-target="#DetailsModal"> <img
+                                                                src="../../images/DashboardImgs/DetailBadgeIcon.svg"
+                                                                alt="DetailBadgeIcon"> تفاصيل</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1NDBWXSDQ1C5</td>
+                                                    <td> تحويل بنكي</td>
+                                                    <td class="green">3,026.00 ج.م.</td>
+                                                    <td>3,026.00 ج.م.</td>
+                                                    <td> <span class="GreenBadge green"> مكتمل</span></td>
+
+                                                    <td>2023-02-28 05:35 م </td>
+                                                    <td> <a class="DetailBadge" type="button" data-bs-toggle="modal"
+                                                            data-bs-target="#DetailsModal"> <img
+                                                                src="../../images/DashboardImgs/DetailBadgeIcon.svg"
+                                                                alt="DetailBadgeIcon"> تفاصيل</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1NDBWXSDQ1C5</td>
+                                                    <td> تحويل بنكي</td>
+                                                    <td class="green">3,026.00 ج.م.</td>
+                                                    <td>3,026.00 ج.م.</td>
+                                                    <td> <span class="ErrorBadge"> ملغي</span></td>
+
+                                                    <td>2023-02-28 05:35 م </td>
+                                                    <td> <a class="DetailBadge" type="button" data-bs-toggle="modal"
+                                                            data-bs-target="#DetailsModal"> <img
+                                                                src="../../images/DashboardImgs/DetailBadgeIcon.svg"
+                                                                alt="DetailBadgeIcon"> تفاصيل</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1NDBWXSDQ1C5</td>
+                                                    <td> تحويل بنكي</td>
+                                                    <td class="green">3,026.00 ج.م.</td>
+                                                    <td>3,026.00 ج.م.</td>
+                                                    <td> <span class="ReviewBadge"> مراجعة</span></td>
+
+                                                    <td>2023-02-28 05:35 م </td>
+                                                    <td> <a class="DetailBadge" type="button" data-bs-toggle="modal"
+                                                            data-bs-target="#DetailsModal"> <img
+                                                                src="../../images/DashboardImgs/DetailBadgeIcon.svg"
+                                                                alt="DetailBadgeIcon"> تفاصيل</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="tablePhone">
+                                            <table class="tableSmallScreen  d-table d-md-none">
+                                                <tr>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+
+
+                                                    <tr>
+                                                        <th>رقم العملية</th>
+                                                        <td>1NDBWXSDQ1C5</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <th>بوابة الدفع</th>
+                                                        <td> تحويل بنكي</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>المبلغ</th>
+                                                        <td class="green">3,026.00 ج.م.</td>
+
+
+                                                    </tr>
+                                                    <tr>
+                                                        <th>عمولة</th>
+                                                        <td>3,026.00 ج.م.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>الحالة</th>
+                                                        <td> <span class="GoldenBadge"> قيد الانتظار </span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>الوقت</th>
+                                                        <td>2023-02-28 05:35 م </td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <th>التفاصيل</th>
+
+                                                        <td> <a class="DetailBadge" type="button" data-bs-toggle="modal"
+                                                                data-bs-target="#DetailsModal"> <img
+                                                                    src="../../images/DashboardImgs/DetailBadgeIcon.svg"
+                                                                    alt="DetailBadgeIcon"> تفاصيل</a></td>
+                                                    </tr>
+                                            </table>
+                                            <table class="tableSmallScreen  d-table d-md-none">
+                                                <tr>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+
+
+                                                    <tr>
+                                                        <th>رقم العملية</th>
+                                                        <td>1NDBWXSDQ1C5</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <th>بوابة الدفع</th>
+                                                        <td> تحويل بنكي</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>المبلغ</th>
+                                                        <td class="green">3,026.00 ج.م.</td>
+
+
+                                                    </tr>
+                                                    <tr>
+                                                        <th>عمولة</th>
+                                                        <td>3,026.00 ج.م.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>الحالة</th>
+                                                        <td> <span class="GreenBadge green"> مكتمل</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>الوقت</th>
+                                                        <td>2023-02-28 05:35 م </td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <th>التفاصيل</th>
+
+                                                        <td> <a class="DetailBadge" type="button" data-bs-toggle="modal"
+                                                                data-bs-target="#DetailsModal"> <img
+                                                                    src="../../images/DashboardImgs/DetailBadgeIcon.svg"
+                                                                    alt="DetailBadgeIcon"> تفاصيل</a></td>
+                                                    </tr>
+                                            </table>
+                                            <table class="tableSmallScreen  d-table d-md-none">
+                                                <tr>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+
+
+                                                    <tr>
+                                                        <th>رقم العملية</th>
+                                                        <td>1NDBWXSDQ1C5</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <th>بوابة الدفع</th>
+                                                        <td> تحويل بنكي</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>المبلغ</th>
+                                                        <td class="green">3,026.00 ج.م.</td>
+
+
+                                                    </tr>
+                                                    <tr>
+                                                        <th>عمولة</th>
+                                                        <td>3,026.00 ج.م.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>الحالة</th>
+                                                        <td> <span class="ErrorBadge"> ملغي</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>الوقت</th>
+                                                        <td>2023-02-28 05:35 م </td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <th>التفاصيل</th>
+
+                                                        <td> <a class="DetailBadge" type="button" data-bs-toggle="modal"
+                                                                data-bs-target="#DetailsModal"> <img
+                                                                    src="../../images/DashboardImgs/DetailBadgeIcon.svg"
+                                                                    alt="DetailBadgeIcon"> تفاصيل</a></td>
+                                                    </tr>
+                                            </table>
+                                            <table class="tableSmallScreen  d-table d-md-none">
+                                                <tr>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+
+
+                                                    <tr>
+                                                        <th>رقم العملية</th>
+                                                        <td>1NDBWXSDQ1C5</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <th>بوابة الدفع</th>
+                                                        <td> تحويل بنكي</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>المبلغ</th>
+                                                        <td class="green">3,026.00 ج.م.</td>
+
+
+                                                    </tr>
+                                                    <tr>
+                                                        <th>عمولة</th>
+                                                        <td>3,026.00 ج.م.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>الحالة</th>
+                                                        <td> <span class="ReviewBadge"> مراجعة</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>الوقت</th>
+                                                        <td>2023-02-28 05:35 م </td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <th>التفاصيل</th>
+
+                                                        <td> <a class="DetailBadge" type="button" data-bs-toggle="modal"
+                                                                data-bs-target="#DetailsModal"> <img
+                                                                    src="../../images/DashboardImgs/DetailBadgeIcon.svg"
+                                                                    alt="DetailBadgeIcon"> تفاصيل</a></td>
+                                                    </tr>
+                                            </table>
+                                        </div>
+                                    </section>
+                                </div>
+                                <!--End Latest Transactions-->
+                            </div>
+                            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel"
+                                aria-labelledby="profile-tab" tabindex="0">
+                                <!--Latest Transactions-->
+                                <div class="PinkBg px-0 ContentPart TransactionsRow">
+
+                                    <section class="Transactions  px-0" id="Transactions">
+
+                                        <table class="tableBigScreen d-none d-md-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>رقم العملية</th>
+                                                    <th>بوابة الدفع</th>
+                                                    <th>المبلغ</th>
+                                                    <th>عمولة</th>
+                                                    <th>الحالة</th>
+                                                    <th>الوقت</th>
+                                                    <th>التفاصيل</th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                    </section>
+                                </div>
+                                <div class="WhiteBG paragraph py-3 text-center">
+                                    لا يوجد توكيلات
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel"
+                                aria-labelledby="contact-tab" tabindex="0">
+                                <!--Latest Transactions-->
+                                <div class="PinkBg px-0 ContentPart TransactionsRow">
+
+                                    <section class="Transactions  px-0" id="Transactions">
+
+                                        <table class="tableBigScreen d-none d-md-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>رقم العملية</th>
+                                                    <th>بوابة الدفع</th>
+                                                    <th>المبلغ</th>
+                                                    <th>عمولة</th>
+                                                    <th>الحالة</th>
+                                                    <th>الوقت</th>
+                                                    <th>التفاصيل</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1NDBWXSDQ1C5</td>
+                                                    <td> تحويل بنكي</td>
+                                                    <td class="green">3,026.00 ج.م.</td>
+                                                    <td>3,026.00 ج.م.</td>
+                                                    <td> <span class="GoldenBadge"> قيد الانتظار </span></td>
+
+                                                    <td>2023-02-28 05:35 م </td>
+                                                    <td> <a class="DetailBadge" type="button" data-bs-toggle="modal"
+                                                            data-bs-target="#DetailsModal"> <img
+                                                                src="../../images/DashboardImgs/DetailBadgeIcon.svg"
+                                                                alt="DetailBadgeIcon"> تفاصيل</a></td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                        <div class="tablePhone">
+                                            <table class="tableSmallScreen  d-table d-md-none">
+                                                <tr>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+
+
+                                                    <tr>
+                                                        <th>رقم العملية</th>
+                                                        <td>1NDBWXSDQ1C5</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <th>بوابة الدفع</th>
+                                                        <td> تحويل بنكي</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>المبلغ</th>
+                                                        <td class="green">3,026.00 ج.م.</td>
+
+
+                                                    </tr>
+                                                    <tr>
+                                                        <th>عمولة</th>
+                                                        <td>3,026.00 ج.م.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>الحالة</th>
+                                                        <td> <span class="GoldenBadge"> قيد الانتظار </span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>الوقت</th>
+                                                        <td>2023-02-28 05:35 م </td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <th>التفاصيل</th>
+
+                                                        <td> <a class="DetailBadge" type="button" data-bs-toggle="modal"
+                                                                data-bs-target="#DetailsModal"> <img
+                                                                    src="../../images/DashboardImgs/DetailBadgeIcon.svg"
+                                                                    alt="DetailBadgeIcon"> تفاصيل</a></td>
+                                                    </tr>
+                                            </table>
+
+                                        </div>
+                                    </section>
+                                </div>
+                                <!--End Latest Transactions-->
+                            </div>
+                            <div class="tab-pane fade" id="Four" role="tabpanel" aria-labelledby="contact-tab"
+                                tabindex="0">
+
+                            </div>
+                            <div class="tab-pane fade" id="Five" role="tabpanel" aria-labelledby="contact-tab"
+                                tabindex="0">
+                                <!--Latest Transactions-->
+                                <div class="PinkBg px-0 ContentPart TransactionsRow">
+
+                                    <section class="Transactions  px-0" id="Transactions">
+
+                                        <table class="tableBigScreen d-none d-md-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>رقم العملية</th>
+                                                    <th>بوابة الدفع</th>
+                                                    <th>المبلغ</th>
+                                                    <th>عمولة</th>
+                                                    <th>الحالة</th>
+                                                    <th>الوقت</th>
+                                                    <th>التفاصيل</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1NDBWXSDQ1C5</td>
+                                                    <td> تحويل بنكي</td>
+                                                    <td class="green">3,026.00 ج.م.</td>
+                                                    <td>3,026.00 ج.م.</td>
+                                                    <td class="red">ملغي</td>
+                                                    <td>2023-02-28 05:35 م </td>
+                                                    <td> <a class="DetailBadge" type="button" data-bs-toggle="modal"
+                                                            data-bs-target="#DetailsModal"> <img
+                                                                src="../../images/DashboardImgs/DetailBadgeIcon.svg"
+                                                                alt="DetailBadgeIcon"> تفاصيل</a></td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                        <div class="tablePhone">
+                                            <table class="tableSmallScreen  d-table d-md-none">
+                                                <tr>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+
+
+                                                    <tr>
+                                                        <th>رقم العملية</th>
+                                                        <td>1NDBWXSDQ1C5</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <th>بوابة الدفع</th>
+                                                        <td> تحويل بنكي</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>المبلغ</th>
+                                                        <td class="green">3,026.00 ج.م.</td>
+
+
+                                                    </tr>
+                                                    <tr>
+                                                        <th>عمولة</th>
+                                                        <td>3,026.00 ج.م.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>الحالة</th>
+                                                        <td class="red">ملغي</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>الوقت</th>
+                                                        <td>2023-02-28 05:35 م </td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <th>التفاصيل</th>
+
+                                                        <td> <a class="DetailBadge" type="button" data-bs-toggle="modal"
+                                                                data-bs-target="#DetailsModal"> <img
+                                                                    src="../../images/DashboardImgs/DetailBadgeIcon.svg"
+                                                                    alt="DetailBadgeIcon"> تفاصيل</a></td>
+                                                    </tr>
+                                            </table>
+
+                                        </div>
+                                    </section>
+                                </div>
+                                <!--End Latest Transactions-->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--End Payment Methods-->
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+<script src="../../assets/js/jquery-3.6.1.min.js"></script>
+<script src="../../assets/js/bootstrap.js"></script>
+<script src="../../assets/js/all.js"></script>
+<script src="../../js/js.js"></script>
+
+
+</html>

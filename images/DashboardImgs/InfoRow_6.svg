@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <g id="Group_41829" data-name="Group 41829" transform="translate(-282 -238)">
+    <rect id="Rectangle_18616" data-name="Rectangle 18616" width="50" height="50" rx="10" transform="translate(282 238)" fill="#f56f70"/>
+    <g id="money-send" transform="translate(-135 -195)">
+      <g id="Group" transform="translate(439.089 452.754)">
+        <path id="Vector" d="M0,6.14A2,2,0,0,0,1.949,8.182H4.144A1.738,1.738,0,0,0,5.836,6.4,1.542,1.542,0,0,0,4.681,4.7L1.167,3.478A1.534,1.534,0,0,1,.012,1.786,1.745,1.745,0,0,1,1.7,0H3.9A2,2,0,0,1,5.848,2.043" transform="translate(0 1.156)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <path id="Vector-2" data-name="Vector" d="M0,0V10.5" transform="translate(2.918)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      </g>
+      <path id="Vector-3" data-name="Vector" d="M11.672,0A11.672,11.672,0,0,0,6.536,22.154" transform="translate(430.334 446.334)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Vector-4" data-name="Vector" d="M11.672,0A11.676,11.676,0,0,1,0,11.672" transform="translate(442.007 458.007)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Vector-5" data-name="Vector" d="M4.669,4.669V0H0" transform="translate(449.01 446.334)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Vector-6" data-name="Vector" d="M0,5.836,5.836,0" transform="translate(447.843 446.334)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Vector-7" data-name="Vector" d="M0,0H28.013V28.013H0Z" transform="translate(428 444)" fill="none" opacity="0"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26.023" height="26.023" viewBox="0 0 26.023 26.023">
+  <g id="vuesax_twotone_dollar-circle" data-name="vuesax/twotone/dollar-circle" transform="translate(-236 -572)">
+    <g id="dollar-circle" transform="translate(236 572)">
+      <g id="Group_576" data-name="Group 576" transform="translate(9.403 6.506)" opacity="0.4">
+        <path id="Vector" d="M0,7.579a2.464,2.464,0,0,0,2.407,2.526H5.129a2.156,2.156,0,0,0,2.1-2.2A1.9,1.9,0,0,0,5.8,5.812L1.431,4.294A1.9,1.9,0,0,1,0,2.2,2.156,2.156,0,0,1,2.1,0H4.825A2.464,2.464,0,0,1,7.232,2.526" transform="translate(0 1.453)" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <path id="Vector-2" data-name="Vector" d="M0,0V13.012" transform="translate(3.609)" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      </g>
+      <path id="Vector-3" data-name="Vector" d="M21.686,10.843A10.843,10.843,0,1,1,10.843,0,10.843,10.843,0,0,1,21.686,10.843Z" transform="translate(2.169 2.169)" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Vector-4" data-name="Vector" d="M0,0H26.023V26.023H0Z" fill="none" opacity="0"/>
+    </g>
+  </g>
+</svg>

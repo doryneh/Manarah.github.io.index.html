@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="../../assets/css/bootstrap.rtl.css">
+    <link rel="stylesheet" href="../../assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <meta name="description" content="">
+
+
+    <title> Manarah | Agent Dashboard </title>
+</head>
+
+<body class="pt-5">
+    <nav class="navbar navbar-expand-lg  fixed-top DashNav">
+        <div class="container-fluid px-md-5">
+            <div class="row py-3 w-100 mx-0">
+                <div class="col-3 d-flex  align-items-center">
+                    <a class="navbar-brand" href="index.html"><img src="../../images/DashboardImgs/LogoImgs.svg"
+                            alt="Al Manarah Logo Svg Format"></a>
+
+                </div>
+                <div class="col-9">
+
+                    <div class="d-flex justify-content-between align-items-center w-100">
+                        <form action="">
+                            <div class="d-flex align-items-center">
+                                <button class="TextSmall NavSearchButton DropSHadowBtn">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </button>
+                                <div class="SearchLine position-relative ms-3">
+                                    <input type="search" name="SearchNavLine" id="SearchNavLine" placeholder="ابحث"
+                                        class="py-2 TextSmall ps-5">
+                                    <img src="../../images/DashboardImgs/Search Nav Icon.svg" alt="Search Nav Icon">
+                                </div>
+                            </div>
+                        </form>
+
+
+                        <div class="d-flex justify-content-center align-items-center RegisterNavRow">
+                            <button type="button" class="btn  position-relative p-0 NotificationBtn me-3">
+                                <img src="../../images/DashboardImgs/NotificationIcon.svg" alt="Notification Icon">
+                                <span
+                                    class="position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger">
+                                    9+
+                                    <span class="visually-hidden">unread messages</span>
+                                </span>
+                            </button>
+
+                            <div class="nav-item dropdown p-0 ">
+                                <a class="nav-link dropdown-toggle p-0" href="#" id="navbarDropdownMenuLink1"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="../../images/DashboardImgs/UserImg.png" alt="UserImg " class="UserImg">
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                                    <li><a class="dropdown-item" href="AboutUs.html">من نحن</a></li>
+                                    <li><a class="dropdown-item" href="AffiliateMarketing.html"> التسويق بالعمولة</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="CompanyLicense.html"> ترخيص الشركة</a></li>
+                                    <li><a class="dropdown-item" href="InvestmentContract.html"> عقد الاستثمار </a></li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <div class="container-fluid px-md-5">
+    
+        <!-- Modal -->
+<div class="modal fade DetailModal" id="ContinueDepositeModal" tabindex="-1" aria-labelledby="ContinueDepositeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content p-4">
+            <div class="modal-header  py-3 px-4">
+                <div class="paragraph"><b>توكيل مكتمل  </b></div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body border-0">
+                <form action="">
+                    <p class="ModalSmallText mb-0">ملاحظة</p>
+                    <div class="input-group mb-3">
+                        <textarea name="Note" id="Note" rows="5" class="w-100 BorderRadius p-" placeholder="اكتب ملاحظة"></textarea>
+                    </div>
+                 
+                    <div class="d-flex">
+                        <a href="" class="greenBtnLink mx-auto mt-2"> <button type="submit"
+                            class="bg-transparent border-0 w-100 h-100"> اراسل </button></a>
+                            <a href="" class="greenBtnLink RedBtn mx-auto mt-2"  data-bs-dismiss="modal" aria-label="Close"> إغلاق</a>
+                    </div>
+                   
+                </form>
+            </div>
+        </div>
+    </div>
+</div>     
+
+
+        <div class="row">
+            <!--Side Nav-->
+            <div class="col-lg-2 d-flex flex-column mt-5 pt-4 SideNav">
+                <a href=""><img src="../../images/DashboardImgs/UserSide_1.svg" alt="UserSide_1" class="me-3 TextSmall">
+                    لوحة التحكم</a>
+                <a href=""><img src="../../images/DashboardImgs/AgentSide_2.svg" alt="AgentSide_2" class="me-3 TextSmall">
+                    توكيلات الايداع
+                </a>
+                <a href=""><img src="../../images/DashboardImgs/AgentSide_3.svg" alt="AgentSide_3" class="me-3 TextSmall">
+                    توكيلات السحب </a>
+                <a href=""><img src="../../images/DashboardImgs/UserSide_9.svg" alt="UserSide_9" class="me-3 TextSmall">
+                    طلبات التحصيل </a>
+                <a href=""><img src="../../images/DashboardImgs/AgentSide_5.svg" alt="AgentSide_5" class="me-3 TextSmall">
+                    سجلات التمويل  </a>
+               
+                <a href=""><img src="../../images/DashboardImgs/UserSide_12.svg" alt="UserSide_12" class="me-3 TextSmall">
+                    تسجيل الخروج </a>
+
+            </div>
+
+            <!--End Side Nav-->
+            <div class="col-lg-10 PinkBg mt-5 pt-4 px-0 ContentPart  px-3">
+                <div class="Texts "><b>توكيل إيداع </b></div>
+                
+                <div class="row AgentDashtable pb-5" >
+                        <div class="WhiteBG pt-4 ">
+                            <div class="Texts pb-4"  style="border-bottom: 1px solid #000000;"><img src="../../images/Egypt_Post_Logo.svg" alt="Egypt_Post_Logo" class="me-2">إيداع بواسطة البريد المصري  <span class="float-end GoldenBadge px-5"><b> قيد الانتظار</b> </span></div>
+                        <div class="row">
+                            <div class="col-xxl-4 pb-4" style="border-left: 1px solid #000000;">
+                                <div class="d-flex flex-column px-3 mt-4 ">
+                                    <div class="TextXSmall w-100">رقم العملية<span class="float-end ">MYQ9SXB2K1O9</span></div>
+                                    <div class="TextXSmall w-100 mt-3"> إسم المستخدم  <span class="float-end ">ALM602660128 </span></div>
+                                    <div class="TextXSmall w-100 mt-3">وسيلة الدفع <span class="float-end ">البريد المصري  </span></div>
+                                    <div class="TextXSmall w-100 mt-3"> المبلغ   <span class="float-end "> 1,000.00 $ </span></div>
+                                    <div class="TextXSmall w-100 mt-3"> سعر الصرف   <span class="float-end "> 1$ = 15.50 ج.م. </span></div>
+                                    <div class="TextXSmall w-100 mt-3"> مستحق الدفع   <span class="float-end "> 15.50000 ج.م. </span></div>
+    
+    
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 pb-4" style="border-left: 1px solid #000000;">
+                                <div class="d-flex flex-column px-3 mt-4 " >
+                                    <div class="TextXSmall w-100"> التاريخ<span class="float-end ">2023-02-28 05:35  م</span></div>
+                                    <div class="TextXSmall w-100 mt-3"> نوع العمولة <span class="float-end ">نسبة مئوية </span></div>
+                                    <div class="TextXSmall w-100 mt-3">مقدار العمولة<span class="float-end ">( 5% ) 15,500.00 ج.م   </span></div>
+                                    <div class="TextXSmall w-100 mt-3 greenText"> <img src="../../images/DashboardImgs/P.S..svg" alt="P.S." class="me-2"> ملاحظة المسؤول   </div>
+                                    <div class="TextXSmall w-100 mt-3"> الرجاء مراجعة العملية </span></div>
+    
+                                </div>
+                            </div>
+                            <div class="col-xxl-4  pb-4 ps-xxl-0 ">
+                                <div class="d-flex flex-column  mt-2 ">
+                                    <div class="paragraph w-100 px-3"  style="border-bottom: 1px solid #000000;"> معلومات الإيداع للمستخدم</div>
+                                    <div class="TextSmall w-100 mt-3 px-3"> صورة عن ايصال التحويل </div>
+                                    <img src="../../images/DashboardImgs/CashOutNumberImg.png" alt="CashOutNumberImg" class="BorderRadius w-100 my-4 px-3">                             
+    
+                                </div>
+                            </div>
+
+                        </div>
+                        </div>
+                        <div class="d-flex mt-3">
+                            <a href="" type="button" class="greenBtnLink  mt-2 w-25" data-bs-toggle="modal"
+                            data-bs-target="#ContinueDepositeModal"> <button type="submit"
+                                class="bg-transparent border-0 w-100 h-100"  > إكمال الإيداع </button></a>
+                                <a href="" class="greenBtnLink RedBtn w-25 ms-4 mt-2"  data-bs-dismiss="modal" aria-label="Close"> إغلاق</a>
+                        </div>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+
+</body>
+<script src="../../assets/js/jquery-3.6.1.min.js"></script>
+<script src="../../assets/js/bootstrap.js"></script>
+<script src="../../assets/js/all.js"></script>
+<script src="../../js/js.js"></script>
+
+
+</html>

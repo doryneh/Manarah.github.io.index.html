@@ -41,6 +41,12 @@ a:hover {
 
 }
 
+.greenBtnLink.RedBtn {
+    background-color: #F56F70;
+    color: white;
+    border: 1px solid #F56F70;
+}
+
 .greenBtnLink button {
     color: white;
     width: 100%;
@@ -50,6 +56,10 @@ a:hover {
 .greenBtnLink:hover, .greenBtnLink:hover button {
     background-color: white;
     color: #00A1A3;
+}
+
+.greenBtnLink.RedBtn:hover {
+    color: #F56F70;
 }
 
 .whiteBtnLink {
@@ -79,8 +89,17 @@ a:hover {
 }
 
 .TextSmall {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 18px !important;
+    line-height: 24px !important;
+}
+
+.TextXSmall {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.BorderRadius {
+    border-radius: 20px;
 }
 
 /************************
@@ -169,7 +188,7 @@ Modal
     width: 44%;
 }
 
-.modal select, .modal input, .searchInput, section.LoginSection input, section.LoginSection select {
+.modal select, .modal input, .searchInput, section.LoginSection input, section.LoginSection select, .ContentPart select {
     border-bottom: 1px solid black !important;
     border-bottom-left-radius: 0px !important;
     border-bottom-right-radius: 0px !important;
@@ -183,14 +202,14 @@ Modal
     padding-right: 0px !important;
 }
 
-.modal .input-group-text, section.LoginSection input {
+.modal .input-group-text, section.LoginSection input, .ContentPart input, .ContentPart .input-group-text {
     background-color: transparent;
     border: none;
     border-bottom: 1px solid black !important;
     margin-right: 10px !important;
     border-radius: 0 !important;
     box-shadow: none;
-
+    direction: rtl;
 }
 
 section.LoginSection input {
@@ -200,7 +219,7 @@ section.LoginSection input {
 
 }
 
-.modal .input-group-text span, .RegisterInputGroup.input-group span {
+.modal .input-group-text span, .RegisterInputGroup.input-group span, .ContentPart .input-group .input-group-text span {
     background-color: #D3EEEF;
     color: #00A1A3;
     border-radius: 19px;
@@ -213,6 +232,16 @@ section.LoginSection input {
 
 .modal .modal-dialog {
     max-width: 60%;
+}
+
+
+.modal.DetailModal .modal-header {
+    border-bottom: 1px solid #707070;
+}
+
+.modal.DetailModal .modal-body {
+    border-bottom: 2px dashed #70707031;
+
 }
 
 /************************
@@ -671,7 +700,7 @@ section.Calculator .Text {
     font-weight: 500;
 }
 
-section.Calculator select, .modal select, .modal input, .searchInput {
+section.Calculator select, .modal select, .modal input, .searchInput, .ContentPart input, .ContentPart select {
     appearance: none;
     /* Remove default arrow */
     -webkit-appearance: none;
@@ -943,7 +972,7 @@ section.FAQ .accordion .accordion-item .accordion-button::after {
     display: none;
 }
 
-section.FAQ .accordion .accordion-item .accordion-button {
+section.FAQ .accordion .accordion-item .accordion-button, .InviteRow .accordion .accordion-button {
     justify-content: space-between;
     border: none;
     box-shadow: none;
@@ -961,9 +990,13 @@ section.FAQ .accordion .accordion-item .accordion-button svg {
     font-size: 22px;
 }
 
-section.FAQ .accordion .accordion-item .accordion-button:not(.collapsed) {
+section.FAQ .accordion .accordion-item .accordion-button:not(.collapsed), .InviteRow .accordion-item .accordion-button:not(.collapsed) {
     color: black;
     font-weight: 600;
+}
+
+.InviteRow .accordion-item .accordion-button:not(.collapsed)::after {
+    filter: brightness(0) !important;
 }
 
 .WhiteBGBody section.FAQ {
@@ -1198,7 +1231,7 @@ Bundel Page
 **************************
 **************************/
 section.BreadCrumbs, .BundelsPage section.Calculator, .PinkBg {
-    background-color: #F9F8FD;
+    background-color: #2b02cc;
 }
 
 .BundelsPage section.BreadCrumbs h1 {
@@ -1418,7 +1451,7 @@ section.LoginSection .GreenBorderBottom {
     padding-bottom: 10px;
 }
 
-section.LoginSection .GreenBorderBottom input {
+section.LoginSection .GreenBorderBottom input, section.LoginSection .GreenBorderBottom select {
     background-color: #E7F6F6;
     border-radius: 23px !important;
     border-bottom: none !important;
@@ -1427,15 +1460,17 @@ section.LoginSection .GreenBorderBottom input {
     font-size: 20px;
     font-weight: bold;
     padding: 5px 10px !important;
+    width: fit-content !important;
+
 }
 
-section.LoginSection .GreenBorderBottom input.custom-placeholder {
+section.LoginSection .GreenBorderBottom input.custom-placeholder, section.LoginSection .GreenBorderBottom select.custom-placeholder {
     color: #00A1A3;
     /* Default color for older browsers */
 }
 
 /* Modern browsers */
-section.LoginSection .GreenBorderBottom input::placeholder {
+section.LoginSection .GreenBorderBottom input::placeholder, section.LoginSection .GreenBorderBottom select::placeholder {
     color: #00A1A3;
     /* Placeholder color for modern browsers */
 }
@@ -1637,7 +1672,7 @@ section.SupportTicket textarea {
     outline: none;
 }
 
-section.SupportTicket .ButtonsRow button {
+.ButtonsRow button, nav.navbar.DashNav button.NavSearchButton {
     background-color: white;
     color: #00A1A3;
     padding: 10px 15px;
@@ -1645,7 +1680,7 @@ section.SupportTicket .ButtonsRow button {
     border-radius: 10px;
 }
 
-section.SupportTicket .ButtonsRow button.DropSHadowBtn {
+.ButtonsRow button.DropSHadowBtn, nav.navbar.DashNav button.NavSearchButton {
     filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.16));
 }
 
@@ -1687,6 +1722,594 @@ section.SupportTicket .Support.WhiteSupport {
 End Support Tickets
 **************************
 **************************/
+
+
+/******************************************************************************
+******************************************************************************
+Dashboards Pages
+******************************************************************************
+******************************************************************************/
+
+/**************************
+**************************
+User Dashboard
+**************************
+**************************/
+nav.navbar.DashNav {
+    background-color: white;
+}
+
+nav.navbar.DashNav button.NavSearchButton {
+    width: 40px;
+    height: 40px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav.navbar.DashNav .SearchLine {
+    height: 100%;
+    width: 300px;
+}
+
+nav.navbar.DashNav .SearchLine input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+nav.navbar.DashNav .SearchLine img {
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform: translateY(-50%);
+}
+
+nav.navbar.DashNav button.NotificationBtn {
+    box-shadow: none;
+    transition: 0.3s ease all;
+}
+
+nav.navbar.DashNav button.NotificationBtn .badge {
+    background-color: #ED7780 !important;
+    border-radius: 1px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+nav.navbar.DashNav button.NotificationBtn:hover {
+    transform: scale(1.1);
+}
+
+nav.navbar.DashNav .dropdown .UserImg {
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    border: 1px solid #00A1A3;
+    padding: 2px;
+}
+
+nav.navbar.DashNav .dropdown .dropdown-toggle::after {
+    color: #00A1A3;
+    font-size: 25px;
+    vertical-align: unset !important;
+}
+
+nav.navbar.DashNav .dropdown .dropdown-menu[data-bs-popper] {
+    right: unset;
+    left: 0;
+    margin-top: 10px;
+    min-width: 13rem;
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+    border: none;
+    border-radius: 10px;
+}
+
+nav.navbar.DashNav .dropdown .NotificationMenu {
+    width: 16rem;
+    max-width: 16rem !important;
+    overflow-x: hidden;
+    /* Hide the overflowing content */
+    max-height: 16rem;
+    white-space: nowrap;
+    /* Prevent text from wrapping to multiple lines */
+    text-overflow: ellipsis;
+    overflow-y: scroll;
+}
+nav.navbar.DashNav .dropdown .NotificationMenu li,nav.navbar.DashNav .dropdown .NotificationMenu li a{
+    width: 100%;
+}
+nav.navbar.DashNav .dropdown .NotificationMenu li{
+    border-bottom: 1px solid #AAAAAA;
+    padding: 10px 0;
+}
+nav.navbar.DashNav .NotificationLine {
+    white-space: nowrap;
+    /* Prevent text from wrapping */
+    overflow: hidden;
+    /* Hide any overflowed content */
+    text-overflow: ellipsis;
+    /* Display "..." at the end of the line if it overflows */
+    max-width: 150px;
+    /* Limit the width of the text to its container */
+}
+
+/**************************
+**************************
+End User Dashboard
+**************************
+**************************/
+
+
+
+/**************************
+**************************
+Side Nav
+**************************
+**************************/
+.SideNav a {
+    margin-bottom: 25px;
+}
+
+/**************************
+**************************
+End Side Nav
+**************************
+**************************/
+
+/**************************
+**************************
+ContentPart
+**************************
+**************************/
+.PinkBg.ContentPart {
+    background-color: red;
+}
+
+.PinkBg.ContentPart .WelcomeLine .TextSmall {
+    line-height: 45px;
+}
+
+.PinkBg.ContentPart .WelcomeLine .BuildingIcon {
+    position: absolute;
+    bottom: 10%;
+}
+
+.PinkBg.ContentPart .WelcomeLine .Close {
+    position: absolute;
+    left: 3%;
+    top: 2%;
+    line-height: 0;
+}
+
+.PinkBg.ContentPart .InformationRow .card {
+    border-radius: 20px;
+    filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.1));
+    border: none;
+}
+
+.PinkBg.ContentPart .InformationRow .card .TextSmall {
+    font-size: 16px;
+}
+
+.PinkBg.ContentPart .InformationRow .card .Texts {
+    font-size: 23px;
+}
+
+.PinkBg.ContentPart .InformationRow .card.Purple {
+    background: linear-gradient(-5deg, #FFFFFF 0%, #7777ED 100%);
+
+}
+
+.PinkBg.ContentPart .InformationRow .card.Rose {
+    background: linear-gradient(-5deg, #FFFFFF 0%, #FFAFD0 100%);
+
+}
+
+.PinkBg.ContentPart .InformationRow .card.Orange {
+    background: linear-gradient(-5deg, #FFFFFF 0%, #F5A68E 100%);
+
+}
+
+.PinkBg.ContentPart .InformationRow .card.Blue {
+    background: linear-gradient(-5deg, #FFFFFF 0%, #BED9FD 100%);
+
+}
+
+.PinkBg.ContentPart .InformationRow .card.Green {
+    background: linear-gradient(-5deg, #FFFFFF 0%, #B3F1D7 100%);
+
+}
+
+.PinkBg.ContentPart .InformationRow.InformationRowAgent .card {
+    position: relative;
+}
+
+.PinkBg.ContentPart .InformationRow.InformationRowAgent .card .CardTop img {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    margin-left: 0px !important;
+    z-index: 0;
+}
+
+.PinkBg.ContentPart .InformationRow.InformationRowAgent .card .TextPart {
+    z-index: 10;
+    color: white;
+}
+
+.PinkBg.ContentPart .TransactionsRow section.Transactions table thead {
+    background-color: #00A1A3;
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 3px hsla(0, 0%, 0%, 0.1));
+}
+
+.PinkBg.ContentPart .TransactionsRow section.Transactions table thead tr th {
+    font-size: 18px;
+    border-left: 2px solid #00A1A3 !important;
+    border-right: 2px solid #00A1A3 !important;
+    border-top: none !important;
+    border-bottom: none !important;
+}
+
+.PinkBg.ContentPart .TransactionsRow section.Transactions table thead tr th:first-child, .PinkBg.ContentPart .TransactionsRow section.Transactions table thead tr th:last-child {
+    border-radius: 10px;
+
+}
+
+.PinkBg.ContentPart .TransactionsRow section.Transactions table thead tr th:first-child {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-right: none !important;
+
+}
+
+.PinkBg.ContentPart .TransactionsRow section.Transactions table thead tr th:last-child {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-left: none !important;
+
+}
+
+.PinkBg.ContentPart .TransactionsRow section.Transactions table tbody tr td {
+    font-size: 18px;
+    line-height: 24px;
+
+}
+
+.PinkBg.ContentPart .TransactionsRow section.Transactions table tbody tr td.red {
+    color: #F56F70;
+}
+
+.PinkBg.ContentPart .TransactionsRow section.Transactions table tbody tr td.green {
+    color: #50CD89;
+}
+
+.PinkBg.ContentPart .TransactionsRow section.Transactions table {
+    border-collapse: separate;
+    border-spacing: 0 20px;
+}
+
+.PinkBg.ContentPart .TransactionsRow section.Transactions table tbody tr td {
+    border-top: 0.5px solid #AAAAAA;
+    border-bottom: 0.5px solid #AAAAAA;
+    border-radius: 0px;
+
+}
+
+.PinkBg.ContentPart .TransactionsRow section.Transactions table tbody tr td:first-child {
+    border-right: 0.5px solid #AAAAAA;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+
+}
+
+.PinkBg.ContentPart .TransactionsRow section.Transactions table tbody tr td:last-child {
+    border-left: 0.5px solid #AAAAAA;
+    border-radius: 10px;
+
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.PinkBg.ContentPart .TransactionsRow section.Transactions table.tableSmallScreen {
+    border-bottom: 3px solid #008688;
+    border-top: 3px solid #008688;
+
+    margin-bottom: 30px;
+}
+
+.PinkBg.ContentPart .TransactionsRow section.Transactions table.tableSmallScreen tr {
+    height: 50px;
+}
+
+.PinkBg.ContentPart .TransactionsRow section.Transactions table.tableSmallScreen tr th {
+    border: 0.5px solid #AAAAAA !important;
+    border-left: 0px !important;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: #008688;
+    text-align: center;
+    color: white;
+}
+
+.PinkBg.ContentPart .TransactionsRow section.Transactions table.tableSmallScreen tr td {
+    padding-left: 20px;
+}
+
+.PinkBg.ContentPart .TransactionsRow section.Transactions nav ul.pagination {
+    border: 1px solid black;
+    width: fit-content;
+    border-radius: 29px;
+    padding: 5px;
+
+}
+
+.PinkBg.ContentPart .TransactionsRow section.Transactions nav ul.pagination li.page-item a.page-link {
+    border: none !important;
+    background: transparent;
+    color: black;
+    box-shadow: none;
+
+}
+
+.PinkBg.ContentPart .TransactionsRow section.Transactions nav ul.pagination li.page-item a.page-link.active {
+    background-color: #E2F3F3;
+    color: #008688;
+    border-radius: 6px;
+}
+
+
+.PinkBg.ContentPart .copyLink .Link {
+    border: 1px solid #AAAAAA;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 75%;
+    padding-right: 20px;
+    border-left: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.PinkBg.ContentPart .copyLink button {
+    box-shadow: none;
+    background-color: white;
+    border-radius: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid #AAAAAA;
+    width: 25%;
+    border-right: 0;
+}
+
+.PinkBg.ContentPart .AmountCircle {
+    border-radius: 72px 134px 247px 265px;
+}
+
+.PinkBg.ContentPart .AmountCircle hr {
+    width: 90%;
+    border: 1px solid #AAAAAA !important;
+}
+
+.PinkBg.ContentPart .AmountCircle h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.PinkBg.ContentPart .AmountCircle .red {
+    color: #E95D51;
+}
+
+.PinkBg.ContentPart .AmountCircle .green {
+    color: #50CD89;
+}
+
+.PinkBg.ContentPart .TransactionsRow section.Transactions table tbody tr {
+    height: 80px;
+    background-color: white;
+    filter: drop-shadow(0px 0px 3px hsla(0, 0%, 0%, 0.1));
+}
+
+.CheckRow .form-check {
+    display: flex;
+    align-items: center;
+}
+
+.CheckRow .form-check-input {
+    border: 1px solid black;
+    border-radius: 2px !important;
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+    margin-left: 10px;
+    margin-top: 0px;
+}
+
+.CheckRow .form-check-input:checked {
+    border: 1px solid #00A1A3 !important;
+    background-color: transparent;
+    background-image: url(../images/DashboardImgs/GreenCheck.svg);
+    background-size: 10px;
+    background-position: center center;
+}
+
+.FormCheckOutRow {
+    display: none;
+}
+
+.CashOutNumberImg {
+    width: 75%;
+    border-radius: 20px;
+}
+
+.RadioRow input {
+    border-radius: 50% !important;
+    padding: 0px;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #AAAAAA;
+    border-bottom: 1px solid #AAAAAA !important;
+    margin-left: 15px;
+    background-color: white;
+    background-image: url(../images/DashboardImgs/greyDot.svg);
+    background-position: center center;
+}
+
+.RadioRow input:checked {
+    background-color: white;
+    background-image: url(../images/DashboardImgs/GreenDot.svg) !important;
+    background-position: center center;
+    border: 1px solid #00A1A3;
+    border-bottom: 1px solid #00A1A3 !important;
+}
+
+.RadioRow .form-check {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.RadioRow .Texts {
+    font-size: 22px;
+}
+
+.PinkBg.ContentPart .PaymentMethodsRow .card .Texts {
+    font-size: 22px;
+}
+
+.DetailModal input, .DetailModal select {
+    color: black;
+    font-weight: bold;
+}
+
+.BannerAd {
+    filter: brightness(75%);
+    border-radius: 20px;
+}
+
+
+/* Modern browsers */
+.GreenInputBadge input::placeholder {
+    background-color: #E2F3F3;
+    color: #00A1A3;
+    border-radius: 23px;
+    width: fit-content;
+    padding: 10px 30px;
+}
+
+.ContentPart .GreenBorderBottom {
+    border-bottom: 1px solid black !important;
+    padding-bottom: 22px !important;
+    padding-top: 22px !important;
+
+}
+
+.ContentPart .GreenBorderBottom input {
+    width: fit-content;
+}
+
+/**************************
+**************************
+End ContentPart
+**************************
+
+/******
+All Pages
+********/
+.GreenBadge, .GoldenBadge, .DetailBadge, .ErrorBadge, .ReviewBadge, .GreyBadge {
+    background-color: #E8FFF3;
+    text-decoration: none;
+    border-radius: 23px;
+    font-size: 16px;
+    padding: 5px 15px;
+}
+
+.GreyBadge {
+    background-color: #AAAAAA;
+    color: white;
+}
+
+.GoldenBadge {
+    background-color: #FFF8DD;
+    color: #F59310;
+}
+
+.DetailBadge {
+    background-color: white;
+    border: 1px solid #00A1A3;
+    color: #00A1A3;
+}
+
+.ErrorBadge {
+    background-color: #FFF5F8;
+    color: #F56F70;
+}
+
+.ReviewBadge {
+    background-color: #E8F1FF;
+    color: #5B9EFB;
+}
+
+.DarkBadge .GreenBadge {
+    background-color: #50CD89;
+}
+
+.DarkBadge .ErrorBadge {
+    background-color: #F56F70;
+}
+
+.DarkBadge .ReviewBadge {
+    background-color: #5B9EFB;
+}
+
+.DarkBadge .ErrorBadge, .DarkBadge .ReviewBadge, .DarkBadge .GreenBadge, .DarkBadge .GreyBadge {
+    color: white;
+    width: 50% !important;
+    display: block;
+    margin: auto;
+}
+
+
+table .progress {
+    background-color: #D8F1E4;
+    border-radius: 23px;
+    direction: ltr;
+    width: 75%;
+    margin: 10px auto 0px;
+}
+
+table .progress .progress-bar {
+
+    background-color: #50CD89 !important;
+    border-radius: 23px;
+
+}
+
+.BorderBottom {
+    border-bottom: 1px solid #A5A5A5;
+}
+
+.MinHeight {
+    min-height: 100vh;
+}
+
+.WhiteBG {
+    background-color: white !important;
+    border-radius: 18px;
+}
+
 .greenText {
     color: #00A1A3 !important;
 }
@@ -1695,7 +2318,28 @@ End Support Tickets
     color: white !important;
 }
 
-/******************************************************************************
+.black {
+    color: black !important;
+}
+
+.Grey {
+    color: #707070;
+}
+
+.red {
+    color: #F56F70;
+}
+
+.green {
+    color: #50CD89;
+}
+
+.blue {
+    color: #0098DD;
+}
+
+
+/*****************************************************************************
 ******************************************************************************
 Media Query 
 ******************************************************************************
@@ -1718,14 +2362,17 @@ Media Query
     .BlogDetails section.NewestBlogs .smallImgText .UserRow .TextSmall {
         font-size: 13px;
     }
+
     section.NewsLetter .NewsLetterImg {
         left: 0;
         width: 70%;
         top: -25%;
     }
-    section.NewsLetter .NewsLetterInputPart form input{
+
+    section.NewsLetter .NewsLetterInputPart form input {
         width: 63%;
     }
+
     nav.navbar ul.navbar-nav li.nav-item a.nav-link {
         font-size: 15px;
         line-height: 40px;
@@ -1934,6 +2581,20 @@ Media Query
         padding-top: 130px !important;
     }
 
+    .InviteRow .MaxWidth, .InviteRow .MaxWidth .TextSmall {
+        width: 100% !important;
+        font-size: 15px;
+    }
+
+    .PinkBg.ContentPart .WelcomeLine .BuildingIcon {
+        position: unset;
+        width: 75%;
+    }
+
+    .PinkBg.ContentPart .WelcomeLine .TextSmall {
+        line-height: 30px;
+    }
+
     .navbar-collapse.show {
         opacity: 1;
     }
@@ -2016,9 +2677,11 @@ Media Query
     section.Stat .StatisticsRow .TwoStatDiv .statDiv .statTextRow {
         min-width: 150px;
     }
+
     section.Stat .StatisticsRow .statDiv {
         margin-right: 0px;
     }
+
     section.Stat .StatisticsRow .statDiv .statICon {
         margin-left: 0px;
     }
@@ -2089,6 +2752,15 @@ Media Query
         font-size: 18px;
     }
 
+    .InviteRow .MaxWidth, .InviteRow .MaxWidth .TextSmall,
+    .PinkBg.ContentPart .copyLink button {
+        font-size: 13px;
+    }
+
+    .PinkBg.ContentPart .copyLink button img {
+        width: 15px;
+    }
+
     section.Transactions .tablePhone {
         height: 100vh;
         overflow-y: scroll;
@@ -2107,7 +2779,7 @@ Media Query
     }
 
     .modal .modal-dialog {
-        width: 100%;
+        max-width: 100%;
     }
 
     .container-sm, .container {
@@ -2147,6 +2819,21 @@ Media Query
 @media (max-width: 575px) {
     .container-sm, .container {
         max-width: unset;
+    }
+
+    .PinkBg.ContentPart .AmountCircle h1 {
+        font-size: 25px;
+    }
+
+    .PinkBg.ContentPart .AmountCircle hr {
+
+        margin: 5px 0px;
+    }
+
+    .PinkBg.ContentPart .WelcomeLine .BuildingIcon {
+        width: 30%;
+        margin: auto;
+        margin-top: 20px;
     }
 
     .Subscribtion .WhiteDiv {

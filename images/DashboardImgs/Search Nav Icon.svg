@@ -1,0 +1,12 @@
+<svg id="Search_1" data-name="Search 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24.935" height="24.935" viewBox="0 0 24.935 24.935">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Search_1_Background_Mask_" data-name="Search 1 (Background/Mask)" width="24.935" height="24.935" fill="none"/>
+    </clipPath>
+  </defs>
+  <rect id="Search_1_Background_Mask_2" data-name="Search 1 (Background/Mask)" width="24.935" height="24.935" fill="none"/>
+  <g id="Search_1-2" data-name="Search 1" clip-path="url(#clip-path)">
+    <path id="Vector" d="M9.339,18.677a9.339,9.339,0,1,1,9.339-9.339A9.339,9.339,0,0,1,9.339,18.677Z" transform="translate(2.885 2.886)" fill="none" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke-dasharray="0 0"/>
+    <path id="Vector-2" data-name="Vector" d="M0,0,3.661,3.652" transform="translate(18.719 19.205)" fill="none" stroke="#a5a5a5" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke-dasharray="0 0"/>
+  </g>
+</svg>
