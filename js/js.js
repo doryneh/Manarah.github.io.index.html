@@ -73,15 +73,15 @@ $(document).ready(function() {
   /******
    Radio Row
    ******/
-   $('.RadioRow .form-check-input').change(function() {
+   $('.RadioRow.HideRadioRow .form-check-input').change(function() {
     var $label = $(this).siblings('label');
-    $('.RadioRow .form-check-input').not(this).siblings('label').css('color', 'black');
+    $('.RadioRow.HideRadioRow .form-check-input').not(this).siblings('label').css('color', 'black');
 
     if ($(this).is(':checked')) {
       $label.css('color', '#00A1A3');
 
       setTimeout(function() {
-        $('.RadioRow').hide();
+        $('.RadioRow.HideRadioRow').hide();
         $('.FormCheckOutRow').show();
         $('.BorderBottom').text('سحب الأموال');
       }, 2000);
@@ -92,7 +92,7 @@ $(document).ready(function() {
 
   $('#BackBtn').click(function() {
     $('.FormCheckOutRow').hide();
-    $('.RadioRow').show();
+    $('.RadioRow.HideRadioRow').show();
   });
 
 
