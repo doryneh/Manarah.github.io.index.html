@@ -1852,16 +1852,36 @@ End User Dashboard
 Side Nav
 **************************
 **************************/
-.SideNav a {
+.SideNav a,.SideNav button {
     margin-bottom: 5px;
     padding: 10px 10px 10px 0px;
-
+    box-shadow: none !important;
+}
+.SideNav  .accordion-body{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+}
+.SideNav .accordion-body a{
+    display: flex;
+    align-items: center;
+}
+.SideNav  .accordion-button:not(.collapsed) {
+    background-color: transparent;
+    box-shadow: none !important;
+    color: black !important;
+}
+.SideNav  .accordion-button::after{
+    filter: brightness(0);
 }
 .SideNav a.active{
     background-color: #E2F3F3;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
     color: #00A1A3 !important;
+}
+.SideNav .accordion-flush .accordion-item{
+    border: none;
 }
 /**************************
 **************************

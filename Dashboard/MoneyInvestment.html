@@ -127,43 +127,302 @@
         <div class="row">
             <!--Side Nav-->
             <div class="col-lg-2 mt-5 pt-4 SideNav">
-                <div class="d-lg-flex  flex-lg-column d-none">
-                    <a href="../Dashboard/UserDashboard.html" class="active"><img
-                            src="../images/DashboardImgs/UserSide_1.svg" alt="UserSide_1" class="me-3 TextSmall">
-                        لوحة التحكم</a>
-                    <a href="../Dashboard/CashIn.html"><img src="../images/DashboardImgs/UserSide_2.svg"
-                            alt="UserSide_2" class="me-3 TextSmall">
-                        الإيداع </a>
-                    <a href="../Dashboard/MoneyInvestment.html"><img src="../images/DashboardImgs/UserSide_3.svg"
-                            alt="UserSide_3" class="me-3 TextSmall">
-                        إستثمار </a>
-                    <a href="../Dashboard/CashOut.html"><img src="../images/DashboardImgs/UserSide_2.svg"
-                            alt="UserSide_4" class="me-3 TextSmall">
-                        سحب </a>
-                    <a href="../Dashboard/MoneyTransfer.html"><img src="../images/DashboardImgs/UserSide_5.svg"
-                            alt="UserSide_5" class="me-3 TextSmall">
-                        تحويل الأموال </a>
-                    <a href="../Dashboard/TransactionUser.html"><img src="../images/DashboardImgs/UserSide_6.svg"
-                            alt="UserSide_6" class="me-3 TextSmall">
-                        المعاملات </a>
-                    <a href="../Dashboard/ShowRegisteredStatus.html"><img src="../images/DashboardImgs/UserSide_7.svg"
-                            alt="UserSide_7" class="me-3 TextSmall">
-                        الإحالات </a>
-                    <a href="../Dashboard/TransferCommition.html"><img src="../images/DashboardImgs/UserSide_8.svg"
-                            alt="UserSide_8" class="me-3 TextSmall">
-                        عمولة الإحالة </a>
-                    <a href="../Dashboard/AdsBanners.html"><img src="../images/DashboardImgs/UserSide_9.svg"
-                            alt="UserSide_9" class="me-3 TextSmall">
-                        بنرات إعلانية </a>
-                    <a href="../Dashboard/SupportTickets.html"><img src="../images/DashboardImgs/UserSide_10.svg"
-                            alt="UserSide_10" class="me-3 TextSmall">
-                        إحصل على الدعم </a>
-                    <a href="../Dashboard/AccountSecurity.html"><img src="../images/DashboardImgs/UserSide_11.svg"
-                            alt="UserSide_11" class="me-3 TextSmall">
-                        تأمين الحساب </a>
-                    <a href=""><img src="../images/DashboardImgs/UserSide_12.svg" alt="UserSide_12"
-                            class="me-3 TextSmall">
-                        تسجيل الخروج </a>
+                <div class="col-lg-2 mt-5 pt-4 SideNav">
+                    <div class="d-lg-flex  flex-lg-column d-none">
+                        <a href="../Dashboard/UserDashboard.html" class="active"><img
+                                src="../images/DashboardImgs/UserSide_1.svg" alt="UserSide_1" class="me-3 TextSmall">
+                            لوحة التحكم</a>
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        <img src="../images/DashboardImgs/UserSide_2.svg" alt="UserSide_2"
+                                            class="me-3 TextSmall">
+                                        الإيداع
+                                    </button>
+
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body px-0">
+                                        <a href=" ../Dashboard/CashIn.html" class="ps-3">
+                                            <img src="../images/DashboardImgs/SideNavGreenDot.svg" alt="SideNavGreenDot"
+                                                class="me-3 TextSmall" width="7">
+
+                                            إيداع الأموال</a>
+                                        <a href=" ../Dashboard/DepositArchive.html" class="ps-3">
+                                            <img src="../images/DashboardImgs/SideNavGreyDot.svg" alt="SideNavGreyDot"
+                                                class="me-3 TextSmall">
+                                            أرشيف الودائع </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
+                                        <img src="../images/DashboardImgs/UserSide_3.svg" alt="UserSide_3"
+                                            class="me-3 TextSmall">
+                                        إستثمار
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <a href=" ../Dashboard/MoneyInvestment.html" class="ps-3">
+                                            <img src="../images/DashboardImgs/SideNavGreyDot.svg" alt="SideNavGreyDot"
+                                                class="me-3 TextSmall" width="7">
+
+                                            إستثمار الأموال</a>
+                                        <a href=" ../Dashboard/MyActiveInvestment.html" class="ps-3">
+                                            <img src="../images/DashboardImgs/SideNavGreyDot.svg" alt="SideNavGreyDot"
+                                                class="me-3 TextSmall">
+                                            إستثماراتي النشطة</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
+                                        <img src="../images/DashboardImgs/UserSide_2.svg" alt="UserSide_4"
+                                            class="me-3 TextSmall">
+                                        سحب
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <a href=" ../Dashboard/CashOut.html" class="ps-3">
+                                            <img src="../images/DashboardImgs/SideNavGreyDot.svg" alt="SideNavGreyDot"
+                                                class="me-3 TextSmall" width="7">
+
+                                            سحب الأموال </a>
+                                        <a href=" ../Dashboard/CashOutArchive.html" class="ps-3">
+                                            <img src="../images/DashboardImgs/SideNavGreyDot.svg" alt="SideNavGreyDot"
+                                                class="me-3 TextSmall">
+                                            أرشيف السحب </a>
+                                        <a href=" ../Dashboard/DashPaymentMethod.html" class="ps-3">
+                                            <img src="../images/DashboardImgs/SideNavGreyDot.svg" alt="SideNavGreyDot"
+                                                class="me-3 TextSmall">
+                                            وسائل السحب </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="../Dashboard/MoneyTransfer.html"><img src="../images/DashboardImgs/UserSide_5.svg"
+                                alt="UserSide_5" class="me-3 TextSmall">
+                            تحويل الأموال </a>
+                        <a href="../Dashboard/TransactionUser.html"><img src="../images/DashboardImgs/UserSide_6.svg"
+                                alt="UserSide_6" class="me-3 TextSmall">
+                            المعاملات </a>
+                        <a href="../Dashboard/ShowRegisteredStatus.html"><img
+                                src="../images/DashboardImgs/UserSide_7.svg" alt="UserSide_7" class="me-3 TextSmall">
+                            الإحالات </a>
+                        <a href="../Dashboard/TransferCommition.html"><img src="../images/DashboardImgs/UserSide_8.svg"
+                                alt="UserSide_8" class="me-3 TextSmall">
+                            عمولة الإحالة </a>
+                        <a href="../Dashboard/AdsBanners.html"><img src="../images/DashboardImgs/UserSide_9.svg"
+                                alt="UserSide_9" class="me-3 TextSmall">
+                            بنرات إعلانية </a>
+                        <div class="accordion accordion-flush" id="Accordion2">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        <img src="../images/DashboardImgs/UserSide_10.svg" alt="UserSide_10"
+                                            class="me-3 TextSmall">
+                                        إحصل على الدعم
+                                    </button>
+
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="collapseOne"
+                                    data-bs-parent="#Accordion2">
+                                    <div class="accordion-body px-0">
+                                        <a href=" ../Dashboard/ShowSupportTickets.html" class="ps-3">
+                                            <img src="../images/DashboardImgs/SideNavGreyDot.svg" alt="SideNavGreenDot"
+                                                class="me-3 TextSmall" width="7">
+
+                                            فتح تذكرة جديدة
+                                        </a>
+                                        <a href=" ../Dashboard/SupportTicketTable.html" class="ps-3">
+                                            <img src="../images/DashboardImgs/SideNavGreyDot.svg" alt="SideNavGreyDot"
+                                                class="me-3 TextSmall">
+                                            تذاكري</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <a href="../Dashboard/AccountSecurity.html"><img src="../images/DashboardImgs/UserSide_11.svg"
+                                alt="UserSide_11" class="me-3 TextSmall">
+                            تأمين الحساب </a>
+                        <a href=""><img src="../images/DashboardImgs/UserSide_12.svg" alt="UserSide_12"
+                                class="me-3 TextSmall">
+                            تسجيل الخروج </a>
+                    </div>
+
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                        aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="d-flex  flex-column">
+                                <a href="../Dashboard/UserDashboard.html" class="active"><img
+                                        src="../images/DashboardImgs/UserSide_1.svg" alt="UserSide_1"
+                                        class="me-3 TextSmall">
+                                    لوحة التحكم</a>
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingOne">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                                aria-expanded="false" aria-controls="flush-collapseOne">
+                                                <img src="../images/DashboardImgs/UserSide_2.svg" alt="UserSide_2"
+                                                    class="me-3 TextSmall">
+                                                الإيداع
+                                            </button>
+
+                                        </h2>
+                                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body px-0">
+                                                <a href=" ../Dashboard/CashIn.html" class="ps-3">
+                                                    <img src="../images/DashboardImgs/SideNavGreenDot.svg"
+                                                        alt="SideNavGreenDot" class="me-3 TextSmall" width="7">
+
+                                                    إيداع الأموال</a>
+                                                <a href=" ../Dashboard/DepositArchive.html" class="ps-3">
+                                                    <img src="../images/DashboardImgs/SideNavGreyDot.svg"
+                                                        alt="SideNavGreyDot" class="me-3 TextSmall">
+                                                    أرشيف الودائع </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingTwo">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                                aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                <img src="../images/DashboardImgs/UserSide_3.svg" alt="UserSide_3"
+                                                    class="me-3 TextSmall">
+                                                إستثمار
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <a href=" ../Dashboard/MoneyInvestment.html" class="ps-3">
+                                                    <img src="../images/DashboardImgs/SideNavGreyDot.svg"
+                                                        alt="SideNavGreyDot" class="me-3 TextSmall" width="7">
+
+                                                    إستثمار الأموال</a>
+                                                <a href=" ../Dashboard/MyActiveInvestment.html" class="ps-3">
+                                                    <img src="../images/DashboardImgs/SideNavGreyDot.svg"
+                                                        alt="SideNavGreyDot" class="me-3 TextSmall">
+                                                    إستثماراتي النشطة</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingThree">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                                aria-expanded="false" aria-controls="flush-collapseThree">
+                                                <img src="../images/DashboardImgs/UserSide_2.svg" alt="UserSide_4"
+                                                    class="me-3 TextSmall">
+                                                سحب
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-headingThree"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <a href=" ../Dashboard/CashOut.html" class="ps-3">
+                                                    <img src="../images/DashboardImgs/SideNavGreyDot.svg"
+                                                        alt="SideNavGreyDot" class="me-3 TextSmall" width="7">
+
+                                                    سحب الأموال </a>
+                                                <a href=" ../Dashboard/CashOutArchive.html" class="ps-3">
+                                                    <img src="../images/DashboardImgs/SideNavGreyDot.svg"
+                                                        alt="SideNavGreyDot" class="me-3 TextSmall">
+                                                    أرشيف السحب </a>
+                                                <a href=" ../Dashboard/DashPaymentMethod.html" class="ps-3">
+                                                    <img src="../images/DashboardImgs/SideNavGreyDot.svg"
+                                                        alt="SideNavGreyDot" class="me-3 TextSmall">
+                                                    وسائل السحب </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="../Dashboard/MoneyTransfer.html"><img
+                                        src="../images/DashboardImgs/UserSide_5.svg" alt="UserSide_5"
+                                        class="me-3 TextSmall">
+                                    تحويل الأموال </a>
+                                <a href="../Dashboard/TransactionUser.html"><img
+                                        src="../images/DashboardImgs/UserSide_6.svg" alt="UserSide_6"
+                                        class="me-3 TextSmall">
+                                    المعاملات </a>
+                                <a href="../Dashboard/ShowRegisteredStatus.html"><img
+                                        src="../images/DashboardImgs/UserSide_7.svg" alt="UserSide_7"
+                                        class="me-3 TextSmall">
+                                    الإحالات </a>
+                                <a href="../Dashboard/TransferCommition.html"><img
+                                        src="../images/DashboardImgs/UserSide_8.svg" alt="UserSide_8"
+                                        class="me-3 TextSmall">
+                                    عمولة الإحالة </a>
+                                <a href="../Dashboard/AdsBanners.html"><img src="../images/DashboardImgs/UserSide_9.svg"
+                                        alt="UserSide_9" class="me-3 TextSmall">
+                                    بنرات إعلانية </a>
+                                <div class="accordion accordion-flush" id="Accordion2">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingOne">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                aria-expanded="false" aria-controls="collapseOne">
+                                                <img src="../images/DashboardImgs/UserSide_10.svg" alt="UserSide_10"
+                                                    class="me-3 TextSmall">
+                                                إحصل على الدعم
+                                            </button>
+
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse"
+                                            aria-labelledby="collapseOne" data-bs-parent="#Accordion2">
+                                            <div class="accordion-body px-0">
+                                                <a href=" ../Dashboard/ShowSupportTickets.html" class="ps-3">
+                                                    <img src="../images/DashboardImgs/SideNavGreyDot.svg"
+                                                        alt="SideNavGreenDot" class="me-3 TextSmall" width="7">
+
+                                                    فتح تذكرة جديدة
+                                                </a>
+                                                <a href=" ../Dashboard/SupportTicketTable.html" class="ps-3">
+                                                    <img src="../images/DashboardImgs/SideNavGreyDot.svg"
+                                                        alt="SideNavGreyDot" class="me-3 TextSmall">
+                                                    تذاكري</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <a href="../Dashboard/AccountSecurity.html"><img
+                                        src="../images/DashboardImgs/UserSide_11.svg" alt="UserSide_11"
+                                        class="me-3 TextSmall">
+                                    تأمين الحساب </a>
+                                <a href=""><img src="../images/DashboardImgs/UserSide_12.svg" alt="UserSide_12"
+                                        class="me-3 TextSmall">
+                                    تسجيل الخروج </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
