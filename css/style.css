@@ -55,7 +55,7 @@ a:hover {
 
 .greenBtnLink:hover, .greenBtnLink:hover button {
     background-color: white;
-    color: #00A1A3;
+    color: #00A1A3 !important;
 }
 
 .greenBtnLink.RedBtn:hover {
@@ -1214,9 +1214,7 @@ footer.footer .ContactUsFooter a.socialMediaFooter:hover {
     transform: scale(1.1);
 }
 
-.WhiteText {
-    color: white;
-}
+
 
 /**************************
 **************************
@@ -2247,6 +2245,29 @@ ContentPart
     width: fit-content;
 }
 
+
+.ContentPart .carousel-indicators{
+    position: relative;
+    margin-top: 30px;
+}
+.ContentPart .carousel-indicators button{
+    background-color: #E2F3F3;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    opacity: 1;
+    margin-left: 15px;
+}
+.ContentPart .carousel-indicators button.active{
+    background-color: #00A1A3;
+}
+.ContentPart  .carousel,.ContentPart .carousel .carousel-inner{
+    direction: rtl;
+    
+}
+.ContentPart .carousel .carousel-inner .carousel-item{
+    height: 510px;
+}
 /**************************
 **************************
 End ContentPart
@@ -2344,7 +2365,9 @@ table .progress .progress-bar {
 .whiteText {
     color: white !important;
 }
-
+.ContentPart .greenBtnLink:hover .whiteText{
+    color: #008688 !important;
+}
 .black {
     color: black !important;
 }
@@ -2365,7 +2388,9 @@ table .progress .progress-bar {
     color: #0098DD;
 }
 
-
+.Golden{
+    color: #FFBA0F;
+}
 /*****************************************************************************
 ******************************************************************************
 Media Query 
