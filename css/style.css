@@ -2362,10 +2362,10 @@ table .progress .progress-bar {
     color: #00A1A3 !important;
 }
 
-.whiteText {
+.WhiteText {
     color: white !important;
 }
-.ContentPart .greenBtnLink:hover .whiteText{
+.ContentPart .greenBtnLink:hover .WhiteText{
     color: #008688 !important;
 }
 .black {
